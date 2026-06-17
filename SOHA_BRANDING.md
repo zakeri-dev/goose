@@ -75,10 +75,37 @@ git checkout soha-brand && git rebase main
 
 ## Remaining / open
 
-- **Phase 5 — Windows installer**: makers currently produce a ZIP for Windows (no
-  `maker-squirrel` wired). Producing a real installer + the Windows `goosed.exe` from a
-  non-MSVC environment is the main open problem (options: `cargo-xwin` cross-compile, or
-  build goosed in Docker for windows-gnu, then package). Not solved yet.
+### Phase 5 — runnable Windows build (needs a decision)
+The desktop app (Electron) builds with just Node/pnpm, but it spawns a **`goosed.exe`**
+backend that must be placed in `ui/desktop/src/bin/` (dev) or bundled (packaged). Producing
+that `goosed.exe` is the one unsolved piece. Findings:
+
+- The documented path (`justfile`) is `cargo build --release --target
+  x86_64-pc-windows-msvc -p goose-server` → **requires the MSVC C++ Build Tools** (declined
+  during setup).
+- **Cross-compiling to `x86_64-pc-windows-gnu` in Docker is NOT practical** here: the
+  `rustls-tls` feature pulls **`aws-lc-rs`** (heavy C/asm, very hard to cross-compile) and the
+  default features include **`local-inference`** (large native ML deps). Trimming features
+  could help but is a substantial, uncertain effort.
+
+**Recommended options (pick one when ready):**
+1. Install VS C++ Build Tools, then `cargo build --target x86_64-pc-windows-msvc -p
+   goose-server` + `just copy-binary-windows`, then `pnpm make` in `ui/desktop`. (Cleanest.)
+2. Trim goose-server features (drop `local-inference`, swap `aws-lc-rs`→`ring`) and attempt a
+   windows-gnu cross-compile in Docker. (No MSVC, but real engineering.)
+3. For a quick visual demo only: drop a version-matched (1.38.0) upstream `goosed.exe` into
+   `ui/desktop/src/bin/` and run `pnpm start-gui` — shows SOHA branding, but the backend
+   won't include our telemetry-off / system-prompt changes.
+
+Also wire `@electron-forge/maker-squirrel` into `forge.config.ts` makers for an actual
+Windows installer (currently Windows output is a ZIP).
+
+### Other follow-ups
 - Auto-update channel points at `zakeri-dev/goose` (GITHUB_OWNER/REPO) — needs releases published there.
 - In-app emblem SVGs (`src/images/icon.svg`, `glyph.svg`) still show the goose mark; replace
   with a SOHA SVG for full in-app logo consistency.
+- RTL (right-to-left) layout for Persian is not implemented — only text is translated.
+
+## Validation done
+- `pnpm install` (pnpm 10) ✓ · `pnpm run typecheck` ✓ · `pnpm run i18n:compile` (en+fa) ✓
+- Rust core compiles: `cargo check -p goose` in Docker (rust:1.92-bookworm) ✓
