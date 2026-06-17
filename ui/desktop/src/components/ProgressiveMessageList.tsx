@@ -282,6 +282,7 @@ export default function ProgressiveMessageList({
             {showModelChangeDisclosure && currentResolvedModel && previousResolvedModel &&
               renderModelChangeDisclosure(previousResolvedModel, currentResolvedModel)}
             <div
+              dir="ltr"
               className={`relative ${index === 0 ? 'mt-0' : 'mt-4'} ${isUser ? 'user' : 'assistant'} ${messageIsInChain ? 'in-chain' : ''}`}
               data-testid="message-container"
             >
