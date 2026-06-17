@@ -489,7 +489,7 @@ export default function AppSettingsSection({ scrollToSection }: AppSettingsSecti
           <div className="flex space-x-4">
             <Button
               onClick={() => {
-                window.open('https://github.com/zakeri-dev/goose/issues/new', '_blank');
+                window.open('https://sohaagent.ir', '_blank');
               }}
               variant="secondary"
               size="sm"
@@ -498,7 +498,7 @@ export default function AppSettingsSection({ scrollToSection }: AppSettingsSecti
             </Button>
             <Button
               onClick={() => {
-                window.open('https://github.com/zakeri-dev/goose/issues/new', '_blank');
+                window.open('https://sohaagent.ir', '_blank');
               }}
               variant="secondary"
               size="sm"

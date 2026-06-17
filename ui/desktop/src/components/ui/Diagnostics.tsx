@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AlertTriangle, Download, Github } from 'lucide-react';
 import { Button } from './button';
 import { toastError } from '../../toasts';
-import { diagnostics, systemInfo } from '../../api';
+import { diagnostics } from '../../api';
 import { defineMessages, useIntl } from '../../i18n';
 
 const i18n = defineMessages({
@@ -127,66 +127,7 @@ export const DiagnosticsModal: React.FC<DiagnosticsModalProps> = ({
     setIsFilingBug(true);
 
     try {
-      const response = await systemInfo({ throwOnError: true });
-      const info = response.data;
-
-      const providerModel =
-        info.provider && info.model
-          ? `${info.provider} – ${info.model}`
-          : info.provider || info.model || '[e.g. Google – gemini-1.5-pro]';
-
-      const extensions =
-        info.enabled_extensions.length > 0
-          ? info.enabled_extensions.join(', ')
-          : '[e.g. Computer Controller, Figma]';
-
-      const body = `**Describe the bug**
-
-📦 To help us debug faster, attach your **diagnostics zip** if possible.
-
-A clear and concise description of what the bug is.
-
----
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
----
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
----
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
----
-
-**Please provide the following information**
-- **OS & Arch:** ${info.os} ${info.os_version} ${info.architecture}
-- **Interface:** UI
-- **Version:** ${info.app_version}
-- **Extensions enabled:** ${extensions}
-- **Provider & Model:** ${providerModel}
-
----
-
-**Additional context**
-Add any other context about the problem here.
-`;
-
-      const params = new URLSearchParams({
-        template: 'bug_report.md',
-        body: body,
-        labels: 'bug',
-      });
-
-      window.open(`https://github.com/zakeri-dev/goose/issues/new?${params.toString()}`, '_blank');
+      window.open('https://sohaagent.ir', '_blank');
       onClose();
     } catch {
       toastError({
