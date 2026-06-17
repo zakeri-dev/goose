@@ -34,7 +34,7 @@ type ColorTokenKey = Exclude<McpUiStyleVariableKey, BaseTokenKey>;
 // ---------------------------------------------------------------------------
 const baseTokens: Pick<ThemeTokens, BaseTokenKey> = {
   // Typography — families
-  '--font-sans': "'Cash Sans', sans-serif",
+  '--font-sans': "'Vazirmatn Variable', 'Cash Sans', sans-serif",
   '--font-mono': 'monospace',
 
   // Typography — weights
@@ -73,12 +73,12 @@ const baseTokens: Pick<ThemeTokens, BaseTokenKey> = {
   '--font-heading-2xl-line-height': '2.5rem',
   '--font-heading-3xl-line-height': '3.5rem',
 
-  // Border radius
-  '--border-radius-xs': '2px',
-  '--border-radius-sm': '4px',
-  '--border-radius-md': '8px',
-  '--border-radius-lg': '12px',
-  '--border-radius-xl': '16px',
+  // Border radius (softened for a premium SOHA feel)
+  '--border-radius-xs': '3px',
+  '--border-radius-sm': '6px',
+  '--border-radius-md': '10px',
+  '--border-radius-lg': '14px',
+  '--border-radius-xl': '20px',
   '--border-radius-full': '9999px',
 
   // Border width
@@ -92,112 +92,112 @@ type ColorTokens = Pick<ThemeTokens, ColorTokenKey>;
 // Light theme — colors & shadows
 // ---------------------------------------------------------------------------
 const lightColorTokens: ColorTokens = {
-  // Backgrounds
+  // Backgrounds — clean white with a cool, blue-tinted neutral
   '--color-background-primary': '#ffffff',
-  '--color-background-secondary': '#f4f6f7',
-  '--color-background-tertiary': '#e3e6ea',
-  '--color-background-inverse': '#000000',
+  '--color-background-secondary': '#f3f6fc',
+  '--color-background-tertiary': '#e6ecf8',
+  '--color-background-inverse': '#14213d', // deep royal navy (primary buttons, user bubble)
   '--color-background-ghost': 'transparent',
-  '--color-background-info': '#5c98f9',
-  '--color-background-danger': '#f94b4b',
-  '--color-background-success': '#91cb80',
-  '--color-background-warning': '#fbcd44',
-  '--color-background-disabled': '#e3e6ea',
+  '--color-background-info': '#2563eb', // royal blue accent
+  '--color-background-danger': '#ef4444',
+  '--color-background-success': '#16a34a',
+  '--color-background-warning': '#d99a2b', // SOHA gold
+  '--color-background-disabled': '#e6ecf8',
 
   // Text
-  '--color-text-primary': '#3f434b',
-  '--color-text-secondary': '#878787',
-  '--color-text-tertiary': '#a7b0b9',
+  '--color-text-primary': '#16213a', // deep navy ink
+  '--color-text-secondary': '#5b6b88',
+  '--color-text-tertiary': '#97a4bd',
   '--color-text-inverse': '#ffffff',
-  '--color-text-ghost': '#878787',
-  '--color-text-info': '#5c98f9',
-  '--color-text-danger': '#f94b4b',
-  '--color-text-success': '#91cb80',
-  '--color-text-warning': '#fbcd44',
-  '--color-text-disabled': '#cbd1d6',
+  '--color-text-ghost': '#5b6b88',
+  '--color-text-info': '#2563eb',
+  '--color-text-danger': '#dc2626',
+  '--color-text-success': '#16a34a',
+  '--color-text-warning': '#b07d18', // gold (readable on light)
+  '--color-text-disabled': '#aab4c8',
 
   // Borders
-  '--color-border-primary': '#e3e6ea',
-  '--color-border-secondary': '#e3e6ea',
-  '--color-border-tertiary': '#cbd1d6',
-  '--color-border-inverse': '#000000',
+  '--color-border-primary': '#e6ecf8',
+  '--color-border-secondary': '#dde5f3',
+  '--color-border-tertiary': '#cdd8ec',
+  '--color-border-inverse': '#14213d',
   '--color-border-ghost': 'transparent',
-  '--color-border-info': '#5c98f9',
-  '--color-border-danger': '#f94b4b',
-  '--color-border-success': '#91cb80',
-  '--color-border-warning': '#fbcd44',
-  '--color-border-disabled': '#e3e6ea',
+  '--color-border-info': '#2563eb',
+  '--color-border-danger': '#ef4444',
+  '--color-border-success': '#16a34a',
+  '--color-border-warning': '#d99a2b',
+  '--color-border-disabled': '#e6ecf8',
 
   // Rings
-  '--color-ring-primary': '#e3e6ea',
-  '--color-ring-secondary': '#cbd1d6',
+  '--color-ring-primary': '#cdd8ec',
+  '--color-ring-secondary': '#cdd8ec',
   '--color-ring-inverse': '#ffffff',
-  '--color-ring-info': '#5c98f9',
-  '--color-ring-danger': '#f94b4b',
-  '--color-ring-success': '#91cb80',
-  '--color-ring-warning': '#fbcd44',
+  '--color-ring-info': '#2563eb',
+  '--color-ring-danger': '#ef4444',
+  '--color-ring-success': '#16a34a',
+  '--color-ring-warning': '#d99a2b',
 
-  // Shadows
-  '--shadow-hairline': '0 0 0 1px rgba(0, 0, 0, 0.05)',
-  '--shadow-sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-  '--shadow-md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
-  '--shadow-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)',
+  // Shadows — soft, cool-tinted depth
+  '--shadow-hairline': '0 0 0 1px rgba(20, 33, 61, 0.06)',
+  '--shadow-sm': '0 1px 2px 0 rgba(20, 33, 61, 0.08)',
+  '--shadow-md': '0 4px 12px -2px rgba(20, 33, 61, 0.12), 0 2px 4px -2px rgba(20, 33, 61, 0.08)',
+  '--shadow-lg': '0 12px 28px -6px rgba(20, 33, 61, 0.18), 0 4px 8px -4px rgba(20, 33, 61, 0.1)',
 };
 
 // ---------------------------------------------------------------------------
 // Dark theme — colors & shadows
 // ---------------------------------------------------------------------------
 const darkColorTokens: ColorTokens = {
-  // Backgrounds
-  '--color-background-primary': '#22252a',
-  '--color-background-secondary': '#3f434b',
-  '--color-background-tertiary': '#474e57',
-  '--color-background-inverse': '#cbd1d6',
+  // Backgrounds — deep royal navy
+  '--color-background-primary': '#0e1626',
+  '--color-background-secondary': '#16213a',
+  '--color-background-tertiary': '#1f2c49',
+  '--color-background-inverse': '#eef2fb',
   '--color-background-ghost': 'transparent',
-  '--color-background-info': '#7cacff',
+  '--color-background-info': '#4f80ff', // bright royal blue
   '--color-background-danger': '#ff6b6b',
-  '--color-background-success': '#a3d795',
-  '--color-background-warning': '#ffd966',
-  '--color-background-disabled': '#474e57',
+  '--color-background-success': '#7fd07a',
+  '--color-background-warning': '#f0b429', // SOHA gold
+  '--color-background-disabled': '#1f2c49',
 
   // Text
-  '--color-text-primary': '#ffffff',
-  '--color-text-secondary': '#878787',
-  '--color-text-tertiary': '#606c7a',
-  '--color-text-inverse': '#000000',
-  '--color-text-ghost': '#878787',
-  '--color-text-info': '#7cacff',
+  '--color-text-primary': '#eef2fb',
+  '--color-text-secondary': '#9fb0cc',
+  '--color-text-tertiary': '#6b7d9e',
+  '--color-text-inverse': '#0e1626',
+  '--color-text-ghost': '#9fb0cc',
+  '--color-text-info': '#6f9bff',
   '--color-text-danger': '#ff6b6b',
-  '--color-text-success': '#a3d795',
-  '--color-text-warning': '#ffd966',
-  '--color-text-disabled': '#525b68',
+  '--color-text-success': '#8fd98a',
+  '--color-text-warning': '#f0b429', // gold
+  '--color-text-disabled': '#4a5a78',
 
   // Borders
-  '--color-border-primary': '#3f434b',
-  '--color-border-secondary': '#525b68',
-  '--color-border-tertiary': '#474e57',
-  '--color-border-inverse': '#ffffff',
+  '--color-border-primary': '#243352',
+  '--color-border-secondary': '#2e3f63',
+  '--color-border-tertiary': '#1f2c49',
+  '--color-border-inverse': '#eef2fb',
   '--color-border-ghost': 'transparent',
-  '--color-border-info': '#7cacff',
+  '--color-border-info': '#4f80ff',
   '--color-border-danger': '#ff6b6b',
-  '--color-border-success': '#a3d795',
-  '--color-border-warning': '#ffd966',
-  '--color-border-disabled': '#3f434b',
+  '--color-border-success': '#7fd07a',
+  '--color-border-warning': '#f0b429',
+  '--color-border-disabled': '#243352',
 
   // Rings
-  '--color-ring-primary': '#525b68',
-  '--color-ring-secondary': '#474e57',
-  '--color-ring-inverse': '#000000',
-  '--color-ring-info': '#7cacff',
+  '--color-ring-primary': '#2e3f63',
+  '--color-ring-secondary': '#1f2c49',
+  '--color-ring-inverse': '#0e1626',
+  '--color-ring-info': '#4f80ff',
   '--color-ring-danger': '#ff6b6b',
-  '--color-ring-success': '#a3d795',
-  '--color-ring-warning': '#ffd966',
+  '--color-ring-success': '#7fd07a',
+  '--color-ring-warning': '#f0b429',
 
-  // Shadows (darker for dark mode)
-  '--shadow-hairline': '0 0 0 1px rgba(0, 0, 0, 0.2)',
-  '--shadow-sm': '0 1px 2px 0 rgba(0, 0, 0, 0.2)',
-  '--shadow-md': '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2)',
-  '--shadow-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.2)',
+  // Shadows (deep for dark navy)
+  '--shadow-hairline': '0 0 0 1px rgba(0, 0, 0, 0.4)',
+  '--shadow-sm': '0 1px 2px 0 rgba(0, 0, 0, 0.4)',
+  '--shadow-md': '0 4px 14px -2px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4)',
+  '--shadow-lg': '0 14px 32px -6px rgba(0, 0, 0, 0.6), 0 4px 8px -4px rgba(0, 0, 0, 0.45)',
 };
 
 // ---------------------------------------------------------------------------

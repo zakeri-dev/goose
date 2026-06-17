@@ -24,6 +24,46 @@ import { getInitialWorkingDir } from '../utils/workingDir';
 import { createSession } from '../sessions';
 import LoadingGoose from './LoadingGoose';
 import { UserInput } from '../types/message';
+import { ScrollText, AlignRight, Code2, Sparkles, ChevronLeft } from 'lucide-react';
+
+type SuggestionCard = {
+  icon: typeof ScrollText;
+  label: string;
+  prompt: string;
+  bg: string;
+  fg: string;
+};
+
+const SUGGESTION_CARDS: SuggestionCard[] = [
+  {
+    icon: ScrollText,
+    label: 'نوشتن مقاله',
+    prompt: 'سلام! می‌خواهم یک مقاله بنویسم. لطفاً بپرس موضوعش چیست.',
+    bg: 'rgba(37, 99, 235, 0.12)',
+    fg: '#2563eb',
+  },
+  {
+    icon: AlignRight,
+    label: 'خلاصه‌سازی متن',
+    prompt: 'می‌خواهم یک متن را خلاصه کنم. لطفاً بگو متن را بفرستم.',
+    bg: 'rgba(19, 187, 175, 0.14)',
+    fg: '#0f9d92',
+  },
+  {
+    icon: Code2,
+    label: 'نوشتن کد',
+    prompt: 'می‌خواهم یک قطعه کد بنویسم. لطفاً بپرس چه کاری باید انجام دهد و با چه زبانی.',
+    bg: 'rgba(99, 102, 241, 0.12)',
+    fg: '#6366f1',
+  },
+  {
+    icon: Sparkles,
+    label: 'ایده‌پردازی',
+    prompt: 'به چند ایده‌ی خلاقانه نیاز دارم. لطفاً بپرس درباره‌ی چه موضوعی.',
+    bg: 'rgba(217, 154, 43, 0.16)',
+    fg: '#c2871a',
+  },
+];
 
 const i18n = defineMessages({
   goodMorning: { id: 'hub.goodMorning', defaultMessage: 'Good morning' },
@@ -112,7 +152,7 @@ export default function Hub({
 
   return (
     <div className="flex flex-col h-full min-h-0 items-center justify-center px-6 relative">
-      <div className="w-full max-w-2xl">
+      <div className="w-full max-w-3xl">
         <div className="flex items-baseline gap-2 mb-1">
           <span className="text-6xl font-light text-text-primary tracking-tight tabular-nums">
             {time}
@@ -141,6 +181,31 @@ export default function Hub({
             inputRef={inputRef}
           />
         </ChatInputCard>
+
+        <p className="text-xs text-text-tertiary mt-6 mb-3">یا شروع کنید با:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {SUGGESTION_CARDS.map((card) => {
+            const Icon = card.icon;
+            return (
+              <button
+                key={card.label}
+                type="button"
+                onClick={() => handleSubmit({ msg: card.prompt, images: [] })}
+                disabled={isCreatingSession}
+                className="group flex items-center gap-3 p-3.5 rounded-xl border border-border-primary bg-background-secondary text-start transition-all hover:-translate-y-0.5 hover:shadow-md hover:border-border-info disabled:opacity-50 disabled:pointer-events-none"
+              >
+                <span
+                  className="flex items-center justify-center w-10 h-10 rounded-lg shrink-0"
+                  style={{ backgroundColor: card.bg, color: card.fg }}
+                >
+                  <Icon className="w-5 h-5" />
+                </span>
+                <span className="flex-1 text-sm font-medium text-text-primary">{card.label}</span>
+                <ChevronLeft className="w-4 h-4 text-text-tertiary transition-colors group-hover:text-text-info" />
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {isCreatingSession && (
