@@ -856,7 +856,7 @@ export default function CustomProviderForm({
                 clearHeaderValidation();
               }}
               onKeyDown={handleHeaderKeyDown}
-              placeholder="Header name"
+              placeholder={intl.formatMessage(i18n.headerNamePlaceholder)}
               className={cn(
                 'w-full text-textStandard border-borderSubtle hover:border-borderStandard',
                 invalidHeaderFields.key && 'border-red-500 focus:border-red-500'

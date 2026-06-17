@@ -496,7 +496,7 @@ export function AppInner() {
   // Show a toast if mesh is the configured provider but isn't running.
   useEffect(() => {
     const handler = () => {
-      toast.warn('Inference Mesh is set as your provider but isn\'t running. Open Settings → Mesh to start it. Keep goose running to stay connected.', {
+      toast.warn('Inference Mesh به‌عنوان ارائه‌دهنده شما تنظیم شده اما در حال اجرا نیست. برای راه‌اندازی آن به تنظیمات ← Mesh بروید. سها را در حال اجرا نگه دارید تا اتصال برقرار بماند.', {
         autoClose: false,
         toastId: 'mesh-not-running',
       });
@@ -638,7 +638,7 @@ export function AppInner() {
     <>
       <PageViewTracker />
       <ToastContainer
-        aria-label="Toast notifications"
+        aria-label="اعلان‌ها"
         toastClassName={() =>
           `relative min-h-16 mb-4 p-2 rounded-lg
                flex justify-between overflow-hidden cursor-pointer

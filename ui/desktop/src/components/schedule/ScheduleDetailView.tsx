@@ -231,10 +231,10 @@ const ScheduleDetailView: React.FC<ScheduleDetailViewProps> = ({ scheduleId, onN
       if (result.sessionId) {
         const duration = result.runningDurationSeconds
           ? `${Math.floor(result.runningDurationSeconds / 60)}m ${result.runningDurationSeconds % 60}s`
-          : 'Unknown';
+          : 'نامشخص';
         toastSuccess({
           title: intl.formatMessage(i18n.jobInspection),
-          msg: `Session: ${result.sessionId}\nRunning for: ${duration}`,
+          msg: `نشست: ${result.sessionId}\nمدت اجرا: ${duration}`,
         });
       } else {
         toastSuccess({ title: intl.formatMessage(i18n.jobInspection), msg: intl.formatMessage(i18n.inspectNoInfo) });

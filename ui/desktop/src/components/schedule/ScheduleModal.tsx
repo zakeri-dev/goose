@@ -196,7 +196,7 @@ export const ScheduleModal: React.FC<ScheduleModalProps> = ({
       <Card className="w-full max-w-md bg-background-primary shadow-xl rounded-3xl z-50 flex flex-col max-h-[90vh] overflow-hidden">
         <div className="px-8 pt-6 pb-4 flex-shrink-0">
           <div className="flex items-center gap-3">
-            <img src={ClockIcon} alt="Clock" className="w-8 h-8" />
+            <img src={ClockIcon} alt="ساعت" className="w-8 h-8" />
             <div className="flex-1">
               <h2 className="text-base font-semibold text-text-primary">
                 {isEditMode ? intl.formatMessage(i18n.editSchedule) : intl.formatMessage(i18n.createNewSchedule)}

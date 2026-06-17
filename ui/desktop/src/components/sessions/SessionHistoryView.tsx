@@ -238,14 +238,14 @@ const SessionHistoryView: React.FC<SessionHistoryViewProps> = ({
     try {
       const config = await window.electron.getSetting('sessionSharing');
       if (!config.enabled || !config.baseUrl) {
-        throw new Error('Session sharing is not enabled or base URL is not configured.');
+        throw new Error('اشتراک‌گذاری نشست فعال نیست یا نشانی پایه پیکربندی نشده است.');
       }
 
       const shareToken = await createSharedSession(
         config.baseUrl,
         session.working_dir,
         messages,
-        session.name || 'Shared Session',
+        session.name || 'نشست اشتراکی',
         session.total_tokens || 0
       );
 

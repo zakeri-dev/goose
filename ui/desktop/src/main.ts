@@ -1028,7 +1028,12 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
     minWidth: 480,
     minHeight: 400,
     resizable: true,
-    icon: path.join(__dirname, '../images/icon.icns'),
+    icon: (() => {
+      const file = process.platform === 'win32' ? 'icon.ico' : 'icon.png';
+      return app.isPackaged
+        ? path.join(process.resourcesPath, 'images', file)
+        : path.join(app.getAppPath(), 'src', 'images', file);
+    })(),
     webPreferences: {
       spellcheck: settings.spellcheckEnabled ?? true,
       preload: path.join(__dirname, 'preload.js'),

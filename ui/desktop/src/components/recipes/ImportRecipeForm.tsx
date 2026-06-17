@@ -84,7 +84,7 @@ const importRecipeSchema = z
       .string()
       .refine(
         (value) => !value || value.trim().startsWith('goose://recipe?config='),
-        'Invalid deeplink format. Expected: goose://recipe?config=...'
+        'قالب پیوند عمیق نامعتبر است. قالب مورد انتظار: goose://recipe?config=...'
       ),
     recipeUploadFile: z
       .instanceof(File)
@@ -92,10 +92,10 @@ const importRecipeSchema = z
       .refine((file) => {
         if (!file) return true;
         return file.size <= 1024 * 1024;
-      }, 'File is too large, max size is 1MB'),
+      }, 'حجم فایل بیش از حد است؛ بیشینه اندازه ۱ مگابایت است'),
   })
   .refine((data) => (data.deeplink && data.deeplink.trim()) || data.recipeUploadFile, {
-    message: 'Either of deeplink or recipe file are required',
+    message: 'یکی از پیوند عمیق یا فایل دستور کار الزامی است',
     path: ['deeplink'],
   });
 
@@ -123,7 +123,7 @@ export default function ImportRecipeForm({ isOpen, onClose, onSuccess }: ImportR
         if (value.deeplink && value.deeplink.trim()) {
           const parsedRecipe = await parseDeeplink(value.deeplink.trim());
           if (!parsedRecipe) {
-            throw new Error('Invalid deeplink or recipe format');
+            throw new Error('پیوند عمیق یا قالب دستور کار نامعتبر است');
           }
           recipe = parsedRecipe;
         } else {
@@ -144,14 +144,14 @@ export default function ImportRecipeForm({ isOpen, onClose, onSuccess }: ImportR
 
         toastSuccess({
           title: recipe.title.trim(),
-          msg: 'Recipe imported successfully',
+          msg: 'دستور کار با موفقیت وارد شد',
         });
       } catch (error) {
         console.error('Failed to import recipe:', error);
 
         toastError({
-          title: 'Import Failed',
-          msg: `Failed to import recipe: ${errorMessage(error, 'Unknown error')}`,
+          title: 'ورود ناموفق بود',
+          msg: `وارد کردن دستور کار ناموفق بود: ${errorMessage(error, 'Unknown error')}`,
           traceback: errorMessage(error),
         });
       } finally {
@@ -179,8 +179,8 @@ export default function ImportRecipeForm({ isOpen, onClose, onSuccess }: ImportR
         await parseDeeplink(value.trim());
       } catch (error) {
         toastError({
-          title: 'Invalid Deeplink',
-          msg: `The deeplink format is invalid: ${errorMessage(error, 'Unknown error')}`,
+          title: 'پیوند عمیق نامعتبر',
+          msg: `قالب پیوند عمیق نامعتبر است: ${errorMessage(error, 'Unknown error')}`,
         });
       }
     }
@@ -195,7 +195,7 @@ export default function ImportRecipeForm({ isOpen, onClose, onSuccess }: ImportR
         await parseRecipeFromFile(fileContent);
       } catch (error) {
         toastError({
-          title: 'Invalid Recipe File',
+          title: 'فایل دستور کار نامعتبر',
           msg: errorMessage(error, 'Unknown error'),
         });
       }

@@ -1669,7 +1669,7 @@ export default function ChatInput({
                     <Bug className="w-4 h-4" />
                   </Button>
                 </TooltipTrigger>
-                <TooltipContent>Generate diagnostics bundle</TooltipContent>
+                <TooltipContent>ساخت بسته عیب‌یابی</TooltipContent>
               </Tooltip>
             )}
 
@@ -1691,7 +1691,7 @@ export default function ChatInput({
                   <Attach className="w-4 h-4" />
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>Attach file</TooltipContent>
+              <TooltipContent>پیوست فایل</TooltipContent>
             </Tooltip>
           </>
         )}
@@ -1734,9 +1734,9 @@ export default function ChatInput({
             </TooltipTrigger>
             <TooltipContent>
               {!isEnabled ? (
-                <p>Dictation not configured (Settings)</p>
+                <p>دیکته پیکربندی نشده است (تنظیمات)</p>
               ) : (
-                <p>Voice dictation{isRecording ? '' : ' • Say "submit" to send'}</p>
+                <p>دیکته صوتی{isRecording ? '' : ' • برای ارسال بگویید «submit»'}</p>
               )}
             </TooltipContent>
           </Tooltip>
@@ -1750,7 +1750,7 @@ export default function ChatInput({
             size="sm"
             shape="round"
             variant="ghost"
-            aria-label="Stop"
+            aria-label="توقف"
             className="bg-background-tertiary text-text-primary hover:bg-background-tertiary/70"
           >
             <Stop />

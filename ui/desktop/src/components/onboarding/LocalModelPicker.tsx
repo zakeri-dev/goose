@@ -359,7 +359,7 @@ export default function LocalModelPicker({ onConfigured, onBack }: LocalModelPic
                               </span>
                               {model.status.state === 'Downloaded' && (
                                 <span className="text-xs bg-green-600 text-white px-2 py-0.5 rounded-full">
-                                  Ready
+                                  {intl.formatMessage(i18n.ready)}
                                 </span>
                               )}
                             </div>

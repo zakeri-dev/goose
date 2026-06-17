@@ -161,7 +161,7 @@ export const MeshSettings = () => {
       await refreshCurrentModelAndProvider();
       setActiveModel(modelId);
     } catch (err) {
-      setError(`Failed to activate model: ${err}`);
+      setError(`فعال‌سازی مدل ناموفق بود: ${err}`);
     } finally {
       setSaving(false);
     }
@@ -178,7 +178,7 @@ export const MeshSettings = () => {
         args.push('serve', '--model', selectedModel);
       } else if (mode === 'join') {
         if (!joinToken.trim()) {
-          setError('Paste an invite token to join a mesh');
+          setError('برای پیوستن به شبکه، یک توکن دعوت وارد کنید');
           setStatus('stopped');
           return;
         }
@@ -198,7 +198,7 @@ export const MeshSettings = () => {
 
       const result = await window.electron.startMesh(args);
       if (!result.started) {
-        setError(result.error || 'Failed to start mesh-llm');
+        setError(result.error || 'راه‌اندازی mesh-llm ناموفق بود');
         setStatus('stopped');
         return;
       }
@@ -212,14 +212,14 @@ export const MeshSettings = () => {
         startTimeoutRef.current = null;
         setStatus((prev) => {
           if (prev === 'starting') {
-            setError('mesh-llm did not become ready. Check ~/.mesh-llm/mesh-llm.log');
+            setError('mesh-llm آماده نشد. فایل ~/.mesh-llm/mesh-llm.log را بررسی کنید');
             return 'stopped';
           }
           return prev;
         });
       }, 300000);
     } catch (err) {
-      setError(`Failed to start: ${err}`);
+      setError(`راه‌اندازی ناموفق بود: ${err}`);
       setStatus('stopped');
     }
   };
@@ -231,10 +231,10 @@ export const MeshSettings = () => {
         setStatus('stopped');
         setStatusInfo((prev) => ({ ...prev, running: false, models: [], token: undefined }));
       } else {
-        setError('Failed to stop mesh-llm');
+        setError('توقف mesh-llm ناموفق بود');
       }
     } catch {
-      setError('Failed to stop mesh-llm');
+      setError('توقف mesh-llm ناموفق بود');
     }
   };
 
@@ -252,12 +252,9 @@ export const MeshSettings = () => {
         return (
           <span className="flex items-center gap-1.5 text-xs text-green-500">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            Running — {statusInfo.models.length} model
-            {statusInfo.models.length !== 1 ? 's' : ''} available
+            در حال اجرا — {statusInfo.models.length} مدل در دسترس
             {statusInfo.peerCount !== undefined && statusInfo.peerCount > 0 && (
-              <span className="text-text-muted ml-1">
-                · {statusInfo.peerCount} peer{statusInfo.peerCount !== 1 ? 's' : ''}
-              </span>
+              <span className="text-text-muted ml-1">· {statusInfo.peerCount} همتا</span>
             )}
           </span>
         );
@@ -265,21 +262,21 @@ export const MeshSettings = () => {
         return (
           <span className="flex items-center gap-1.5 text-xs text-yellow-500">
             <RefreshCw className="w-3 h-3 animate-spin" />
-            Starting — this may take a minute if downloading a model...
+            در حال راه‌اندازی — اگر مدلی در حال دانلود باشد ممکن است یک دقیقه طول بکشد...
           </span>
         );
       case 'downloading':
         return (
           <span className="flex items-center gap-1.5 text-xs text-yellow-500">
             <RefreshCw className="w-3 h-3 animate-spin" />
-            Downloading latest mesh-llm (~19 MB)...
+            در حال دانلود آخرین نسخه mesh-llm (~۱۹ مگابایت)...
           </span>
         );
       case 'not-installed':
         return (
           <span className="flex items-center gap-1.5 text-xs text-text-muted">
             <span className="w-2 h-2 rounded-full bg-orange-400" />
-            mesh-llm not installed
+            mesh-llm نصب نشده است
           </span>
         );
       case 'stopped':
@@ -290,14 +287,14 @@ export const MeshSettings = () => {
             ) : (
               <span className="w-2 h-2 rounded-full bg-gray-400" />
             )}
-            Not running
+            در حال اجرا نیست
           </span>
         );
       default:
         return checking ? (
           <span className="flex items-center gap-1.5 text-xs text-text-muted">
             <RefreshCw className="w-3 h-3 animate-spin" />
-            Checking...
+            در حال بررسی...
           </span>
         ) : null;
     }
@@ -308,7 +305,7 @@ export const MeshSettings = () => {
       {/* Header */}
       <div>
         <div className="flex items-center justify-between">
-          <h3 className="text-text-default font-medium">Inference Mesh</h3>
+          <h3 className="text-text-default font-medium">شبکه استنتاج</h3>
           <a
             href="https://docs.anarchai.org/"
             target="_blank"
@@ -316,13 +313,14 @@ export const MeshSettings = () => {
             className="inline-flex items-center text-xs text-text-muted hover:text-text-default transition-colors"
           >
             <ExternalLink className="w-3 h-3 mr-1" />
-            Learn more
+            اطلاعات بیشتر
           </a>
         </div>
         <p className="text-xs text-text-muted max-w-2xl mt-1">
-          <span className="text-orange-400 font-medium">Experimental.</span> Pool GPUs with others
-          for decentralized LLM inference — no API keys, no cloud. Start a private mesh, join one
-          with an invite token, or discover public meshes.{' '}
+          <span className="text-orange-400 font-medium">آزمایشی.</span> پردازنده‌های گرافیکی را با
+          دیگران به اشتراک بگذارید تا استنتاج غیرمتمرکز LLM انجام شود — بدون کلید API و بدون ابر. یک
+          شبکه خصوصی راه‌اندازی کنید، با یک توکن دعوت به شبکه‌ای بپیوندید، یا شبکه‌های عمومی را کشف
+          کنید.{' '}
           <a
             href="https://docs.anarchai.org/"
             target="_blank"
@@ -341,21 +339,21 @@ export const MeshSettings = () => {
       {/* Not installed — non-macOS only; on macOS start-mesh handles the download */}
       {status === 'not-installed' && (
         <div className="border border-border-subtle rounded-xl p-4 bg-background-default">
-          <p className="text-sm font-medium text-text-default">Get started</p>
+          <p className="text-sm font-medium text-text-default">شروع کنید</p>
           <p className="text-xs text-text-muted mt-1">
-            mesh-llm is not installed. Follow the install guide to set it up, or connect to a mesh
-            already running on this machine.
+            mesh-llm نصب نشده است. برای راه‌اندازی آن از راهنمای نصب پیروی کنید، یا به شبکه‌ای که
+            هم‌اکنون روی این دستگاه در حال اجراست متصل شوید.
           </p>
           <div className="flex items-center gap-2 mt-3">
             <a href="https://docs.anarchai.org/" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="sm">
                 <ExternalLink className="w-3 h-3 mr-1" />
-                Install guide
+                راهنمای نصب
               </Button>
             </a>
             <Button variant="ghost" size="sm" onClick={checkStatus}>
               <RefreshCw className="w-3 h-3 mr-1" />
-              Check Again
+              بررسی دوباره
             </Button>
           </div>
         </div>
@@ -364,9 +362,9 @@ export const MeshSettings = () => {
       {/* Downloading */}
       {status === 'downloading' && (
         <div className="border border-yellow-500/30 rounded-xl p-4 bg-yellow-500/5">
-          <p className="text-sm font-medium text-text-default">Downloading latest mesh-llm...</p>
+          <p className="text-sm font-medium text-text-default">در حال دانلود آخرین نسخه mesh-llm...</p>
           <p className="text-xs text-text-muted mt-1">
-            Fetching the latest version to ~/.mesh-llm/. This should only take a moment.
+            در حال دریافت آخرین نسخه در ~/.mesh-llm/. این کار فقط لحظه‌ای طول می‌کشد.
           </p>
         </div>
       )}
@@ -385,14 +383,14 @@ export const MeshSettings = () => {
               />
               <div>
                 <span className="text-sm font-medium text-text-default">
-                  Auto-discover a public mesh
+                  کشف خودکار یک شبکه عمومی
                 </span>
                 <p className="text-xs text-text-muted">
-                  Find and join the best available mesh automatically.
+                  بهترین شبکه در دسترس را به‌طور خودکار پیدا کرده و به آن بپیوندید.
                 </p>
                 <p className="text-xs text-orange-400 mt-0.5">
-                  Public meshes are run by volunteers. Your prompts are sent to their hardware — no
-                  privacy guarantees.
+                  شبکه‌های عمومی توسط داوطلبان اجرا می‌شوند. پرامپت‌های شما به سخت‌افزار آن‌ها ارسال
+                  می‌شود — هیچ تضمینی برای حریم خصوصی وجود ندارد.
                 </p>
               </div>
             </label>
@@ -406,10 +404,10 @@ export const MeshSettings = () => {
               />
               <div>
                 <span className="text-sm font-medium text-text-default">
-                  Join with invite token
+                  پیوستن با توکن دعوت
                 </span>
                 <p className="text-xs text-text-muted">
-                  Join a private mesh someone shared with you.
+                  به شبکه خصوصی‌ای که کسی با شما به اشتراک گذاشته بپیوندید.
                 </p>
               </div>
             </label>
@@ -423,10 +421,11 @@ export const MeshSettings = () => {
               />
               <div>
                 <span className="text-sm font-medium text-text-default">
-                  Start a new private mesh
+                  راه‌اندازی یک شبکه خصوصی جدید
                 </span>
                 <p className="text-xs text-text-muted">
-                  Create your own mesh. Share the invite token with others to pool GPUs.
+                  شبکه خودتان را بسازید. توکن دعوت را با دیگران به اشتراک بگذارید تا پردازنده‌های
+                  گرافیکی را به اشتراک بگذارید.
                 </p>
               </div>
             </label>
@@ -435,7 +434,7 @@ export const MeshSettings = () => {
           {/* Mode-specific options */}
           {mode === 'new' && (
             <div className="pl-6 space-y-2">
-              <label className="text-xs text-text-default block">Model to serve</label>
+              <label className="text-xs text-text-default block">مدلی که ارائه شود</label>
               <select
                 value={selectedModel}
                 onChange={(e) => setSelectedModel(e.target.value)}
@@ -448,19 +447,20 @@ export const MeshSettings = () => {
                 ))}
               </select>
               <p className="text-xs text-text-muted">
-                Downloads automatically if not already cached. Larger models need more VRAM.
+                اگر از قبل ذخیره نشده باشد به‌طور خودکار دانلود می‌شود. مدل‌های بزرگ‌تر به VRAM بیشتری
+                نیاز دارند.
               </p>
             </div>
           )}
 
           {mode === 'join' && (
             <div className="pl-6 space-y-2">
-              <label className="text-xs text-text-default block">Invite token</label>
+              <label className="text-xs text-text-default block">توکن دعوت</label>
               <Input
                 type="text"
                 value={joinToken}
                 onChange={(e) => setJoinToken(e.target.value)}
-                placeholder="Paste invite token here"
+                placeholder="توکن دعوت را اینجا جای‌گذاری کنید"
                 className="max-w-md"
               />
             </div>
@@ -474,19 +474,19 @@ export const MeshSettings = () => {
                 onChange={(e) => setContributeGpu(e.target.checked)}
               />
               <span className="text-sm text-text-default">
-                Contribute GPU
-                <span className="text-text-muted ml-1">(serve models for others too)</span>
+                مشارکت پردازنده گرافیکی
+                <span className="text-text-muted ml-1">(ارائه مدل‌ها برای دیگران نیز)</span>
               </span>
             </label>
           )}
 
           <Button onClick={startMesh} disabled={checking} size="sm">
             <Play className="w-3 h-3 mr-1" />
-            Start Mesh
+            راه‌اندازی شبکه
           </Button>
 
           <p className="text-xs text-text-muted">
-            When you start the mesh, keep goose running to stay connected.
+            هنگامی که شبکه را راه‌اندازی می‌کنید، سها را در حال اجرا نگه دارید تا متصل بمانید.
           </p>
         </div>
       )}
@@ -494,9 +494,9 @@ export const MeshSettings = () => {
       {/* Starting indicator */}
       {status === 'starting' && (
         <div className="border border-yellow-500/30 rounded-xl p-4 bg-yellow-500/5">
-          <p className="text-sm font-medium text-text-default">Starting mesh-llm...</p>
+          <p className="text-sm font-medium text-text-default">در حال راه‌اندازی mesh-llm...</p>
           <p className="text-xs text-text-muted mt-1">
-            Connecting to the mesh and loading models. This may take a minute on first run.
+            در حال اتصال به شبکه و بارگذاری مدل‌ها. در اولین اجرا ممکن است یک دقیقه طول بکشد.
           </p>
         </div>
       )}
@@ -509,21 +509,21 @@ export const MeshSettings = () => {
             <div className="border border-border-subtle rounded-xl p-4 bg-background-default">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-text-default">Invite token</p>
+                  <p className="text-sm font-medium text-text-default">توکن دعوت</p>
                   <p className="text-xs text-text-muted mt-0.5">
-                    Share this with others so they can join your mesh.
+                    این را با دیگران به اشتراک بگذارید تا بتوانند به شبکه شما بپیوندند.
                   </p>
                 </div>
                 <Button variant="outline" size="sm" onClick={copyToken}>
                   {copiedToken ? (
                     <>
                       <Check className="w-3 h-3 mr-1" />
-                      Copied
+                      کپی شد
                     </>
                   ) : (
                     <>
                       <Copy className="w-3 h-3 mr-1" />
-                      Copy
+                      کپی
                     </>
                   )}
                 </Button>
@@ -537,9 +537,9 @@ export const MeshSettings = () => {
           {/* Model list */}
           {statusInfo.models.length > 0 && (
             <div>
-              <h4 className="text-sm font-medium text-text-default mb-2">Available Models</h4>
+              <h4 className="text-sm font-medium text-text-default mb-2">مدل‌های در دسترس</h4>
               <p className="text-xs text-text-muted mb-3">
-                Select a model to use it as your Goose provider.
+                یک مدل را انتخاب کنید تا به عنوان ارائه‌دهنده سها استفاده شود.
               </p>
               <div className="space-y-2">
                 {statusInfo.models.map((modelId) => {
@@ -557,10 +557,10 @@ export const MeshSettings = () => {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <span className="text-sm font-medium text-text-default">{modelId}</span>
-                          <span className="text-xs text-green-500">live</span>
+                          <span className="text-xs text-green-500">فعال</span>
                         </div>
                         {isActive ? (
-                          <span className="text-xs font-medium text-green-500">Active</span>
+                          <span className="text-xs font-medium text-green-500">فعال</span>
                         ) : (
                           <Button
                             variant="outline"
@@ -572,7 +572,7 @@ export const MeshSettings = () => {
                             disabled={saving}
                           >
                             <Zap className="w-3 h-3 mr-1" />
-                            Use
+                            استفاده
                           </Button>
                         )}
                       </div>
@@ -585,19 +585,20 @@ export const MeshSettings = () => {
 
           {statusInfo.models.length === 0 && (
             <p className="text-xs text-text-muted">
-              Mesh is running but no models are available yet. A model may still be loading.
+              شبکه در حال اجراست اما هنوز مدلی در دسترس نیست. ممکن است مدلی همچنان در حال بارگذاری
+              باشد.
             </p>
           )}
 
           <p className="text-xs text-text-muted">
-            Keep goose running to stay connected to the mesh.
+            سها را در حال اجرا نگه دارید تا به شبکه متصل بمانید.
           </p>
 
           {/* Actions row */}
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" onClick={stopMesh}>
               <Square className="w-3 h-3 mr-1" />
-              Stop Mesh
+              توقف شبکه
             </Button>
             <a
               href={`http://localhost:${MESH_CONSOLE_PORT}`}
@@ -606,7 +607,7 @@ export const MeshSettings = () => {
               className="inline-flex items-center text-xs text-text-muted hover:text-text-default transition-colors px-2 py-1"
             >
               <ExternalLink className="w-3 h-3 mr-1" />
-              Open Console
+              باز کردن کنسول
             </a>
           </div>
         </>
@@ -623,23 +624,23 @@ export const MeshSettings = () => {
           ) : (
             <ChevronRight className="w-3 h-3" />
           )}
-          Advanced
+          پیشرفته
         </button>
 
         {showAdvanced && (
           <div className="mt-3 space-y-3">
             {statusInfo.binaryPath && (
               <div>
-                <label className="text-xs text-text-muted block">Binary</label>
+                <label className="text-xs text-text-muted block">فایل اجرایی</label>
                 <code className="text-xs text-text-default">{statusInfo.binaryPath}</code>
               </div>
             )}
             <div>
-              <label className="text-xs text-text-muted block">API endpoint</label>
+              <label className="text-xs text-text-muted block">نقطه پایانی API</label>
               <code className="text-xs text-text-default">http://localhost:{MESH_API_PORT}/v1</code>
             </div>
             <div>
-              <label className="text-xs text-text-muted block">Console</label>
+              <label className="text-xs text-text-muted block">کنسول</label>
               <code className="text-xs text-text-default">
                 http://localhost:{MESH_CONSOLE_PORT}
               </code>
@@ -652,7 +653,7 @@ export const MeshSettings = () => {
       <div className="flex justify-end">
         <Button variant="ghost" size="sm" onClick={checkStatus}>
           <RefreshCw className="w-3 h-3 mr-1" />
-          Refresh
+          بازخوانی
         </Button>
       </div>
     </div>

@@ -185,7 +185,7 @@ export default function StandaloneAppView() {
         justifyContent: 'center',
       }}
     >
-      <p style={{ color: 'var(--color-text-secondary, #6b7280)' }}>Initializing app...</p>
+      <p style={{ color: 'var(--color-text-secondary, #6b7280)' }}>{intl.formatMessage(i18n.initializing)}</p>
     </div>
   );
 }
