@@ -145,6 +145,63 @@ const MENU_TRANSLATIONS_ZH_CN: Record<string, string> = {
   Services: '服务',
 };
 
+const MENU_TRANSLATIONS_FA: Record<string, string> = {
+  // Top-level
+  File: 'پرونده',
+  Edit: 'ویرایش',
+  View: 'نمایش',
+  Window: 'پنجره',
+  Help: 'راهنما',
+  // Context menu
+  'Add to dictionary': 'افزودن به واژه‌نامه',
+  Cut: 'برش',
+  Copy: 'کپی',
+  Paste: 'چسباندن',
+  // SOHA-added items
+  'New Window': 'پنجره جدید',
+  Settings: 'تنظیمات',
+  'Find…': 'یافتن…',
+  'Find Next': 'یافتن بعدی',
+  'Find Previous': 'یافتن قبلی',
+  'Use Selection for Find': 'استفاده از انتخاب برای یافتن',
+  Find: 'یافتن',
+  'New Chat': 'گفتگوی جدید',
+  'New Chat Window': 'پنجره گفتگوی جدید',
+  'Open Directory...': 'باز کردن پوشه…',
+  'Recent Directories': 'پوشه‌های اخیر',
+  'Focus Goose Window': 'تمرکز روی پنجره سها',
+  'Quick Launcher': 'راه‌انداز سریع',
+  'Always on Top': 'همیشه در بالا',
+  'Toggle Navigation': 'تغییر نوار پیمایش',
+  'About Goose': 'درباره سها',
+  Undo: 'واگرد',
+  Redo: 'ازنو',
+  'Select All': 'انتخاب همه',
+  Delete: 'حذف',
+  Speech: 'گفتار',
+  Reload: 'بارگذاری مجدد',
+  'Force Reload': 'بارگذاری اجباری',
+  'Toggle Developer Tools': 'ابزار توسعه‌دهنده',
+  'Actual Size': 'اندازه واقعی',
+  'Reset Zoom': 'بازنشانی بزرگ‌نمایی',
+  'Zoom In': 'بزرگ‌نمایی',
+  'Zoom Out': 'کوچک‌نمایی',
+  'Toggle Full Screen': 'تمام‌صفحه',
+  'Toggle Fullscreen': 'تمام‌صفحه',
+  Minimize: 'کمینه',
+  Close: 'بستن',
+  'Close Window': 'بستن پنجره',
+  Quit: 'خروج',
+  Exit: 'خروج',
+  'Bring All to Front': 'همه به جلو',
+  'Emoji & Symbols': 'ایموجی و نمادها',
+  'Start Dictation…': 'شروع دیکته…',
+  'Hide Goose': 'پنهان کردن سها',
+  'Hide Others': 'پنهان کردن بقیه',
+  'Show All': 'نمایش همه',
+  Services: 'خدمات',
+};
+
 function detectMenuLocale(): string {
   return getConfiguredGooseLocale() ?? 'en';
 }
@@ -156,6 +213,9 @@ function menuT(label: string): string {
   const isSimplifiedChinese = !isTraditional && (lower === 'zh' || lower.startsWith('zh-'));
   if (isSimplifiedChinese) {
     return MENU_TRANSLATIONS_ZH_CN[label] ?? label;
+  }
+  if (lower === 'fa' || lower.startsWith('fa-')) {
+    return MENU_TRANSLATIONS_FA[label] ?? label;
   }
   return label;
 }
