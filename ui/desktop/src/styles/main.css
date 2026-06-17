@@ -110,7 +110,7 @@
   --color-ring-warning: var(--color-ring-warning);
 
   /* Typography */
-  --font-sans: initial;
+  --font-sans: 'Vazirmatn Variable', 'Cash Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: initial;
   --font-weight-normal: initial;
   --font-weight-medium: initial;
@@ -243,6 +243,7 @@
   }
   body {
     @apply text-text-primary;
+    font-family: 'Vazirmatn Variable', 'Cash Sans', ui-sans-serif, system-ui, sans-serif;
   }
 }
 

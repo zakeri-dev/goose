@@ -255,6 +255,7 @@ const MarkdownContent = memo(function MarkdownContent({
         prose-ol:my-2 prose-ol:font-sans
         prose-ul:mt-0 prose-ul:mb-3 prose-ul:font-sans
         prose-li:m-0 prose-li:font-sans ${className}`}
+        dir="auto"
       >
         <ReactMarkdown
           urlTransform={customUrlTransform}

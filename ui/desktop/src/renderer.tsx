@@ -9,6 +9,7 @@ import { setTelemetryEnabled } from './utils/analytics';
 import { readConfig } from './api';
 import { applyThemeTokens } from './theme/theme-tokens';
 import { currentLocale, currentMessageLocale, loadMessages, isRtl } from './i18n';
+import '@fontsource-variable/vazirmatn';
 
 // Apply theme tokens to :root before first paint.
 applyThemeTokens();
