@@ -44,6 +44,10 @@ const i18n = defineMessages({
     id: 'navigationPanel.collapseSidebar',
     defaultMessage: 'Collapse sidebar',
   },
+  expandSidebar: {
+    id: 'navigationPanel.expandSidebar',
+    defaultMessage: 'Expand sidebar',
+  },
 });
 
 const navItemClass = (active: boolean) =>
@@ -71,6 +75,33 @@ const NavRow: React.FC<NavRowProps> = ({ item, active, onClick }) => {
       {item.getTag && (
         <span className="text-xs font-mono text-text-secondary">{item.getTag()}</span>
       )}
+    </button>
+  );
+};
+
+interface RailIconProps {
+  item: NavItem;
+  active: boolean;
+  onClick: () => void;
+}
+
+const RailIcon: React.FC<RailIconProps> = ({ item, active, onClick }) => {
+  const intl = useIntl();
+  const Icon = item.icon;
+  const label = getNavItemLabel(item, intl);
+  return (
+    <button
+      onClick={onClick}
+      title={label}
+      aria-label={label}
+      className={cn(
+        'flex items-center justify-center w-10 h-10 rounded-xl no-drag transition-colors',
+        active
+          ? 'bg-background-tertiary text-text-primary'
+          : 'text-text-secondary hover:bg-background-tertiary/60 hover:text-text-primary'
+      )}
+    >
+      <Icon className="w-5 h-5" />
     </button>
   );
 };
@@ -195,7 +226,43 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
 
   const [isChatsExpanded, setIsChatsExpanded] = useState(true);
 
-  if (!isNavExpanded) return null;
+  if (!isNavExpanded) {
+    return (
+      <div className="soha-sidebar outline-none flex flex-col items-center h-full pb-2">
+        {/* Logo doubles as the expand control. Top padding clears the macOS
+            traffic lights / Windows caption buttons. */}
+        <button
+          onClick={() => setIsNavExpanded(true)}
+          title={intl.formatMessage(i18n.expandSidebar)}
+          aria-label={intl.formatMessage(i18n.expandSidebar)}
+          className="no-drag mt-[26px] mb-2 p-1.5 rounded-xl hover:bg-background-tertiary transition-colors"
+        >
+          <Goose className="w-8 h-8" />
+        </button>
+
+        <div className="flex flex-col items-center gap-1 w-full px-2">
+          {visibleItems.map((item) => (
+            <RailIcon
+              key={item.id}
+              item={item}
+              active={isActive(item.path)}
+              onClick={() => handleNavClick(item.path)}
+            />
+          ))}
+        </div>
+
+        <div className="flex-1" />
+
+        <div className="w-full px-2 pt-2 border-t border-border-secondary flex justify-center">
+          <RailIcon
+            item={SETTINGS_NAV_ITEM}
+            active={isActive(SETTINGS_NAV_ITEM.path)}
+            onClick={() => handleNavClick(SETTINGS_NAV_ITEM.path)}
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <motion.div

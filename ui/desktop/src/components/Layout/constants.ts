@@ -1,6 +1,8 @@
 export const NAV_DIMENSIONS = {
-  /** Width of the navigation sidebar */
+  /** Width of the navigation sidebar when expanded */
   NAV_WIDTH: 240,
+  /** Width of the collapsed icon-only rail */
+  NAV_RAIL_WIDTH: 64,
 } as const;
 
 export const Z_INDEX = {

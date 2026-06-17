@@ -2456,6 +2456,9 @@
   "navigationPanel.collapseSidebar": {
     "defaultMessage": "جمع کردن نوار کناری"
   },
+  "navigationPanel.expandSidebar": {
+    "defaultMessage": "باز کردن نوار کناری"
+  },
   "navigationPanel.noChats": {
     "defaultMessage": "هیچ گفتگوی اخیری وجود ندارد"
   },
