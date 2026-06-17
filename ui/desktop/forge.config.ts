@@ -89,7 +89,10 @@ module.exports = {
       platforms: ['win32'],
       config: {
         name: 'SOHA',
+        authors: 'SOHA',
+        description: 'SOHA AI Assistant',
         setupIcon: 'src/images/icon.ico',
+        iconUrl: 'https://sohaagent.ir/icon.ico',
       },
     },
     {
