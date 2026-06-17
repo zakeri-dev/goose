@@ -13,7 +13,11 @@ use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Mutex;
 use uuid::Uuid;
 
+// SOHA: outbound telemetry is fully disabled (see posthog_capture). These remain
+// only to keep the original event-shaping code compiling.
+#[allow(dead_code)]
 const POSTHOG_API_KEY: &str = "phc_RyX5CaY01VtZJCQyhSR5KFh6qimUy81YwxsEpotAftT";
+#[allow(dead_code)]
 const POSTHOG_CAPTURE_URL: &str = "https://us.i.posthog.com/capture/";
 
 /// Config key for telemetry opt-out preference
@@ -56,6 +60,7 @@ pub fn is_telemetry_enabled() -> bool {
 // ============================================================================
 
 #[derive(Serialize)]
+#[allow(dead_code)]
 struct CaptureEvent {
     api_key: &'static str,
     event: String,
@@ -64,28 +69,14 @@ struct CaptureEvent {
     timestamp: Option<String>,
 }
 
+#[allow(unused_variables)]
 async fn posthog_capture(
     event_name: &str,
     distinct_id: &str,
     properties: HashMap<String, serde_json::Value>,
 ) -> Result<(), String> {
-    let payload = CaptureEvent {
-        api_key: POSTHOG_API_KEY,
-        event: event_name.to_string(),
-        distinct_id: distinct_id.to_string(),
-        properties,
-        timestamp: Some(Utc::now().to_rfc3339()),
-    };
-
-    let client = reqwest::Client::new();
-    client
-        .post(POSTHOG_CAPTURE_URL)
-        .header("Content-Type", "application/json")
-        .json(&payload)
-        .send()
-        .await
-        .map_err(|e| format!("{e}"))?;
-
+    // SOHA: telemetry is disabled. Events are dropped here and never sent to any
+    // remote endpoint.
     Ok(())
 }
 

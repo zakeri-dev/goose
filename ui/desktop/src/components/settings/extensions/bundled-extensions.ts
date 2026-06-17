@@ -15,6 +15,7 @@ type BundledExtension = {
   cmd?: string;
   args?: string[];
   uri?: string;
+  headers?: { [key: string]: string };
   envs?: { [key: string]: string };
   env_keys?: Array<string>;
   timeout?: number;
@@ -116,8 +117,12 @@ export async function syncBundledExtensions(
             description: bundledExt.description,
             timeout: bundledExt.timeout,
             uri: bundledExt.uri || '',
+            headers: bundledExt.headers,
+            envs: bundledExt.envs,
+            env_keys: bundledExt.env_keys || [],
             bundled: true,
           };
+          break;
       }
 
       // Add or update the extension, preserving enabled state if it exists

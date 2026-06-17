@@ -54,6 +54,22 @@ import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-insta
 import { BLOCKED_PROTOCOLS, WEB_PROTOCOLS } from './utils/urlSecurity';
 import { buildCSP } from './utils/csp';
 
+// =======================================================================
+// SOHA bundled recipes
+// -----------------------------------------------------------------------
+// Recipes shipped with SOHA (packaged via forge `extraResource`) are exposed to
+// goosed through GOOSE_RECIPE_PATH, which the backend scans when listing the
+// recipe library. Set before goosed is spawned so the child inherits it.
+(() => {
+  const sohaRecipesDir = app.isPackaged
+    ? path.join(process.resourcesPath, 'recipes')
+    : path.join(app.getAppPath(), 'src', 'recipes');
+  const sep = process.platform === 'win32' ? ';' : ':';
+  process.env.GOOSE_RECIPE_PATH = process.env.GOOSE_RECIPE_PATH
+    ? `${process.env.GOOSE_RECIPE_PATH}${sep}${sohaRecipesDir}`
+    : sohaRecipesDir;
+})();
+
 function shouldSetupUpdater(): boolean {
   // Setup updater if either the flag is enabled OR dev updates are enabled
   return UPDATES_ENABLED || process.env.ENABLE_DEV_UPDATES === 'true';
@@ -171,6 +187,7 @@ const STARTUP_LOGS_DIR = path.join(app.getPath('userData'), 'logs', 'startup');
 const validLanguageSettings = new Set<Settings['language']>([
   'system',
   'en',
+  'fa',
   'hi',
   'ja',
   'ru',
@@ -640,7 +657,7 @@ app.on('open-url', async (_event, url) => {
 app.on('will-finish-launching', () => {
   if (process.platform === 'darwin') {
     app.setAboutPanelOptions({
-      applicationName: 'Goose',
+      applicationName: 'SOHA',
       applicationVersion: app.getVersion(),
     });
   }
@@ -695,7 +712,7 @@ async function handleFileOpen(filePath: string) {
 
     // Show user-friendly error notification
     new Notification({
-      title: 'Goose',
+      title: 'SOHA',
       body: `Could not open directory: ${path.basename(filePath)}`,
     }).show();
   }
@@ -1058,7 +1075,7 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
     } else {
       dialog.showMessageBoxSync({
         type: 'error',
-        title: 'Goose Failed to Start',
+        title: 'SOHA Failed to Start',
         message: 'The backend server failed to start.',
         detail: failureDetailParts.join('\n\n'),
         buttons: ['OK'],
@@ -2854,7 +2871,7 @@ app.whenReady().then(async () => {
   try {
     await appMain();
   } catch (error) {
-    dialog.showErrorBox('Goose Error', `Failed to create main window: ${error}`);
+    dialog.showErrorBox('SOHA Error', `Failed to create main window: ${error}`);
     app.quit();
   }
 });

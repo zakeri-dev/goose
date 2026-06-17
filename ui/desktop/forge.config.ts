@@ -6,7 +6,7 @@ const isLinuxVulkanBuild = process.env.GOOSE_DESKTOP_LINUX_VARIANT === 'vulkan';
 
 let cfg = {
   asar: true,
-  extraResource: ['src/bin', 'src/images'],
+  extraResource: ['src/bin', 'src/images', 'src/recipes'],
   icon: 'src/images/icon',
   // Windows specific configuration
   win32: {
@@ -36,9 +36,9 @@ let cfg = {
     ],
     // Usage descriptions for macOS TCC (Transparency, Consent, and Control)
     NSCalendarsUsageDescription:
-      'Goose needs access to your calendars to help manage and query calendar events.',
+      'SOHA needs access to your calendars to help manage and query calendar events.',
     NSRemindersUsageDescription:
-      'Goose needs access to your reminders to help manage and query reminders.',
+      'SOHA needs access to your reminders to help manage and query reminders.',
   },
 };
 
@@ -65,7 +65,7 @@ module.exports = {
       name: '@electron-forge/publisher-github',
       config: {
         repository: {
-          owner: process.env.GITHUB_OWNER || 'aaif-goose',
+          owner: process.env.GITHUB_OWNER || 'zakeri-dev',
           name: process.env.GITHUB_REPO || 'goose',
         },
         prerelease: false,
@@ -87,10 +87,10 @@ module.exports = {
     {
       name: '@electron-forge/maker-deb',
       config: {
-        name: 'Goose',
-        bin: 'Goose',
-        maintainer: 'AAIF (Agentic AI Foundation)',
-        homepage: 'https://goose-docs.ai/',
+        name: 'SOHA',
+        bin: 'SOHA',
+        maintainer: 'SOHA',
+        homepage: 'https://github.com/zakeri-dev/goose',
         categories: ['Development'],
         desktopTemplate: './forge.deb.desktop',
         options: {
@@ -103,10 +103,10 @@ module.exports = {
     {
       name: '@electron-forge/maker-rpm',
       config: {
-        name: 'Goose',
-        bin: 'Goose',
-        maintainer: 'AAIF (Agentic AI Foundation)',
-        homepage: 'https://goose-docs.ai/',
+        name: 'SOHA',
+        bin: 'SOHA',
+        maintainer: 'SOHA',
+        homepage: 'https://github.com/zakeri-dev/goose',
         categories: ['Development'],
         desktopTemplate: './forge.rpm.desktop',
         options: {
@@ -120,16 +120,16 @@ module.exports = {
       name: '@electron-forge/maker-flatpak',
       config: {
         options: {
-          id: 'io.github.block.Goose', // NOTE: kept for backwards compat with existing installs
+          id: 'io.github.zakeridev.Soha',
           categories: ['Development'],
           icon: {
             scalable: 'src/images/icon.svg',
             '512x512': 'src/images/icon-512.png',
           },
-          homepage: 'https://goose-docs.ai/',
+          homepage: 'https://github.com/zakeri-dev/goose',
           runtimeVersion: '25.08',
           baseVersion: '25.08',
-          bin: 'Goose',
+          bin: 'SOHA',
           modules: [
             {
               name: 'libbz2-shim',

@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Goose
-Exec=/usr/lib/goose/Goose %U
-Icon=/usr/share/pixmaps/goose.png
+Name=SOHA
+Exec=/usr/lib/SOHA/SOHA %U
+Icon=/usr/share/pixmaps/SOHA.png
 Terminal=false
 Type=Application
 Categories=Development;

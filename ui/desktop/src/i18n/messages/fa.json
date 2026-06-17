@@ -1,0 +1,4820 @@
+{
+  "alertBox.autoCompactAt": {
+    "defaultMessage": "فشرده‌سازی خودکار در"
+  },
+  "alertBox.compactNow": {
+    "defaultMessage": "اکنون فشرده کن"
+  },
+  "alertBox.failedToSaveThreshold": {
+    "defaultMessage": "ذخیره آستانه ناموفق بود: {error}"
+  },
+  "announcementModal.gotIt": {
+    "defaultMessage": "متوجه شدم!"
+  },
+  "appLayout.openNavigation": {
+    "defaultMessage": "باز کردن منوی ناوبری"
+  },
+  "appsView.customApp": {
+    "defaultMessage": "برنامه سفارشی"
+  },
+  "appsView.description": {
+    "defaultMessage": "برنامه‌هایی از سرورهای MCP شما و برنامه‌هایی که خود سها می‌سازد. می‌توانید از طریق رابط گفتگو از آن بخواهید برنامه‌های جدید بسازد و آن‌ها اینجا نمایش داده می‌شوند."
+  },
+  "appsView.errorLoading": {
+    "defaultMessage": "خطا در بارگذاری برنامه‌ها: {error}"
+  },
+  "appsView.importApp": {
+    "defaultMessage": "ورود برنامه"
+  },
+  "appsView.launch": {
+    "defaultMessage": "اجرا"
+  },
+  "appsView.loading": {
+    "defaultMessage": "در حال بارگذاری برنامه‌ها..."
+  },
+  "appsView.noAppsDescription": {
+    "defaultMessage": "یک گفتگو باز کنید و برنامه مورد نظرتان را از سها بخواهید. می‌تواند برایتان یکی بسازد و اینجا نمایش داده می‌شود. یا اگر کسی برنامه‌ای را به اشتراک گذاشته، می‌توانید با دکمه بالا آن را وارد کنید."
+  },
+  "appsView.noAppsTitle": {
+    "defaultMessage": "هیچ برنامه‌ای در دسترس نیست"
+  },
+  "appsView.retry": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "appsView.title": {
+    "defaultMessage": "برنامه‌ها"
+  },
+  "authSettings.activeProviderWarning": {
+    "defaultMessage": "این ارائه‌دهنده فعال است. تا زمانی که اعتبارنامه دیگری پیکربندی نکنید، درخواست‌های جدید ممکن است با شکست مواجه شوند."
+  },
+  "authSettings.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "authSettings.delete": {
+    "defaultMessage": "حذف"
+  },
+  "authSettings.deleteCredential": {
+    "defaultMessage": "حذف اعتبارنامه"
+  },
+  "authSettings.deleteMessage": {
+    "defaultMessage": "اعتبارنامه {name} برای {provider} حذف شود؟"
+  },
+  "authSettings.deleteTitle": {
+    "defaultMessage": "حذف اعتبارنامه"
+  },
+  "authSettings.deleted": {
+    "defaultMessage": "اعتبارنامه حذف شد"
+  },
+  "authSettings.description": {
+    "defaultMessage": "مدیریت اعتبارنامه‌های ارائه‌دهنده که به‌صورت محلی توسط سها ذخیره شده‌اند."
+  },
+  "authSettings.empty": {
+    "defaultMessage": "هیچ اعتبارنامه ارائه‌دهنده‌ای که به‌صورت محلی ذخیره شده باشد یافت نشد."
+  },
+  "authSettings.expiresAt": {
+    "defaultMessage": "انقضا در {date}"
+  },
+  "authSettings.failedToConfigure": {
+    "defaultMessage": "پیکربندی اعتبارنامه ناموفق بود: {error}"
+  },
+  "authSettings.failedToDelete": {
+    "defaultMessage": "حذف اعتبارنامه ناموفق بود: {error}"
+  },
+  "authSettings.failedToLoad": {
+    "defaultMessage": "بارگذاری اعتبارنامه‌های ارائه‌دهنده ناموفق بود"
+  },
+  "authSettings.loading": {
+    "defaultMessage": "در حال بارگذاری اعتبارنامه‌ها..."
+  },
+  "authSettings.reauthorize": {
+    "defaultMessage": "اعطای مجدد دسترسی"
+  },
+  "authSettings.signIn": {
+    "defaultMessage": "ورود"
+  },
+  "authSettings.signedIn": {
+    "defaultMessage": "اعتبارنامه پیکربندی شد"
+  },
+  "authSettings.storageProviderCache": {
+    "defaultMessage": "حافظه نهان ارائه‌دهنده"
+  },
+  "authSettings.storageSecretStore": {
+    "defaultMessage": "مخزن اسرار"
+  },
+  "authSettings.title": {
+    "defaultMessage": "اعتبارنامه‌های ارائه‌دهنده"
+  },
+  "backButton.back": {
+    "defaultMessage": "بازگشت"
+  },
+  "baseChat.failedToLoadSession": {
+    "defaultMessage": "بارگذاری نشست ناموفق بود"
+  },
+  "baseChat.goHome": {
+    "defaultMessage": "رفتن به خانه"
+  },
+  "baseChat.noSession": {
+    "defaultMessage": "نشستی وجود ندارد"
+  },
+  "baseChat.recipeCreatedMessage": {
+    "defaultMessage": "«{title}» ذخیره شد و آماده استفاده است."
+  },
+  "baseChat.recipeCreatedTitle": {
+    "defaultMessage": "دستور کار با موفقیت ساخته شد!"
+  },
+  "bottomMenuExtensionSelection.extensionToggleError": {
+    "defaultMessage": "خطا در تغییر وضعیت افزونه"
+  },
+  "bottomMenuExtensionSelection.extensionUpdated": {
+    "defaultMessage": "افزونه به‌روزرسانی شد"
+  },
+  "bottomMenuExtensionSelection.extensionWillBeDisabled": {
+    "defaultMessage": "{name} در گفتگوهای جدید غیرفعال خواهد شد"
+  },
+  "bottomMenuExtensionSelection.extensionWillBeEnabled": {
+    "defaultMessage": "{name} در گفتگوهای جدید فعال خواهد شد"
+  },
+  "bottomMenuExtensionSelection.extensionsForNewChats": {
+    "defaultMessage": "افزونه‌ها برای گفتگوهای جدید"
+  },
+  "bottomMenuExtensionSelection.extensionsForThisSession": {
+    "defaultMessage": "افزونه‌ها برای این نشست گفتگو"
+  },
+  "bottomMenuExtensionSelection.manageExtensions": {
+    "defaultMessage": "مدیریت افزونه‌ها"
+  },
+  "bottomMenuExtensionSelection.noActiveSession": {
+    "defaultMessage": "هیچ نشست فعالی یافت نشد. لطفاً ابتدا یک نشست گفتگو آغاز کنید."
+  },
+  "bottomMenuExtensionSelection.noExtensionsAvailable": {
+    "defaultMessage": "هیچ افزونه‌ای در دسترس نیست"
+  },
+  "bottomMenuExtensionSelection.noExtensionsFound": {
+    "defaultMessage": "هیچ افزونه‌ای یافت نشد"
+  },
+  "bottomMenuExtensionSelection.searchExtensions": {
+    "defaultMessage": "جستجوی افزونه‌ها..."
+  },
+  "cardButtons.configure": {
+    "defaultMessage": "پیکربندی"
+  },
+  "cardButtons.launch": {
+    "defaultMessage": "اجرا"
+  },
+  "chat.notification.taskComplete.body": {
+    "defaultMessage": "برای بازگرداندن سها به تمرکز اینجا کلیک کنید."
+  },
+  "chat.notification.taskComplete.title": {
+    "defaultMessage": "سها وظیفه را به پایان رساند."
+  },
+  "chatInput.contextWindow": {
+    "defaultMessage": "پنجره زمینه"
+  },
+  "chatInput.createRecipeFromSession": {
+    "defaultMessage": "ساخت دستور کار از نشست"
+  },
+  "chatInput.dictationError": {
+    "defaultMessage": "خطای دیکته"
+  },
+  "chatInput.failedToReadImage": {
+    "defaultMessage": "خواندن فایل تصویر ناموفق بود"
+  },
+  "chatInput.navigationShortcut": {
+    "defaultMessage": "{prefix}↑/{prefix}↓ برای پیمایش پیام‌ها"
+  },
+  "chatInput.processingDroppedFiles": {
+    "defaultMessage": "در حال پردازش فایل‌های رهاشده..."
+  },
+  "chatInput.recording": {
+    "defaultMessage": "در حال ضبط..."
+  },
+  "chatInput.removeFile": {
+    "defaultMessage": "حذف فایل"
+  },
+  "chatInput.removeImage": {
+    "defaultMessage": "حذف تصویر"
+  },
+  "chatInput.restartingSession": {
+    "defaultMessage": "در حال راه‌اندازی مجدد نشست..."
+  },
+  "chatInput.send": {
+    "defaultMessage": "ارسال"
+  },
+  "chatInput.tooManyTools": {
+    "defaultMessage": "تعداد زیاد ابزارها می‌تواند کارایی را کاهش دهد. تعداد ابزار: {toolCount} (توصیه‌شده: {recommended})"
+  },
+  "chatInput.transcribing": {
+    "defaultMessage": "در حال رونویسی..."
+  },
+  "chatInput.typeMessage": {
+    "defaultMessage": "برای ارسال یک پیام بنویسید"
+  },
+  "chatInput.unknownType": {
+    "defaultMessage": "نوع ناشناخته"
+  },
+  "chatInput.viewEditRecipe": {
+    "defaultMessage": "مشاهده/ویرایش دستور کار"
+  },
+  "chatInput.viewExtensions": {
+    "defaultMessage": "مشاهده افزونه‌ها"
+  },
+  "chatInput.waitingForImages": {
+    "defaultMessage": "در انتظار ذخیره تصاویر..."
+  },
+  "chatSettings.modeDescription": {
+    "defaultMessage": "نحوه تعامل سها با ابزارها و افزونه‌ها را پیکربندی کنید"
+  },
+  "chatSettings.modeTitle": {
+    "defaultMessage": "حالت"
+  },
+  "chatSettings.responseStylesDescription": {
+    "defaultMessage": "انتخاب کنید سها چگونه پاسخ‌های خود را قالب‌بندی و سبک‌دهی کند"
+  },
+  "chatSettings.responseStylesTitle": {
+    "defaultMessage": "سبک‌های پاسخ"
+  },
+  "configSettings.configReset": {
+    "defaultMessage": "بازنشانی پیکربندی"
+  },
+  "configSettings.configResetMsg": {
+    "defaultMessage": "همه تغییرات بازگردانده شد"
+  },
+  "configSettings.configUpdated": {
+    "defaultMessage": "پیکربندی به‌روزرسانی شد"
+  },
+  "configSettings.configUpdatedMsg": {
+    "defaultMessage": "«{name}» با موفقیت ذخیره شد"
+  },
+  "configSettings.configurationEditor": {
+    "defaultMessage": "ویرایشگر پیکربندی"
+  },
+  "configSettings.description": {
+    "defaultMessage": "تنظیمات پیکربندی سها را ویرایش کنید"
+  },
+  "configSettings.descriptionWithProvider": {
+    "defaultMessage": "تنظیمات پیکربندی سها را ویرایش کنید (تنظیمات فعلی برای {provider})"
+  },
+  "configSettings.done": {
+    "defaultMessage": "انجام شد"
+  },
+  "configSettings.editConfiguration": {
+    "defaultMessage": "ویرایش پیکربندی"
+  },
+  "configSettings.enterValue": {
+    "defaultMessage": "{name} را وارد کنید"
+  },
+  "configSettings.noSettings": {
+    "defaultMessage": "هیچ تنظیمات پیکربندی‌ای یافت نشد."
+  },
+  "configSettings.resetChanges": {
+    "defaultMessage": "بازنشانی تغییرات"
+  },
+  "configSettings.saveFailed": {
+    "defaultMessage": "ذخیره ناموفق بود"
+  },
+  "configSettings.saveFailedMsg": {
+    "defaultMessage": "ذخیره «{name}» ناموفق بود"
+  },
+  "configSettings.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
+  "configSettings.title": {
+    "defaultMessage": "پیکربندی"
+  },
+  "configureApproveMode.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "configureApproveMode.description": {
+    "defaultMessage": "درخواست‌های تأیید می‌توانند به همه درخواست‌های ابزار داده شوند یا تعیین کنند کدام اقدامات نیاز به یکپارچه‌سازی دارند"
+  },
+  "configureApproveMode.manualApproval": {
+    "defaultMessage": "تأیید دستی"
+  },
+  "configureApproveMode.manualApprovalDescription": {
+    "defaultMessage": "همه ابزارها، افزونه‌ها و تغییرات فایل نیازمند تأیید انسانی خواهند بود"
+  },
+  "configureApproveMode.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "configureApproveMode.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
+  "configureApproveMode.smartApproval": {
+    "defaultMessage": "تأیید هوشمند"
+  },
+  "configureApproveMode.smartApprovalDescription": {
+    "defaultMessage": "به‌صورت هوشمند بر اساس سطح خطر تعیین کنید کدام اقدامات نیاز به تأیید دارند"
+  },
+  "configureApproveMode.title": {
+    "defaultMessage": "پیکربندی حالت تأیید"
+  },
+  "confirmationModal.defaultCancel": {
+    "defaultMessage": "خیر"
+  },
+  "confirmationModal.defaultConfirm": {
+    "defaultMessage": "بله"
+  },
+  "confirmationModal.processing": {
+    "defaultMessage": "در حال پردازش..."
+  },
+  "conversationLimitsDropdown.conversationLimits": {
+    "defaultMessage": "محدودیت‌های گفتگو"
+  },
+  "conversationLimitsDropdown.maxTurns": {
+    "defaultMessage": "حداکثر نوبت‌ها"
+  },
+  "conversationLimitsDropdown.maxTurnsDescription": {
+    "defaultMessage": "حداکثر نوبت‌های عامل پیش از آنکه سها از کاربر ورودی بخواهد"
+  },
+  "costTracker.costUnavailable": {
+    "defaultMessage": "داده‌های هزینه برای {model} در دسترس نیست ({inputTokens} ورودی، {outputTokens} توکن خروجی)"
+  },
+  "costTracker.inputOutputTooltip": {
+    "defaultMessage": "ورودی: {inputTokens} توکن ({inputCost}) | خروجی: {outputTokens} توکن ({outputCost})"
+  },
+  "costTracker.pricingUnavailable": {
+    "defaultMessage": "داده‌های قیمت‌گذاری برای {model} در دسترس نیست"
+  },
+  "costTracker.totalSessionCost": {
+    "defaultMessage": "هزینه کل نشست: {cost}"
+  },
+  "createEditRecipe.clickToGenerateDeeplink": {
+    "defaultMessage": "برای ساخت پیوند عمیق کلیک کنید"
+  },
+  "createEditRecipe.close": {
+    "defaultMessage": "بستن"
+  },
+  "createEditRecipe.copied": {
+    "defaultMessage": "کپی شد!"
+  },
+  "createEditRecipe.copy": {
+    "defaultMessage": "کپی"
+  },
+  "createEditRecipe.copyLinkDescription": {
+    "defaultMessage": "این پیوند را برای اشتراک‌گذاری با دوستان کپی کنید یا مستقیماً در Chrome برای باز کردن جای‌گذاری کنید"
+  },
+  "createEditRecipe.createRecipeTitle": {
+    "defaultMessage": "ساخت دستور کار"
+  },
+  "createEditRecipe.createSubtitle": {
+    "defaultMessage": "یک دستور کار جدید بسازید تا رفتار و قابلیت‌های عامل را برای نشست‌های گفتگوی قابل‌استفاده مجدد تعریف کنید."
+  },
+  "createEditRecipe.editSubtitle": {
+    "defaultMessage": "می‌توانید دستور کار زیر را ویرایش کنید تا رفتار عامل را در یک نشست جدید تغییر دهید."
+  },
+  "createEditRecipe.generatingDeeplink": {
+    "defaultMessage": "در حال ساخت پیوند عمیق..."
+  },
+  "createEditRecipe.learnMore": {
+    "defaultMessage": "بیشتر بدانید"
+  },
+  "createEditRecipe.recipeSavedAndLaunchedMsg": {
+    "defaultMessage": "دستور کار با موفقیت ذخیره و اجرا شد"
+  },
+  "createEditRecipe.recipeSavedMsg": {
+    "defaultMessage": "دستور کار با موفقیت ذخیره شد"
+  },
+  "createEditRecipe.saveAndRunFailed": {
+    "defaultMessage": "ذخیره و اجرا ناموفق بود"
+  },
+  "createEditRecipe.saveAndRunFailedMsg": {
+    "defaultMessage": "ذخیره و اجرای دستور کار ناموفق بود: {error}"
+  },
+  "createEditRecipe.saveAndRunRecipe": {
+    "defaultMessage": "ذخیره و اجرای دستور کار"
+  },
+  "createEditRecipe.saveFailed": {
+    "defaultMessage": "ذخیره ناموفق بود"
+  },
+  "createEditRecipe.saveFailedMsg": {
+    "defaultMessage": "ذخیره دستور کار ناموفق بود: {error}"
+  },
+  "createEditRecipe.saveRecipe": {
+    "defaultMessage": "ذخیره دستور کار"
+  },
+  "createEditRecipe.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
+  "createEditRecipe.validationFailed": {
+    "defaultMessage": "اعتبارسنجی ناموفق بود"
+  },
+  "createEditRecipe.validationMsg": {
+    "defaultMessage": "لطفاً همه فیلدهای الزامی را پر کنید و از معتبر بودن طرحواره JSON اطمینان حاصل کنید."
+  },
+  "createEditRecipe.viewEditRecipeTitle": {
+    "defaultMessage": "مشاهده/ویرایش دستور کار"
+  },
+  "createRecipeFromSession.analyzingTitle": {
+    "defaultMessage": "در حال تحلیل گفتگوی شما"
+  },
+  "createRecipeFromSession.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "createRecipeFromSession.createAndRunRecipe": {
+    "defaultMessage": "ساخت و اجرای دستور کار"
+  },
+  "createRecipeFromSession.createRecipe": {
+    "defaultMessage": "ساخت دستور کار"
+  },
+  "createRecipeFromSession.creating": {
+    "defaultMessage": "در حال ساخت..."
+  },
+  "createRecipeFromSession.extractingInsights": {
+    "defaultMessage": "در حال استخراج بینش‌ها از گفتگوی شما"
+  },
+  "createRecipeFromSession.failedToCreateDefaultMsg": {
+    "defaultMessage": "هنگام ساخت دستور کار خطای غیرمنتظره‌ای رخ داد. لطفاً دوباره تلاش کنید."
+  },
+  "createRecipeFromSession.failedToCreateTitle": {
+    "defaultMessage": "ساخت دستور کار ناموفق بود"
+  },
+  "createRecipeFromSession.stageComplete": {
+    "defaultMessage": "تکمیل شد!"
+  },
+  "createRecipeFromSession.stageExtracting": {
+    "defaultMessage": "در حال استخراج موضوعات اصلی..."
+  },
+  "createRecipeFromSession.stageFinalizing": {
+    "defaultMessage": "در حال نهایی‌سازی جزئیات..."
+  },
+  "createRecipeFromSession.stageGenerating": {
+    "defaultMessage": "در حال ساخت ساختار دستور کار..."
+  },
+  "createRecipeFromSession.stageIdentifying": {
+    "defaultMessage": "در حال شناسایی الگوهای کلیدی..."
+  },
+  "createRecipeFromSession.stageReading": {
+    "defaultMessage": "در حال خواندن گفتگوی شما..."
+  },
+  "createRecipeFromSession.subtitle": {
+    "defaultMessage": "یک دستور کار قابل‌استفاده مجدد بر اساس گفتگوی فعلی خود بسازید."
+  },
+  "createRecipeFromSession.title": {
+    "defaultMessage": "ساخت دستور کار از نشست"
+  },
+  "createSubRecipeInline.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "createSubRecipeInline.closeModal": {
+    "defaultMessage": "بستن پنجره ساخت زیردستور"
+  },
+  "createSubRecipeInline.createAndAdd": {
+    "defaultMessage": "ساخت و افزودن زیردستور"
+  },
+  "createSubRecipeInline.createdSuccess": {
+    "defaultMessage": "زیردستور با موفقیت ساخته شد"
+  },
+  "createSubRecipeInline.creating": {
+    "defaultMessage": "در حال ساخت..."
+  },
+  "createSubRecipeInline.duplicateName": {
+    "defaultMessage": "نام تکراری"
+  },
+  "createSubRecipeInline.duplicateNameMsg": {
+    "defaultMessage": "زیردستوری با نام «{name}» از قبل وجود دارد. لطفاً از یک نام منحصربه‌فرد استفاده کنید."
+  },
+  "createSubRecipeInline.instructionsLabel": {
+    "defaultMessage": "دستورالعمل‌ها"
+  },
+  "createSubRecipeInline.instructionsPlaceholder": {
+    "defaultMessage": "دستورالعمل‌هایی برای هوش مصنوعی هنگام فراخوانی این زیردستور..."
+  },
+  "createSubRecipeInline.nameHint": {
+    "defaultMessage": "شناسه منحصربه‌فردی که برای ساخت نام ابزار استفاده می‌شود"
+  },
+  "createSubRecipeInline.nameLabel": {
+    "defaultMessage": "نام"
+  },
+  "createSubRecipeInline.namePlaceholder": {
+    "defaultMessage": "مثلاً security_scan"
+  },
+  "createSubRecipeInline.preconfiguredValues": {
+    "defaultMessage": "مقادیر از پیش پیکربندی‌شده"
+  },
+  "createSubRecipeInline.preconfiguredValuesHint": {
+    "defaultMessage": "مقادیر پارامتر اختیاری که همیشه به زیردستور ارسال می‌شوند"
+  },
+  "createSubRecipeInline.recipeDescriptionLabel": {
+    "defaultMessage": "توضیحات دستور کار"
+  },
+  "createSubRecipeInline.recipeDescriptionPlaceholder": {
+    "defaultMessage": "این دستور کار هنگام اجرا چه کاری انجام می‌دهد"
+  },
+  "createSubRecipeInline.recipeTitleLabel": {
+    "defaultMessage": "عنوان دستور کار"
+  },
+  "createSubRecipeInline.recipeTitlePlaceholder": {
+    "defaultMessage": "مثلاً ابزار تحلیل امنیتی"
+  },
+  "createSubRecipeInline.saveFailed": {
+    "defaultMessage": "ذخیره ناموفق بود"
+  },
+  "createSubRecipeInline.saveFailedMsg": {
+    "defaultMessage": "ذخیره زیردستور ناموفق بود: {error}"
+  },
+  "createSubRecipeInline.sequentialHint": {
+    "defaultMessage": "(اجرای ترتیبی چند نمونه را اجباری می‌کند)"
+  },
+  "createSubRecipeInline.sequentialLabel": {
+    "defaultMessage": "ترتیبی هنگام تکرار"
+  },
+  "createSubRecipeInline.subtitle": {
+    "defaultMessage": "یک دستور کار ساده بسازید تا به‌عنوان ابزار قابل‌فراخوانی در دستور کار اصلی خود استفاده کنید"
+  },
+  "createSubRecipeInline.title": {
+    "defaultMessage": "ساخت زیردستور جدید"
+  },
+  "createSubRecipeInline.toolDescriptionLabel": {
+    "defaultMessage": "توضیحات ابزار"
+  },
+  "createSubRecipeInline.toolDescriptionPlaceholder": {
+    "defaultMessage": "توضیحات اختیاری که هنگام فراخوانی این به‌عنوان ابزار نمایش داده می‌شود"
+  },
+  "createSubRecipeInline.validationFailed": {
+    "defaultMessage": "اعتبارسنجی ناموفق بود"
+  },
+  "createSubRecipeInline.validationMsg": {
+    "defaultMessage": "نام، عنوان، توضیحات دستور کار و دستورالعمل‌ها الزامی هستند."
+  },
+  "creditsExhaustedNotification.addCredits": {
+    "defaultMessage": "افزودن اعتبار"
+  },
+  "creditsExhaustedNotification.insufficientCredits": {
+    "defaultMessage": "اعتبار ناکافی"
+  },
+  "cronPicker.april": {
+    "defaultMessage": "آوریل"
+  },
+  "cronPicker.at": {
+    "defaultMessage": "در"
+  },
+  "cronPicker.atMinute": {
+    "defaultMessage": "در دقیقه"
+  },
+  "cronPicker.atSecond": {
+    "defaultMessage": "در ثانیه"
+  },
+  "cronPicker.august": {
+    "defaultMessage": "اوت"
+  },
+  "cronPicker.cronExpression": {
+    "defaultMessage": "عبارت Cron"
+  },
+  "cronPicker.custom": {
+    "defaultMessage": "Cron سفارشی"
+  },
+  "cronPicker.day": {
+    "defaultMessage": "روز"
+  },
+  "cronPicker.december": {
+    "defaultMessage": "دسامبر"
+  },
+  "cronPicker.emptyCronError": {
+    "defaultMessage": "عبارت Cron نمی‌تواند خالی باشد"
+  },
+  "cronPicker.every": {
+    "defaultMessage": "هر"
+  },
+  "cronPicker.february": {
+    "defaultMessage": "فوریه"
+  },
+  "cronPicker.friday": {
+    "defaultMessage": "جمعه"
+  },
+  "cronPicker.hour": {
+    "defaultMessage": "ساعت"
+  },
+  "cronPicker.inMonth": {
+    "defaultMessage": "در"
+  },
+  "cronPicker.invalidDayOfMonth": {
+    "defaultMessage": "روز باید بین ۱ و {max} باشد"
+  },
+  "cronPicker.january": {
+    "defaultMessage": "ژانویه"
+  },
+  "cronPicker.july": {
+    "defaultMessage": "ژوئیه"
+  },
+  "cronPicker.june": {
+    "defaultMessage": "ژوئن"
+  },
+  "cronPicker.march": {
+    "defaultMessage": "مارس"
+  },
+  "cronPicker.may": {
+    "defaultMessage": "مه"
+  },
+  "cronPicker.minute": {
+    "defaultMessage": "دقیقه"
+  },
+  "cronPicker.mode": {
+    "defaultMessage": "حالت"
+  },
+  "cronPicker.monday": {
+    "defaultMessage": "دوشنبه"
+  },
+  "cronPicker.month": {
+    "defaultMessage": "ماه"
+  },
+  "cronPicker.november": {
+    "defaultMessage": "نوامبر"
+  },
+  "cronPicker.october": {
+    "defaultMessage": "اکتبر"
+  },
+  "cronPicker.on": {
+    "defaultMessage": "در"
+  },
+  "cronPicker.onDay": {
+    "defaultMessage": "در روز"
+  },
+  "cronPicker.quarter": {
+    "defaultMessage": "فصل"
+  },
+  "cronPicker.saturday": {
+    "defaultMessage": "شنبه"
+  },
+  "cronPicker.september": {
+    "defaultMessage": "سپتامبر"
+  },
+  "cronPicker.startingMonth": {
+    "defaultMessage": "ماه شروع"
+  },
+  "cronPicker.sunday": {
+    "defaultMessage": "یکشنبه"
+  },
+  "cronPicker.thursday": {
+    "defaultMessage": "پنجشنبه"
+  },
+  "cronPicker.tuesday": {
+    "defaultMessage": "سه‌شنبه"
+  },
+  "cronPicker.wednesday": {
+    "defaultMessage": "چهارشنبه"
+  },
+  "cronPicker.week": {
+    "defaultMessage": "هفته"
+  },
+  "cronPicker.year": {
+    "defaultMessage": "سال"
+  },
+  "customProviderForm.add": {
+    "defaultMessage": "افزودن"
+  },
+  "customProviderForm.anthropicCompatible": {
+    "defaultMessage": "سازگار با Anthropic"
+  },
+  "customProviderForm.apiBasePath": {
+    "defaultMessage": "مسیر پایه API (اختیاری)"
+  },
+  "customProviderForm.apiBasePathHint": {
+    "defaultMessage": "مسیر پیش‌فرض API را بازنویسی کنید. برای استفاده از مسیر پیش‌فرض ارائه‌دهنده، خالی بگذارید."
+  },
+  "customProviderForm.apiBasePathPlaceholder": {
+    "defaultMessage": "مثلاً v1/chat/completions یا project_id/v1"
+  },
+  "customProviderForm.apiKey": {
+    "defaultMessage": "کلید API"
+  },
+  "customProviderForm.apiKeyPlaceholderExisting": {
+    "defaultMessage": "برای حفظ کلید موجود، خالی بگذارید"
+  },
+  "customProviderForm.apiKeyPlaceholderNew": {
+    "defaultMessage": "کلید API شما"
+  },
+  "customProviderForm.apiKeyRequired": {
+    "defaultMessage": "کلید API الزامی است"
+  },
+  "customProviderForm.apiUrl": {
+    "defaultMessage": "نشانی API"
+  },
+  "customProviderForm.apiUrlPlaceholder": {
+    "defaultMessage": "https://api.example.com"
+  },
+  "customProviderForm.apiUrlRequired": {
+    "defaultMessage": "نشانی API الزامی است"
+  },
+  "customProviderForm.attachments": {
+    "defaultMessage": "پیوست‌ها"
+  },
+  "customProviderForm.authHint": {
+    "defaultMessage": "مدل‌های زبانی محلی مانند Ollama معمولاً به کلید API نیاز ندارند."
+  },
+  "customProviderForm.authentication": {
+    "defaultMessage": "احراز هویت"
+  },
+  "customProviderForm.availableModels": {
+    "defaultMessage": "مدل‌های در دسترس (جداشده با ویرگول)"
+  },
+  "customProviderForm.back": {
+    "defaultMessage": "← بازگشت"
+  },
+  "customProviderForm.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "customProviderForm.cannotDeleteActive": {
+    "defaultMessage": "نمی‌توانید این ارائه‌دهنده را در حالی که در حال استفاده است حذف کنید. لطفاً ابتدا به مدل دیگری تغییر دهید."
+  },
+  "customProviderForm.chooseSetup": {
+    "defaultMessage": "انتخاب کنید چگونه می‌خواهید ارائه‌دهنده خود را راه‌اندازی کنید."
+  },
+  "customProviderForm.clear": {
+    "defaultMessage": "پاک کردن"
+  },
+  "customProviderForm.configureManually": {
+    "defaultMessage": "پیکربندی دستی"
+  },
+  "customProviderForm.configureManuallyDesc": {
+    "defaultMessage": "همه جزئیات ارائه‌دهنده را خودتان وارد کنید"
+  },
+  "customProviderForm.confirmDelete": {
+    "defaultMessage": "تأیید حذف"
+  },
+  "customProviderForm.createProvider": {
+    "defaultMessage": "ساخت ارائه‌دهنده"
+  },
+  "customProviderForm.customHeaders": {
+    "defaultMessage": "سرآیندهای سفارشی"
+  },
+  "customProviderForm.customHeadersHint": {
+    "defaultMessage": "سرآیندهای HTTP سفارشی برای گنجاندن در درخواست‌ها به ارائه‌دهنده اضافه کنید. پس از پر کردن هر دو فیلد، روی دکمه «+» کلیک کنید تا اضافه شود."
+  },
+  "customProviderForm.deleteConfirmation": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید این ارائه‌دهنده سفارشی را حذف کنید؟ این کار ارائه‌دهنده و کلید API ذخیره‌شده آن را برای همیشه حذف می‌کند. این عمل قابل بازگشت نیست."
+  },
+  "customProviderForm.deleteProvider": {
+    "defaultMessage": "حذف ارائه‌دهنده"
+  },
+  "customProviderForm.displayName": {
+    "defaultMessage": "نام نمایشی"
+  },
+  "customProviderForm.displayNamePlaceholder": {
+    "defaultMessage": "نام ارائه‌دهنده شما"
+  },
+  "customProviderForm.displayNameRequired": {
+    "defaultMessage": "نام نمایشی الزامی است"
+  },
+  "customProviderForm.docs": {
+    "defaultMessage": "مستندات"
+  },
+  "customProviderForm.headerBothRequired": {
+    "defaultMessage": "هم نام و هم مقدار سرآیند باید وارد شوند"
+  },
+  "customProviderForm.headerDuplicate": {
+    "defaultMessage": "سرآیندی با این نام از قبل وجود دارد"
+  },
+  "customProviderForm.headerNamePlaceholder": {
+    "defaultMessage": "نام سرآیند"
+  },
+  "customProviderForm.headerNoSpaces": {
+    "defaultMessage": "نام سرآیند نمی‌تواند شامل فاصله باشد"
+  },
+  "customProviderForm.modelsPlaceholder": {
+    "defaultMessage": "model-a, model-b, model-c"
+  },
+  "customProviderForm.modelsRequired": {
+    "defaultMessage": "حداقل یک مدل الزامی است"
+  },
+  "customProviderForm.ollamaCompatible": {
+    "defaultMessage": "سازگار با Ollama"
+  },
+  "customProviderForm.openaiCompatible": {
+    "defaultMessage": "سازگار با OpenAI"
+  },
+  "customProviderForm.providerType": {
+    "defaultMessage": "نوع ارائه‌دهنده"
+  },
+  "customProviderForm.reasoning": {
+    "defaultMessage": "استدلال"
+  },
+  "customProviderForm.requiresApiKey": {
+    "defaultMessage": "این ارائه‌دهنده به کلید API نیاز دارد"
+  },
+  "customProviderForm.startFromTemplate": {
+    "defaultMessage": "شروع از یک قالب ارائه‌دهنده"
+  },
+  "customProviderForm.startFromTemplateDesc": {
+    "defaultMessage": "یک ارائه‌دهنده شناخته‌شده انتخاب کنید تا پیکربندی را به‌صورت خودکار پر کنیم"
+  },
+  "customProviderForm.submitError": {
+    "defaultMessage": "ذخیره ارائه‌دهنده ناموفق بود. لطفاً پیکربندی خود را بررسی و دوباره تلاش کنید."
+  },
+  "customProviderForm.supportsStreaming": {
+    "defaultMessage": "ارائه‌دهنده از پاسخ‌های جریانی پشتیبانی می‌کند"
+  },
+  "customProviderForm.toolCalling": {
+    "defaultMessage": "فراخوانی ابزار"
+  },
+  "customProviderForm.updateProvider": {
+    "defaultMessage": "به‌روزرسانی ارائه‌دهنده"
+  },
+  "customProviderForm.usingTemplate": {
+    "defaultMessage": "استفاده از قالب: {name}"
+  },
+  "customProviderForm.valuePlaceholder": {
+    "defaultMessage": "مقدار"
+  },
+  "defaultCardButtons.configureSettings": {
+    "defaultMessage": "پیکربندی تنظیمات {name}"
+  },
+  "defaultCardButtons.deleteSettings": {
+    "defaultMessage": "حذف تنظیمات {name}"
+  },
+  "defaultCardButtons.editSettings": {
+    "defaultMessage": "ویرایش تنظیمات {name}"
+  },
+  "defaultCardButtons.getStarted": {
+    "defaultMessage": "با سها شروع کنید!"
+  },
+  "defaultProviderSetupForm.apiHostLabel": {
+    "defaultMessage": "میزبان API"
+  },
+  "defaultProviderSetupForm.apiHostPlaceholder": {
+    "defaultMessage": "https://api.example.com"
+  },
+  "defaultProviderSetupForm.apiKeyLabel": {
+    "defaultMessage": "کلید API"
+  },
+  "defaultProviderSetupForm.apiKeyPlaceholder": {
+    "defaultMessage": "کلید API شما"
+  },
+  "defaultProviderSetupForm.hideOptions": {
+    "defaultMessage": "پنهان کردن {count} گزینه"
+  },
+  "defaultProviderSetupForm.loadingConfig": {
+    "defaultMessage": "در حال بارگذاری مقادیر پیکربندی..."
+  },
+  "defaultProviderSetupForm.modelsLabel": {
+    "defaultMessage": "مدل‌ها"
+  },
+  "defaultProviderSetupForm.modelsPlaceholder": {
+    "defaultMessage": "model-a, model-b"
+  },
+  "defaultProviderSetupForm.noConfigParameters": {
+    "defaultMessage": "هیچ پارامتر پیکربندی برای این ارائه‌دهنده وجود ندارد."
+  },
+  "defaultProviderSetupForm.showOptions": {
+    "defaultMessage": "نمایش {count} گزینه"
+  },
+  "diagnosticsModal.attachHint": {
+    "defaultMessage": "اگر گزارش اشکالی ثبت می‌کنید، پیوست کردن گزارش عیب‌یابی به آن را در نظر بگیرید."
+  },
+  "diagnosticsModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "diagnosticsModal.configSettings": {
+    "defaultMessage": "تنظیمات پیکربندی"
+  },
+  "diagnosticsModal.description": {
+    "defaultMessage": "می‌توانید یک فایل zip عیب‌یابی برای اشتراک‌گذاری با تیم دانلود کنید، یا مستقیماً در GitHub با جزئیات سیستم از پیش پرشده یک گزارش اشکال ثبت کنید. یک گزارش عیب‌یابی شامل موارد زیر است:"
+  },
+  "diagnosticsModal.diagnosticsErrorMsg": {
+    "defaultMessage": "دانلود عیب‌یابی ناموفق بود"
+  },
+  "diagnosticsModal.diagnosticsErrorTitle": {
+    "defaultMessage": "خطای عیب‌یابی"
+  },
+  "diagnosticsModal.download": {
+    "defaultMessage": "دانلود"
+  },
+  "diagnosticsModal.downloading": {
+    "defaultMessage": "در حال دانلود..."
+  },
+  "diagnosticsModal.fileBug": {
+    "defaultMessage": "ثبت اشکال در GitHub"
+  },
+  "diagnosticsModal.logFiles": {
+    "defaultMessage": "فایل‌های گزارش اخیر"
+  },
+  "diagnosticsModal.opening": {
+    "defaultMessage": "در حال باز کردن..."
+  },
+  "diagnosticsModal.reportProblem": {
+    "defaultMessage": "گزارش یک مشکل"
+  },
+  "diagnosticsModal.sensitiveWarning": {
+    "defaultMessage": "اگر نشست شما حاوی اطلاعات حساس است، فایل عیب‌یابی را به‌صورت عمومی به اشتراک نگذارید."
+  },
+  "diagnosticsModal.sessionMessages": {
+    "defaultMessage": "پیام‌های نشست فعلی شما"
+  },
+  "diagnosticsModal.systemInfo": {
+    "defaultMessage": "اطلاعات پایه سیستم"
+  },
+  "diagnosticsModal.systemInfoErrorMsg": {
+    "defaultMessage": "دریافت اطلاعات سیستم ناموفق بود"
+  },
+  "diagnosticsModal.systemInfoErrorTitle": {
+    "defaultMessage": "خطا"
+  },
+  "dialog.close": {
+    "defaultMessage": "بستن"
+  },
+  "dictationSettings.addApiKey": {
+    "defaultMessage": "افزودن کلید API"
+  },
+  "dictationSettings.apiKey": {
+    "defaultMessage": "کلید API"
+  },
+  "dictationSettings.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "dictationSettings.chooseVoiceConversion": {
+    "defaultMessage": "انتخاب کنید صدا چگونه به متن تبدیل شود"
+  },
+  "dictationSettings.configureApiKey": {
+    "defaultMessage": "کلید API را در <b>{settingsPath}</b> پیکربندی کنید"
+  },
+  "dictationSettings.configured": {
+    "defaultMessage": "(پیکربندی‌شده)"
+  },
+  "dictationSettings.configuredIn": {
+    "defaultMessage": "✓ در {settingsPath} پیکربندی شد"
+  },
+  "dictationSettings.disabled": {
+    "defaultMessage": "غیرفعال"
+  },
+  "dictationSettings.enterApiKey": {
+    "defaultMessage": "کلید API خود را وارد کنید"
+  },
+  "dictationSettings.notConfigured": {
+    "defaultMessage": "(پیکربندی نشده)"
+  },
+  "dictationSettings.removeApiKey": {
+    "defaultMessage": "حذف کلید API"
+  },
+  "dictationSettings.requiredForTranscription": {
+    "defaultMessage": "برای رونویسی الزامی است"
+  },
+  "dictationSettings.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "dictationSettings.updateApiKey": {
+    "defaultMessage": "به‌روزرسانی کلید API"
+  },
+  "dictationSettings.voiceDictationProvider": {
+    "defaultMessage": "ارائه‌دهنده دیکته صوتی"
+  },
+  "dirSwitcher.chooseDirectory": {
+    "defaultMessage": "انتخاب پوشه…"
+  },
+  "dirSwitcher.currentDirectory": {
+    "defaultMessage": "پوشه فعلی"
+  },
+  "dirSwitcher.failedToUpdateWorkingDir": {
+    "defaultMessage": "به‌روزرسانی پوشه کاری ناموفق بود"
+  },
+  "dirSwitcher.gitWorktrees": {
+    "defaultMessage": "درخت‌های کاری Git"
+  },
+  "dirSwitcher.noWorktreesFound": {
+    "defaultMessage": "هیچ درخت کاری یافت نشد"
+  },
+  "dirSwitcher.openInFinder": {
+    "defaultMessage": "باز کردن در مدیر فایل"
+  },
+  "dirSwitcher.recentDirectories": {
+    "defaultMessage": "پوشه‌های اخیر"
+  },
+  "elicitationRequest.accept": {
+    "defaultMessage": "پذیرش"
+  },
+  "elicitationRequest.cancelled": {
+    "defaultMessage": "درخواست اطلاعات لغو شد."
+  },
+  "elicitationRequest.defaultMessage": {
+    "defaultMessage": "سها به اطلاعاتی از شما نیاز دارد."
+  },
+  "elicitationRequest.expired": {
+    "defaultMessage": "این درخواست منقضی شده است. افزونه باید دوباره بپرسد."
+  },
+  "elicitationRequest.submit": {
+    "defaultMessage": "ثبت"
+  },
+  "elicitationRequest.submitted": {
+    "defaultMessage": "اطلاعات ثبت شد"
+  },
+  "elicitationRequest.waitingForResponse": {
+    "defaultMessage": "در انتظار پاسخ شما ({timeRemaining} باقی‌مانده)"
+  },
+  "envVarsSection.add": {
+    "defaultMessage": "افزودن"
+  },
+  "envVarsSection.bothRequired": {
+    "defaultMessage": "هم نام و هم مقدار متغیر باید وارد شوند"
+  },
+  "envVarsSection.envVarsDescription": {
+    "defaultMessage": "جفت‌های کلید-مقدار برای متغیرهای محیطی اضافه کنید. پس از پر کردن هر دو فیلد، روی دکمه «+» کلیک کنید تا اضافه شود. برای مقادیر محرمانه موجود، برای ویرایش روی دکمه ویرایش کلیک کنید."
+  },
+  "envVarsSection.environmentVariables": {
+    "defaultMessage": "متغیرهای محیطی"
+  },
+  "envVarsSection.noSpaces": {
+    "defaultMessage": "نام متغیر نمی‌تواند شامل فاصله باشد"
+  },
+  "envVarsSection.value": {
+    "defaultMessage": "مقدار"
+  },
+  "envVarsSection.variableName": {
+    "defaultMessage": "نام متغیر"
+  },
+  "environmentBadge.dev": {
+    "defaultMessage": "توسعه"
+  },
+  "errorBoundary.errorGeneric": {
+    "defaultMessage": "خطایی رخ داد."
+  },
+  "errorBoundary.errorWithVersion": {
+    "defaultMessage": "خطایی در سها نسخه {version} رخ داد."
+  },
+  "errorBoundary.heading": {
+    "defaultMessage": "اوه!"
+  },
+  "errorBoundary.reload": {
+    "defaultMessage": "بارگذاری مجدد"
+  },
+  "extensionConfigFields.commandLabel": {
+    "defaultMessage": "دستور"
+  },
+  "extensionConfigFields.commandPlaceholder": {
+    "defaultMessage": "مثلاً npx -y @modelcontextprotocol/my-extension [filepath]"
+  },
+  "extensionConfigFields.commandRequired": {
+    "defaultMessage": "دستور الزامی است"
+  },
+  "extensionConfigFields.endpointLabel": {
+    "defaultMessage": "نقطه پایانی"
+  },
+  "extensionConfigFields.endpointPlaceholder": {
+    "defaultMessage": "نشانی نقطه پایانی را وارد کنید..."
+  },
+  "extensionConfigFields.endpointRequired": {
+    "defaultMessage": "نشانی نقطه پایانی الزامی است"
+  },
+  "extensionInfoFields.descriptionLabel": {
+    "defaultMessage": "توضیحات"
+  },
+  "extensionInfoFields.descriptionPlaceholder": {
+    "defaultMessage": "توضیحات اختیاری..."
+  },
+  "extensionInfoFields.extensionName": {
+    "defaultMessage": "نام افزونه"
+  },
+  "extensionInfoFields.extensionNamePlaceholder": {
+    "defaultMessage": "نام افزونه را وارد کنید..."
+  },
+  "extensionInfoFields.nameRequired": {
+    "defaultMessage": "نام الزامی است"
+  },
+  "extensionInfoFields.typeHttp": {
+    "defaultMessage": "HTTP"
+  },
+  "extensionInfoFields.typeLabel": {
+    "defaultMessage": "نوع"
+  },
+  "extensionInfoFields.typeSseUnsupported": {
+    "defaultMessage": "SSE (پشتیبانی‌نشده)"
+  },
+  "extensionInfoFields.typeStandardIo": {
+    "defaultMessage": "ورودی/خروجی استاندارد (STDIO)"
+  },
+  "extensionInfoFields.typeStdio": {
+    "defaultMessage": "STDIO"
+  },
+  "extensionInfoFields.typeStreamableHttp": {
+    "defaultMessage": "HTTP جریانی"
+  },
+  "extensionInstallModal.alreadyInstalledMessage": {
+    "defaultMessage": "افزونه ''{name}'' قبلاً با موفقیت نصب شده است. برای استفاده از آن یک نشست گفتگوی جدید آغاز کنید."
+  },
+  "extensionInstallModal.alreadyInstalledTitle": {
+    "defaultMessage": "افزونه ''{name}'' از قبل نصب شده است"
+  },
+  "extensionInstallModal.blockedMessage": {
+    "defaultMessage": "این دستور افزونه در فهرست مجاز نیست و نصب آن مسدود شده است. افزونه: {name} دستور: {command} برای درخواست تأیید این افزونه با مدیر خود تماس بگیرید."
+  },
+  "extensionInstallModal.blockedTitle": {
+    "defaultMessage": "نصب افزونه مسدود شد"
+  },
+  "extensionInstallModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "extensionInstallModal.installAnyway": {
+    "defaultMessage": "به هر حال نصب کن"
+  },
+  "extensionInstallModal.installing": {
+    "defaultMessage": "در حال نصب..."
+  },
+  "extensionInstallModal.no": {
+    "defaultMessage": "خیر"
+  },
+  "extensionInstallModal.ok": {
+    "defaultMessage": "تأیید"
+  },
+  "extensionInstallModal.trustedMessage": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید افزونه {name} را نصب کنید؟ دستور: {command}"
+  },
+  "extensionInstallModal.trustedTitle": {
+    "defaultMessage": "تأیید نصب افزونه"
+  },
+  "extensionInstallModal.unknownCommand": {
+    "defaultMessage": "دستور ناشناخته"
+  },
+  "extensionInstallModal.untrustedMessageWithCommand": {
+    "defaultMessage": "{securityMessage} افزونه: {name} دستور: {command} اگر درباره این مطمئن نیستید با مدیر خود تماس بگیرید."
+  },
+  "extensionInstallModal.untrustedMessageWithUrl": {
+    "defaultMessage": "{securityMessage} افزونه: {name} نشانی: {url} اگر درباره این مطمئن نیستید با مدیر خود تماس بگیرید."
+  },
+  "extensionInstallModal.untrustedSecurityMessage": {
+    "defaultMessage": "این دستور افزونه در فهرست مجاز نیست و قادر خواهد بود به گفتگوهای شما دسترسی پیدا کند و قابلیت‌های بیشتری فراهم کند. نصب افزونه‌ها از منابع غیرقابل‌اعتماد ممکن است خطرات امنیتی ایجاد کند."
+  },
+  "extensionInstallModal.untrustedTitle": {
+    "defaultMessage": "افزونه غیرقابل‌اعتماد نصب شود؟"
+  },
+  "extensionInstallModal.yes": {
+    "defaultMessage": "بله"
+  },
+  "extensionItem.configureExtension": {
+    "defaultMessage": "پیکربندی افزونه {name}"
+  },
+  "extensionItem.toggleExtension": {
+    "defaultMessage": "روشن یا خاموش کردن افزونه {name}"
+  },
+  "extensionList.availableExtensions": {
+    "defaultMessage": "افزونه‌های در دسترس ({count})"
+  },
+  "extensionList.builtInExtension": {
+    "defaultMessage": "افزونه داخلی"
+  },
+  "extensionList.defaultExtensions": {
+    "defaultMessage": "افزونه‌های پیش‌فرض ({count})"
+  },
+  "extensionList.noExtensions": {
+    "defaultMessage": "هیچ افزونه‌ای در دسترس نیست"
+  },
+  "extensionModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "extensionModal.closeWithoutSaving": {
+    "defaultMessage": "بستن بدون ذخیره"
+  },
+  "extensionModal.confirmRemoval": {
+    "defaultMessage": "تأیید حذف"
+  },
+  "extensionModal.deleteDescription": {
+    "defaultMessage": "این کار این افزونه و همه تنظیمات آن را برای همیشه حذف می‌کند."
+  },
+  "extensionModal.deleteExtensionTitle": {
+    "defaultMessage": "حذف افزونه «{name}»"
+  },
+  "extensionModal.installationNotes": {
+    "defaultMessage": "یادداشت‌های نصب"
+  },
+  "extensionModal.removeExtension": {
+    "defaultMessage": "حذف افزونه"
+  },
+  "extensionModal.unsavedChangesMessage": {
+    "defaultMessage": "تغییرات ذخیره‌نشده‌ای در پیکربندی افزونه دارید. آیا مطمئن هستید که می‌خواهید بدون ذخیره ببندید؟"
+  },
+  "extensionModal.unsavedChangesTitle": {
+    "defaultMessage": "تغییرات ذخیره‌نشده"
+  },
+  "extensionTimeoutField.timeoutLabel": {
+    "defaultMessage": "مهلت زمانی"
+  },
+  "extensionsSection.addCustomExtension": {
+    "defaultMessage": "افزودن افزونه سفارشی"
+  },
+  "extensionsSection.addExtension": {
+    "defaultMessage": "افزودن افزونه"
+  },
+  "extensionsSection.browseExtensions": {
+    "defaultMessage": "مرور افزونه‌ها"
+  },
+  "extensionsSection.saveChanges": {
+    "defaultMessage": "ذخیره تغییرات"
+  },
+  "extensionsSection.updateExtension": {
+    "defaultMessage": "به‌روزرسانی افزونه"
+  },
+  "extensionsView.addCustomExtension": {
+    "defaultMessage": "افزودن افزونه سفارشی"
+  },
+  "extensionsView.addExtension": {
+    "defaultMessage": "افزودن افزونه"
+  },
+  "extensionsView.browseExtensions": {
+    "defaultMessage": "مرور افزونه‌ها"
+  },
+  "extensionsView.defaultNote": {
+    "defaultMessage": "افزونه‌هایی که اینجا فعال می‌شوند به‌عنوان پیش‌فرض برای گفتگوهای جدید استفاده می‌شوند. همچنین می‌توانید افزونه‌های فعال را در حین گفتگو تغییر دهید."
+  },
+  "extensionsView.description": {
+    "defaultMessage": "این افزونه‌ها از پروتکل زمینه مدل (MCP) استفاده می‌کنند. آن‌ها می‌توانند قابلیت‌های سها را با استفاده از سه مؤلفه اصلی گسترش دهند: پرامپت‌ها، منابع و ابزارها. برای جستجو {searchShortcut}."
+  },
+  "extensionsView.heading": {
+    "defaultMessage": "افزونه‌ها"
+  },
+  "extensionsView.searchPlaceholder": {
+    "defaultMessage": "جستجوی افزونه‌ها..."
+  },
+  "externalBackendSection.certFingerprint": {
+    "defaultMessage": "اثر انگشت گواهی (اختیاری)"
+  },
+  "externalBackendSection.certFingerprintHelp": {
+    "defaultMessage": "یک اثر انگشت گواهی TLS مشخص را پین کنید. در صورت حذف، گواهی در اولین استفاده مورد اعتماد قرار می‌گیرد (TOFU)."
+  },
+  "externalBackendSection.certFingerprintPlaceholder": {
+    "defaultMessage": "AA:BB:CC:... یا sha256/base64"
+  },
+  "externalBackendSection.description": {
+    "defaultMessage": "به‌صورت پیش‌فرض سها یک سرور برای شما راه‌اندازی می‌کند؛ از این برای اتصال به یک سرور خارجی سها استفاده کنید"
+  },
+  "externalBackendSection.restartNote": {
+    "defaultMessage": "برای اعمال تغییرات باید سها را مجدداً راه‌اندازی کنید. پنجره‌های گفتگوی جدید به سرور خارجی متصل خواهند شد."
+  },
+  "externalBackendSection.secretKey": {
+    "defaultMessage": "کلید محرمانه"
+  },
+  "externalBackendSection.secretKeyHelp": {
+    "defaultMessage": "کلید محرمانه پیکربندی‌شده روی سرور goosed (GOOSE_SERVER__SECRET_KEY)"
+  },
+  "externalBackendSection.secretKeyPlaceholder": {
+    "defaultMessage": "کلید محرمانه سرور را وارد کنید"
+  },
+  "externalBackendSection.serverUrl": {
+    "defaultMessage": "نشانی سرور"
+  },
+  "externalBackendSection.title": {
+    "defaultMessage": "سرور سها"
+  },
+  "externalBackendSection.urlFormatError": {
+    "defaultMessage": "قالب نشانی نامعتبر است"
+  },
+  "externalBackendSection.urlProtocolError": {
+    "defaultMessage": "نشانی باید از پروتکل http یا https استفاده کند"
+  },
+  "externalBackendSection.useExternalServer": {
+    "defaultMessage": "استفاده از سرور خارجی"
+  },
+  "externalBackendSection.useExternalServerDescription": {
+    "defaultMessage": "به یک سرور سها که در جای دیگری اجرا می‌شود متصل شوید (نیازمند راه‌اندازی مجدد برنامه)"
+  },
+  "freeOptionCards.chooseOption": {
+    "defaultMessage": "برای شروع یک گزینه انتخاب کنید."
+  },
+  "freeOptionCards.freeAndPrivate": {
+    "defaultMessage": "رایگان و خصوصی"
+  },
+  "freeOptionCards.localModelDescription": {
+    "defaultMessage": "یک مدل دانلود کنید و کاملاً روی دستگاه خود اجرا کنید. بدون کلید API، بدون حساب کاربری."
+  },
+  "freeOptionCards.localModelTitle": {
+    "defaultMessage": "استفاده از یک مدل محلی"
+  },
+  "freeOptionCards.nanogptDescription": {
+    "defaultMessage": "ثبت‌نام کنید تا ۶۰ میلیون توکن رایگان برای ۷ روز دریافت کنید."
+  },
+  "freeOptionCards.nanogptTitle": {
+    "defaultMessage": "NanoGPT"
+  },
+  "freeOptionCards.retry": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "freeOptionCards.tetrateDescription": {
+    "defaultMessage": "با راه‌اندازی خودکار به چندین مدل هوش مصنوعی دسترسی پیدا کنید. ثبت‌نام کنید تا ۱۰ دلار اعتبار دریافت کنید."
+  },
+  "freeOptionCards.tetrateTitle": {
+    "defaultMessage": "مسیریاب عامل توسط Tetrate"
+  },
+  "freeOptionCards.unexpectedError": {
+    "defaultMessage": "خطای غیرمنتظره‌ای در حین راه‌اندازی رخ داد."
+  },
+  "gatewaySettings.botFatherInstructions": {
+    "defaultMessage": "‏@BotFather را روی تلفن خود باز کنید، /newbot را ارسال کنید و دستورها را برای نام‌گذاری ربات خود دنبال کنید. BotFather با یک توکن API پاسخ می‌دهد — آن را در زیر جای‌گذاری کنید."
+  },
+  "gatewaySettings.close": {
+    "defaultMessage": "بستن"
+  },
+  "gatewaySettings.expiresIn": {
+    "defaultMessage": "انقضا تا {time}"
+  },
+  "gatewaySettings.failedToGeneratePairingCode": {
+    "defaultMessage": "ساخت کد جفت‌سازی ناموفق بود"
+  },
+  "gatewaySettings.failedToRemove": {
+    "defaultMessage": "حذف ناموفق بود"
+  },
+  "gatewaySettings.failedToStart": {
+    "defaultMessage": "شروع ناموفق بود"
+  },
+  "gatewaySettings.failedToStop": {
+    "defaultMessage": "توقف ناموفق بود"
+  },
+  "gatewaySettings.failedToUnpairUser": {
+    "defaultMessage": "لغو جفت‌سازی کاربر ناموفق بود"
+  },
+  "gatewaySettings.loading": {
+    "defaultMessage": "در حال بارگذاری..."
+  },
+  "gatewaySettings.pairDevice": {
+    "defaultMessage": "جفت‌سازی دستگاه"
+  },
+  "gatewaySettings.pairedUsers": {
+    "defaultMessage": "کاربران جفت‌شده"
+  },
+  "gatewaySettings.pairingCode": {
+    "defaultMessage": "کد جفت‌سازی"
+  },
+  "gatewaySettings.pasteBotToken": {
+    "defaultMessage": "توکن ربات را اینجا جای‌گذاری کنید"
+  },
+  "gatewaySettings.remove": {
+    "defaultMessage": "حذف"
+  },
+  "gatewaySettings.running": {
+    "defaultMessage": "در حال اجرا"
+  },
+  "gatewaySettings.sendCodeToPair": {
+    "defaultMessage": "این کد را به ربات {gatewayType} خود ارسال کنید تا جفت شود."
+  },
+  "gatewaySettings.start": {
+    "defaultMessage": "شروع"
+  },
+  "gatewaySettings.stop": {
+    "defaultMessage": "توقف"
+  },
+  "gatewaySettings.stopped": {
+    "defaultMessage": "متوقف شد"
+  },
+  "gatewaySettings.telegram": {
+    "defaultMessage": "تلگرام"
+  },
+  "goosehintsModal.close": {
+    "defaultMessage": "بستن"
+  },
+  "goosehintsModal.developer": {
+    "defaultMessage": "توسعه‌دهنده"
+  },
+  "goosehintsModal.dialogDescription": {
+    "defaultMessage": "زمینه بیشتری درباره پروژه خود فراهم کنید تا ارتباط با سها بهبود یابد"
+  },
+  "goosehintsModal.dialogTitle": {
+    "defaultMessage": "پیکربندی راهنماهای پروژه (.goosehints)"
+  },
+  "goosehintsModal.errorReading": {
+    "defaultMessage": "خطا در خواندن فایل .goosehints: {error}"
+  },
+  "goosehintsModal.failedToAccess": {
+    "defaultMessage": "دسترسی به فایل .goosehints ناموفق بود"
+  },
+  "goosehintsModal.failedToSave": {
+    "defaultMessage": "ذخیره فایل .goosehints ناموفق بود"
+  },
+  "goosehintsModal.fileCreating": {
+    "defaultMessage": "در حال ساخت فایل جدید .goosehints در: {filePath}"
+  },
+  "goosehintsModal.fileFound": {
+    "defaultMessage": "فایل .goosehints در {filePath} یافت شد"
+  },
+  "goosehintsModal.helpText1": {
+    "defaultMessage": ".goosehints یک فایل متنی است که برای فراهم کردن زمینه بیشتر درباره پروژه شما و بهبود ارتباط با سها استفاده می‌شود."
+  },
+  "goosehintsModal.helpText2": {
+    "defaultMessage": "لطفاً مطمئن شوید که افزونه {bold} در صفحه افزونه‌ها فعال است. این افزونه برای استفاده از .goosehints الزامی است. برای اعمال به‌روزرسانی‌های .goosehints باید نشست خود را مجدداً راه‌اندازی کنید."
+  },
+  "goosehintsModal.helpText3": {
+    "defaultMessage": "برای اطلاعات بیشتر {link} را ببینید."
+  },
+  "goosehintsModal.helpTextLink": {
+    "defaultMessage": "استفاده از .goosehints"
+  },
+  "goosehintsModal.placeholder": {
+    "defaultMessage": "راهنماهای پروژه را اینجا وارد کنید..."
+  },
+  "goosehintsModal.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "goosehintsModal.savedSuccessfully": {
+    "defaultMessage": "با موفقیت ذخیره شد"
+  },
+  "goosehintsModal.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
+  "goosehintsSection.configure": {
+    "defaultMessage": "پیکربندی"
+  },
+  "goosehintsSection.description": {
+    "defaultMessage": "فایل .goosehints پروژه خود را پیکربندی کنید تا زمینه بیشتری به سها بدهید"
+  },
+  "goosehintsSection.title": {
+    "defaultMessage": "راهنماهای پروژه (.goosehints)"
+  },
+  "groupedExtensionLoadingToast.askGoose": {
+    "defaultMessage": "از سها بپرسید"
+  },
+  "groupedExtensionLoadingToast.collapseDetails": {
+    "defaultMessage": "جمع کردن جزئیات"
+  },
+  "groupedExtensionLoadingToast.copied": {
+    "defaultMessage": "کپی شد!"
+  },
+  "groupedExtensionLoadingToast.copyError": {
+    "defaultMessage": "کپی خطا"
+  },
+  "groupedExtensionLoadingToast.expandDetails": {
+    "defaultMessage": "گسترش جزئیات"
+  },
+  "groupedExtensionLoadingToast.failedToAddExtension": {
+    "defaultMessage": "افزودن افزونه ناموفق بود"
+  },
+  "groupedExtensionLoadingToast.failedToLoad": {
+    "defaultMessage": "{count,plural,one{# افزونه بارگذاری نشد} other{# افزونه بارگذاری نشدند}}"
+  },
+  "groupedExtensionLoadingToast.loadingExtensions": {
+    "defaultMessage": "{count,plural,one{در حال بارگذاری # افزونه...} other{در حال بارگذاری # افزونه...}}"
+  },
+  "groupedExtensionLoadingToast.partiallyLoaded": {
+    "defaultMessage": "{totalCount,plural,one{{successCount}/# افزونه بارگذاری شد} other{{successCount}/# افزونه بارگذاری شد}}"
+  },
+  "groupedExtensionLoadingToast.showDetails": {
+    "defaultMessage": "نمایش جزئیات"
+  },
+  "groupedExtensionLoadingToast.showLess": {
+    "defaultMessage": "نمایش کمتر"
+  },
+  "groupedExtensionLoadingToast.successfullyLoaded": {
+    "defaultMessage": "{count,plural,one{# افزونه با موفقیت بارگذاری شد} other{# افزونه با موفقیت بارگذاری شدند}}"
+  },
+  "headersSection.add": {
+    "defaultMessage": "افزودن"
+  },
+  "headersSection.bothRequired": {
+    "defaultMessage": "هم نام و هم مقدار سرآیند باید وارد شوند"
+  },
+  "headersSection.duplicateHeader": {
+    "defaultMessage": "سرآیندی با این نام از قبل وجود دارد"
+  },
+  "headersSection.headerName": {
+    "defaultMessage": "نام سرآیند"
+  },
+  "headersSection.headersDescription": {
+    "defaultMessage": "سرآیندهای HTTP سفارشی برای گنجاندن در درخواست‌ها به سرور MCP اضافه کنید. پس از پر کردن هر دو فیلد، روی دکمه «+» کلیک کنید تا اضافه شود."
+  },
+  "headersSection.noSpaces": {
+    "defaultMessage": "نام سرآیند نمی‌تواند شامل فاصله باشد"
+  },
+  "headersSection.requestHeaders": {
+    "defaultMessage": "سرآیندهای درخواست"
+  },
+  "headersSection.value": {
+    "defaultMessage": "مقدار"
+  },
+  "hub.goodAfternoon": {
+    "defaultMessage": "ظهر بخیر"
+  },
+  "hub.goodEvening": {
+    "defaultMessage": "عصر بخیر"
+  },
+  "hub.goodMorning": {
+    "defaultMessage": "صبح بخیر"
+  },
+  "huggingFaceModelSearch.download": {
+    "defaultMessage": "دانلود"
+  },
+  "huggingFaceModelSearch.downloaded": {
+    "defaultMessage": "دانلود شد"
+  },
+  "huggingFaceModelSearch.downloading": {
+    "defaultMessage": "در حال دانلود…"
+  },
+  "huggingFaceModelSearch.loadingVariants": {
+    "defaultMessage": "در حال بارگذاری گونه‌ها..."
+  },
+  "huggingFaceModelSearch.noGgufModels": {
+    "defaultMessage": "هیچ مدل GGUF برای این جستجو یافت نشد."
+  },
+  "huggingFaceModelSearch.recommended": {
+    "defaultMessage": "توصیه‌شده"
+  },
+  "huggingFaceModelSearch.searchError": {
+    "defaultMessage": "خطای جستجو: {details}"
+  },
+  "huggingFaceModelSearch.searchFailed": {
+    "defaultMessage": "جستجو ناموفق بود. لطفاً دوباره تلاش کنید."
+  },
+  "huggingFaceModelSearch.searchHuggingFace": {
+    "defaultMessage": "جستجوی HuggingFace"
+  },
+  "huggingFaceModelSearch.searchNoData": {
+    "defaultMessage": "جستجو هیچ داده‌ای بازنگرداند."
+  },
+  "huggingFaceModelSearch.searchPlaceholder": {
+    "defaultMessage": "جستجوی مدل‌های GGUF..."
+  },
+  "huggingFaceModelSearch.tooLarge": {
+    "defaultMessage": "ممکن است در حافظه جا نشود ({size} مدل، {available} در دسترس)"
+  },
+  "huggingFaceSignInPrompt.failedToConfigure": {
+    "defaultMessage": "ورود به Hugging Face ناموفق بود: {error}"
+  },
+  "huggingFaceSignInPrompt.signIn": {
+    "defaultMessage": "ورود"
+  },
+  "huggingFaceSignInPrompt.signedIn": {
+    "defaultMessage": "ورود به Hugging Face انجام شد"
+  },
+  "huggingFaceSignInPrompt.signingIn": {
+    "defaultMessage": "در حال ورود..."
+  },
+  "huggingFaceSignInPrompt.title": {
+    "defaultMessage": "Hugging Face"
+  },
+  "imagePreview.altText": {
+    "defaultMessage": "تصویر سها"
+  },
+  "imagePreview.clickToCollapse": {
+    "defaultMessage": "برای جمع کردن کلیک کنید"
+  },
+  "imagePreview.clickToExpand": {
+    "defaultMessage": "برای گسترش کلیک کنید"
+  },
+  "imagePreview.unableToLoad": {
+    "defaultMessage": "بارگذاری تصویر ممکن نیست"
+  },
+  "importRecipeForm.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "importRecipeForm.deeplinkHint": {
+    "defaultMessage": "یک پیوند عمیق دستور کار که با «goose://recipe?config=» شروع می‌شود جای‌گذاری کنید"
+  },
+  "importRecipeForm.deeplinkPlaceholder": {
+    "defaultMessage": "پیوند عمیق goose://recipe?config=... خود را اینجا جای‌گذاری کنید"
+  },
+  "importRecipeForm.example": {
+    "defaultMessage": "نمونه"
+  },
+  "importRecipeForm.expectedRecipeStructure": {
+    "defaultMessage": "ساختار مورد انتظار دستور کار"
+  },
+  "importRecipeForm.importRecipeButton": {
+    "defaultMessage": "ورود دستور کار"
+  },
+  "importRecipeForm.importRecipeTitle": {
+    "defaultMessage": "ورود دستور کار"
+  },
+  "importRecipeForm.importing": {
+    "defaultMessage": "در حال ورود..."
+  },
+  "importRecipeForm.or": {
+    "defaultMessage": "یا"
+  },
+  "importRecipeForm.recipeDeeplinkLabel": {
+    "defaultMessage": "پیوند عمیق دستور کار"
+  },
+  "importRecipeForm.recipeFileHint": {
+    "defaultMessage": "یک فایل YAML یا JSON حاوی ساختار دستور کار بارگذاری کنید"
+  },
+  "importRecipeForm.recipeFileLabel": {
+    "defaultMessage": "فایل دستور کار"
+  },
+  "importRecipeForm.reviewWarning": {
+    "defaultMessage": "پیش از افزودن فایل‌های دستور کار به رابط سها، مطمئن شوید که محتوای آن‌ها را بررسی کرده‌اید."
+  },
+  "importRecipeForm.schemaDescription": {
+    "defaultMessage": "فایل YAML یا JSON شما باید از این ساختار پیروی کند. فیلدهای الزامی عبارت‌اند از: عنوان، توضیحات و یکی از دستورالعمل‌ها یا پرامپت."
+  },
+  "inlineEditText.clickToEdit": {
+    "defaultMessage": "برای ویرایش کلیک کنید"
+  },
+  "inlineEditText.doubleClickToEdit": {
+    "defaultMessage": "برای ویرایش دوبار کلیک کنید"
+  },
+  "inlineEditText.enterText": {
+    "defaultMessage": "متن را وارد کنید"
+  },
+  "inlineEditText.failedToSave": {
+    "defaultMessage": "ذخیره ناموفق بود"
+  },
+  "instructionsEditor.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "instructionsEditor.insertExample": {
+    "defaultMessage": "درج نمونه"
+  },
+  "instructionsEditor.label": {
+    "defaultMessage": "دستورالعمل‌ها"
+  },
+  "instructionsEditor.placeholder": {
+    "defaultMessage": "دستورالعمل‌های دقیق برای هوش مصنوعی، پنهان از کاربر"
+  },
+  "instructionsEditor.save": {
+    "defaultMessage": "ذخیره دستورالعمل‌ها"
+  },
+  "instructionsEditor.syntaxHelp": {
+    "defaultMessage": "از نحو {code} برای تعریف پارامترهایی که کاربران می‌توانند پر کنند استفاده کنید"
+  },
+  "instructionsEditor.title": {
+    "defaultMessage": "ویرایشگر دستورالعمل‌ها"
+  },
+  "jsonSchemaEditor.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "jsonSchemaEditor.description": {
+    "defaultMessage": "ساختار مورد انتظار پاسخ هوش مصنوعی را با استفاده از قالب JSON Schema تعریف کنید"
+  },
+  "jsonSchemaEditor.insertExample": {
+    "defaultMessage": "درج نمونه"
+  },
+  "jsonSchemaEditor.invalidJson": {
+    "defaultMessage": "قالب JSON نامعتبر است"
+  },
+  "jsonSchemaEditor.label": {
+    "defaultMessage": "طرحواره JSON پاسخ"
+  },
+  "jsonSchemaEditor.save": {
+    "defaultMessage": "ذخیره طرحواره"
+  },
+  "jsonSchemaEditor.title": {
+    "defaultMessage": "ویرایشگر JSON Schema"
+  },
+  "jsonSchemaForm.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "jsonSchemaForm.fieldRequired": {
+    "defaultMessage": "این فیلد الزامی است"
+  },
+  "jsonSchemaForm.maxLength": {
+    "defaultMessage": "حداکثر طول {maxLength} است"
+  },
+  "jsonSchemaForm.maxValue": {
+    "defaultMessage": "حداکثر مقدار {maximum} است"
+  },
+  "jsonSchemaForm.minLength": {
+    "defaultMessage": "حداقل طول {minLength} است"
+  },
+  "jsonSchemaForm.minValue": {
+    "defaultMessage": "حداقل مقدار {minimum} است"
+  },
+  "jsonSchemaForm.noFields": {
+    "defaultMessage": "هیچ فیلدی برای نمایش وجود ندارد"
+  },
+  "jsonSchemaForm.selectPlaceholder": {
+    "defaultMessage": "انتخاب کنید..."
+  },
+  "jsonSchemaForm.submit": {
+    "defaultMessage": "ثبت"
+  },
+  "keyValueEditor.addValue": {
+    "defaultMessage": "افزودن مقدار از پیش پیکربندی‌شده"
+  },
+  "keyValueEditor.defaultKeyPlaceholder": {
+    "defaultMessage": "نام پارامتر..."
+  },
+  "keyValueEditor.defaultValuePlaceholder": {
+    "defaultMessage": "مقدار پارامتر..."
+  },
+  "keyValueEditor.removeValue": {
+    "defaultMessage": "حذف مقدار از پیش پیکربندی‌شده {key}"
+  },
+  "keyboardShortcuts.alwaysOnTopDescription": {
+    "defaultMessage": "تغییر وضعیت پنجره همیشه در بالا"
+  },
+  "keyboardShortcuts.alwaysOnTopLabel": {
+    "defaultMessage": "همیشه در بالا"
+  },
+  "keyboardShortcuts.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "keyboardShortcuts.categoryApplication": {
+    "defaultMessage": "میانبرهای برنامه"
+  },
+  "keyboardShortcuts.categoryApplicationDescription": {
+    "defaultMessage": "این میانبرها زمانی کار می‌کنند که سها برنامه فعال باشد"
+  },
+  "keyboardShortcuts.categoryGlobal": {
+    "defaultMessage": "میانبرهای سراسری"
+  },
+  "keyboardShortcuts.categoryGlobalDescription": {
+    "defaultMessage": "این میانبرها در سطح سیستم کار می‌کنند، حتی زمانی که سها در تمرکز نیست"
+  },
+  "keyboardShortcuts.categorySearch": {
+    "defaultMessage": "میانبرهای جستجو"
+  },
+  "keyboardShortcuts.categorySearchDescription": {
+    "defaultMessage": "این میانبرها هنگام جستجو در یک گفتگو کار می‌کنند"
+  },
+  "keyboardShortcuts.categoryWindow": {
+    "defaultMessage": "میانبرهای پنجره"
+  },
+  "keyboardShortcuts.categoryWindowDescription": {
+    "defaultMessage": "این میانبرها رفتار پنجره را کنترل می‌کنند"
+  },
+  "keyboardShortcuts.change": {
+    "defaultMessage": "تغییر"
+  },
+  "keyboardShortcuts.disabled": {
+    "defaultMessage": "غیرفعال"
+  },
+  "keyboardShortcuts.dismiss": {
+    "defaultMessage": "رد کردن"
+  },
+  "keyboardShortcuts.findDescription": {
+    "defaultMessage": "باز کردن جستجو در گفتگو"
+  },
+  "keyboardShortcuts.findLabel": {
+    "defaultMessage": "یافتن"
+  },
+  "keyboardShortcuts.findNextDescription": {
+    "defaultMessage": "پرش به نتیجه جستجوی بعدی"
+  },
+  "keyboardShortcuts.findNextLabel": {
+    "defaultMessage": "یافتن بعدی"
+  },
+  "keyboardShortcuts.findPreviousDescription": {
+    "defaultMessage": "پرش به نتیجه جستجوی قبلی"
+  },
+  "keyboardShortcuts.findPreviousLabel": {
+    "defaultMessage": "یافتن قبلی"
+  },
+  "keyboardShortcuts.focusWindowDescription": {
+    "defaultMessage": "پنجره سها را از هر جایی به جلو بیاورید"
+  },
+  "keyboardShortcuts.focusWindowLabel": {
+    "defaultMessage": "تمرکز روی پنجره سها"
+  },
+  "keyboardShortcuts.loading": {
+    "defaultMessage": "در حال بارگذاری..."
+  },
+  "keyboardShortcuts.newChatDescription": {
+    "defaultMessage": "ساخت یک گفتگوی جدید در پنجره فعلی"
+  },
+  "keyboardShortcuts.newChatLabel": {
+    "defaultMessage": "گفتگوی جدید"
+  },
+  "keyboardShortcuts.newChatWindowDescription": {
+    "defaultMessage": "باز کردن یک پنجره سها جدید"
+  },
+  "keyboardShortcuts.newChatWindowLabel": {
+    "defaultMessage": "پنجره گفتگوی جدید"
+  },
+  "keyboardShortcuts.openDirectoryDescription": {
+    "defaultMessage": "باز کردن پنجره انتخاب پوشه"
+  },
+  "keyboardShortcuts.openDirectoryLabel": {
+    "defaultMessage": "باز کردن پوشه"
+  },
+  "keyboardShortcuts.quickLauncherDescription": {
+    "defaultMessage": "باز کردن پوشش اجراگر سریع"
+  },
+  "keyboardShortcuts.quickLauncherLabel": {
+    "defaultMessage": "اجراگر سریع"
+  },
+  "keyboardShortcuts.reassignShortcut": {
+    "defaultMessage": "تخصیص مجدد میانبر"
+  },
+  "keyboardShortcuts.resetAllShortcuts": {
+    "defaultMessage": "بازنشانی همه میانبرها"
+  },
+  "keyboardShortcuts.resetShortcutsDetail": {
+    "defaultMessage": "این کار همه میانبرها را به پیکربندی اصلی آن‌ها بازمی‌گرداند."
+  },
+  "keyboardShortcuts.resetShortcutsMessage": {
+    "defaultMessage": "همه میانبرهای صفحه‌کلید به مقادیر پیش‌فرض بازنشانی شوند؟"
+  },
+  "keyboardShortcuts.resetShortcutsTitle": {
+    "defaultMessage": "بازنشانی میانبرهای صفحه‌کلید"
+  },
+  "keyboardShortcuts.resetToDefaultsDescription": {
+    "defaultMessage": "بازگرداندن همه میانبرهای صفحه‌کلید به پیکربندی اصلی آن‌ها"
+  },
+  "keyboardShortcuts.resetToDefaultsHeading": {
+    "defaultMessage": "بازنشانی به پیش‌فرض‌ها"
+  },
+  "keyboardShortcuts.restartDescription": {
+    "defaultMessage": "تغییرات در میانبرهای برنامه (مانند گفتگوی جدید، تنظیمات و غیره) برای اعمال نیازمند راه‌اندازی مجدد سها هستند. میانبرهای سراسری (تمرکز روی پنجره، اجراگر سریع) بلافاصله کار می‌کنند."
+  },
+  "keyboardShortcuts.restartRequired": {
+    "defaultMessage": "راه‌اندازی مجدد لازم است"
+  },
+  "keyboardShortcuts.settingsDescription": {
+    "defaultMessage": "باز کردن پنل تنظیمات"
+  },
+  "keyboardShortcuts.settingsLabel": {
+    "defaultMessage": "تنظیمات"
+  },
+  "keyboardShortcuts.shortcutConflictSaveDetail": {
+    "defaultMessage": "ذخیره این، میانبر را از «{conflictLabel}» حذف کرده و به «{targetLabel}» اختصاص می‌دهد. آیا می‌خواهید ادامه دهید؟"
+  },
+  "keyboardShortcuts.shortcutConflictTitle": {
+    "defaultMessage": "تداخل میانبر"
+  },
+  "keyboardShortcuts.shortcutConflictToggleDetail": {
+    "defaultMessage": "فعال کردن این، میانبر را از «{conflictLabel}» حذف کرده و به «{targetLabel}» اختصاص می‌دهد. آیا می‌خواهید ادامه دهید؟"
+  },
+  "keyboardShortcuts.shortcutConflictToggleMessage": {
+    "defaultMessage": "میانبر {shortcut} از قبل به «{conflictLabel}» اختصاص داده شده است."
+  },
+  "keyboardShortcuts.toggleNavigationDescription": {
+    "defaultMessage": "نمایش یا پنهان کردن منوی ناوبری"
+  },
+  "keyboardShortcuts.toggleNavigationLabel": {
+    "defaultMessage": "تغییر وضعیت ناوبری"
+  },
+  "launcher.placeholder": {
+    "defaultMessage": "هر چیزی از سها بپرسید..."
+  },
+  "loadingGoose.compacting": {
+    "defaultMessage": "سها در حال فشرده‌سازی گفتگو است..."
+  },
+  "loadingGoose.idle": {
+    "defaultMessage": "سها در حال کار روی آن است…"
+  },
+  "loadingGoose.loadingConversation": {
+    "defaultMessage": "در حال بارگذاری گفتگو..."
+  },
+  "loadingGoose.restartingAgent": {
+    "defaultMessage": "در حال راه‌اندازی مجدد نشست..."
+  },
+  "loadingGoose.streaming": {
+    "defaultMessage": "سها در حال کار روی آن است…"
+  },
+  "loadingGoose.thinking": {
+    "defaultMessage": "سها در حال فکر کردن است…"
+  },
+  "loadingGoose.waiting": {
+    "defaultMessage": "سها در حال انتظار است…"
+  },
+  "localInferenceSettings.deleteConfirm": {
+    "defaultMessage": "این مدل حذف شود؟ می‌توانید بعداً آن را دوباره دانلود کنید."
+  },
+  "localInferenceSettings.description": {
+    "defaultMessage": "مدل‌های زبانی محلی را برای استنتاج بدون کلید API دانلود و مدیریت کنید. در HuggingFace هر مدل GGUF را جستجو کنید یا از گزینه‌های ویژه زیر استفاده کنید."
+  },
+  "localInferenceSettings.download": {
+    "defaultMessage": "دانلود"
+  },
+  "localInferenceSettings.downloadFailed": {
+    "defaultMessage": "دانلود ناموفق بود"
+  },
+  "localInferenceSettings.downloadProgress": {
+    "defaultMessage": "{downloaded} / {total} ({percent}%)"
+  },
+  "localInferenceSettings.downloadedModels": {
+    "defaultMessage": "مدل‌های دانلودشده"
+  },
+  "localInferenceSettings.downloading": {
+    "defaultMessage": "در حال دانلود"
+  },
+  "localInferenceSettings.featuredModels": {
+    "defaultMessage": "مدل‌های ویژه"
+  },
+  "localInferenceSettings.huggingFaceSignInNote": {
+    "defaultMessage": "برای افزایش محدودیت‌های نرخ هنگام جستجو و دانلود مدل‌ها و دسترسی به مخازن خصوصی یا محدود Hugging Face وارد شوید."
+  },
+  "localInferenceSettings.modelSettings": {
+    "defaultMessage": "تنظیمات مدل"
+  },
+  "localInferenceSettings.modelSettingsTitle": {
+    "defaultMessage": "تنظیمات مدل"
+  },
+  "localInferenceSettings.noModels": {
+    "defaultMessage": "هیچ مدلی در دسترس نیست"
+  },
+  "localInferenceSettings.recommended": {
+    "defaultMessage": "توصیه‌شده"
+  },
+  "localInferenceSettings.remaining": {
+    "defaultMessage": "{time} باقی‌مانده"
+  },
+  "localInferenceSettings.showAllFeatured": {
+    "defaultMessage": "نمایش همه موارد ویژه ({count} مورد دیگر)"
+  },
+  "localInferenceSettings.showRecommendedOnly": {
+    "defaultMessage": "فقط نمایش توصیه‌شده‌ها"
+  },
+  "localInferenceSettings.title": {
+    "defaultMessage": "مدل‌های استنتاج محلی"
+  },
+  "localInferenceSettings.vision": {
+    "defaultMessage": "بینایی"
+  },
+  "localInferenceSettings.visionEncoderDownloading": {
+    "defaultMessage": "در حال دانلود رمزگذار بینایی…"
+  },
+  "localInferenceSettings.visionEncoderNotDownloaded": {
+    "defaultMessage": "رمزگذار بینایی دانلود نشده است"
+  },
+  "localModelManager.active": {
+    "defaultMessage": "فعال"
+  },
+  "localModelManager.deleteConfirm": {
+    "defaultMessage": "این مدل حذف شود؟ می‌توانید بعداً آن را دوباره دانلود کنید."
+  },
+  "localModelManager.download": {
+    "defaultMessage": "دانلود"
+  },
+  "localModelManager.downloaded": {
+    "defaultMessage": "دانلود شد"
+  },
+  "localModelManager.gpuAcceleration": {
+    "defaultMessage": "از شتاب‌دهی GPU پشتیبانی می‌کند (CUDA برای NVIDIA، Metal برای Apple Silicon). برای شتاب‌دهی سخت‌افزاری، قابلیت‌های GPU باید در زمان ساخت فعال شده باشند."
+  },
+  "localModelManager.noModels": {
+    "defaultMessage": "هیچ مدلی در دسترس نیست"
+  },
+  "localModelManager.recommended": {
+    "defaultMessage": "توصیه‌شده"
+  },
+  "localModelManager.recommendedForHardware": {
+    "defaultMessage": "توصیه‌شده برای سخت‌افزار شما"
+  },
+  "localModelManager.showAllModels": {
+    "defaultMessage": "نمایش همه مدل‌ها ({count} مورد دیگر)"
+  },
+  "localModelManager.showRecommendedOnly": {
+    "defaultMessage": "فقط نمایش توصیه‌شده‌ها"
+  },
+  "localModelPicker.back": {
+    "defaultMessage": "بازگشت"
+  },
+  "localModelPicker.bestForMachine": {
+    "defaultMessage": "بهترین برای دستگاه شما"
+  },
+  "localModelPicker.cancelDownload": {
+    "defaultMessage": "لغو دانلود"
+  },
+  "localModelPicker.checkingModels": {
+    "defaultMessage": "در حال بررسی مدل‌های در دسترس..."
+  },
+  "localModelPicker.downloadModel": {
+    "defaultMessage": "دانلود {modelId} ({size})"
+  },
+  "localModelPicker.downloading": {
+    "defaultMessage": "در حال دانلود {modelId}"
+  },
+  "localModelPicker.failedToLoad": {
+    "defaultMessage": "بارگذاری مدل‌های در دسترس ناموفق بود. لطفاً دوباره تلاش کنید."
+  },
+  "localModelPicker.failedToStartDownload": {
+    "defaultMessage": "شروع دانلود ناموفق بود. لطفاً دوباره تلاش کنید."
+  },
+  "localModelPicker.hideOtherSizes": {
+    "defaultMessage": "پنهان کردن اندازه‌های دیگر"
+  },
+  "localModelPicker.localModelsNote": {
+    "defaultMessage": "مدل‌های محلی همه چیز را برای حریم خصوصی کامل روی دستگاه شما نگه می‌دارند. کارایی و اندازه پنجره زمینه ممکن است در مقایسه با ارائه‌دهندگان ابری بسته به سخت‌افزار و اندازه مدل شما متفاوت باشد."
+  },
+  "localModelPicker.lostConnection": {
+    "defaultMessage": "ارتباط با دانلود قطع شد. لطفاً دوباره تلاش کنید."
+  },
+  "localModelPicker.modelNotFound": {
+    "defaultMessage": "مدل یافت نشد"
+  },
+  "localModelPicker.ready": {
+    "defaultMessage": "آماده"
+  },
+  "localModelPicker.selectModel": {
+    "defaultMessage": "یک مدل انتخاب کنید"
+  },
+  "localModelPicker.showOtherSizes": {
+    "defaultMessage": "نمایش {count} اندازه دیگر"
+  },
+  "localModelPicker.startingDownload": {
+    "defaultMessage": "در حال شروع دانلود..."
+  },
+  "localModelPicker.tryAgain": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "localModelPicker.useModel": {
+    "defaultMessage": "استفاده از {modelId}"
+  },
+  "markdownContent.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "markdownContent.copyCode": {
+    "defaultMessage": "کپی کد"
+  },
+  "markdownContent.failedToOpenLink": {
+    "defaultMessage": "باز کردن پیوند ناموفق بود"
+  },
+  "markdownContent.noApplicationFound": {
+    "defaultMessage": "هیچ برنامه‌ای برای باز کردن این پیوند یافت نشد."
+  },
+  "markdownContent.open": {
+    "defaultMessage": "باز کردن"
+  },
+  "markdownContent.openExternalLink": {
+    "defaultMessage": "باز کردن پیوند خارجی"
+  },
+  "markdownContent.openProtocolLink": {
+    "defaultMessage": "پیوند {protocol} باز شود؟"
+  },
+  "markdownContent.thisWillOpen": {
+    "defaultMessage": "این مورد باز خواهد شد: {href}"
+  },
+  "mcpAppRenderer.appFallbackTitle": {
+    "defaultMessage": "برنامه"
+  },
+  "mcpAppRenderer.cancelButton": {
+    "defaultMessage": "لغو"
+  },
+  "mcpAppRenderer.close": {
+    "defaultMessage": "بستن"
+  },
+  "mcpAppRenderer.exitFullscreen": {
+    "defaultMessage": "خروج از تمام‌صفحه"
+  },
+  "mcpAppRenderer.exitFullscreenTitle": {
+    "defaultMessage": "خروج از تمام‌صفحه (Esc)"
+  },
+  "mcpAppRenderer.failedToInitSandbox": {
+    "defaultMessage": "راه‌اندازی پروکسی محیط ایزوله ناموفق بود"
+  },
+  "mcpAppRenderer.failedToLoadResource": {
+    "defaultMessage": "بارگذاری منبع ناموفق بود"
+  },
+  "mcpAppRenderer.fullscreen": {
+    "defaultMessage": "تمام‌صفحه"
+  },
+  "mcpAppRenderer.invalidUrl": {
+    "defaultMessage": "نشانی نامعتبر"
+  },
+  "mcpAppRenderer.movePipWindow": {
+    "defaultMessage": "جابجایی پنجره تصویر-در-تصویر (با کلیدهای جهت‌دار)"
+  },
+  "mcpAppRenderer.openButton": {
+    "defaultMessage": "باز کردن"
+  },
+  "mcpAppRenderer.openExternalLinkTitle": {
+    "defaultMessage": "باز کردن پیوند خارجی"
+  },
+  "mcpAppRenderer.openLinkDetail": {
+    "defaultMessage": "این مورد باز خواهد شد: {url}"
+  },
+  "mcpAppRenderer.openProtocolLink": {
+    "defaultMessage": "پیوند {protocol} باز شود؟"
+  },
+  "mcpAppRenderer.pictureInPicture": {
+    "defaultMessage": "تصویر-در-تصویر"
+  },
+  "mcpAppRenderer.playingInPip": {
+    "defaultMessage": "در حال پخش در تصویر-در-تصویر"
+  },
+  "mcpUIResourceRenderer.cancelButton": {
+    "defaultMessage": "لغو"
+  },
+  "mcpUIResourceRenderer.openButton": {
+    "defaultMessage": "باز کردن"
+  },
+  "mcpUIResourceRenderer.openExternalLinkTitle": {
+    "defaultMessage": "باز کردن پیوند خارجی"
+  },
+  "mcpUIResourceRenderer.openLinkDetail": {
+    "defaultMessage": "این مورد باز خواهد شد: {url}"
+  },
+  "mcpUIResourceRenderer.openProtocolLink": {
+    "defaultMessage": "پیوند {protocol} باز شود؟"
+  },
+  "mcpUIResourceRenderer.toastMessageReceived": {
+    "defaultMessage": "پیامی برای {message} دریافت شد."
+  },
+  "mcpUIResourceRenderer.toastTitle": {
+    "defaultMessage": "پیام MCP-UI {messageType}"
+  },
+  "mcpUIResourceRenderer.toastUnsupported": {
+    "defaultMessage": "پیامی برای {message} دریافت شد. پیام‌های {messageType} هنوز پشتیبانی نمی‌شوند، برای جزئیات بیشتر به کنسول مراجعه کنید."
+  },
+  "mentionPopover.itemsFound": {
+    "defaultMessage": "{count,plural,one{# مورد یافت شد} other{# مورد یافت شد}}"
+  },
+  "mentionPopover.loadingCommands": {
+    "defaultMessage": "در حال بارگذاری دستورها..."
+  },
+  "mentionPopover.noCommandsFound": {
+    "defaultMessage": "هیچ دستوری مطابق «{query}» یافت نشد"
+  },
+  "mentionPopover.noItemsFound": {
+    "defaultMessage": "هیچ موردی مطابق «{query}» یافت نشد"
+  },
+  "mentionPopover.scanningFiles": {
+    "defaultMessage": "در حال پویش فایل‌ها..."
+  },
+  "messageCopyLink.copied": {
+    "defaultMessage": "کپی شد!"
+  },
+  "messageCopyLink.copy": {
+    "defaultMessage": "کپی"
+  },
+  "messageQueue.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "messageQueue.cannotSendWhileEditing": {
+    "defaultMessage": "هنگام ویرایش نمی‌توان ارسال کرد"
+  },
+  "messageQueue.clearAll": {
+    "defaultMessage": "پاک کردن همه"
+  },
+  "messageQueue.clickToEdit": {
+    "defaultMessage": "{content} (برای ویرایش کلیک کنید)"
+  },
+  "messageQueue.collapseQueue": {
+    "defaultMessage": "جمع کردن صف"
+  },
+  "messageQueue.dragToReorder": {
+    "defaultMessage": "برای مرتب‌سازی اولویت، پیام‌ها را بکشید"
+  },
+  "messageQueue.expandQueue": {
+    "defaultMessage": "گسترش صف"
+  },
+  "messageQueue.messageCount": {
+    "defaultMessage": "{count,plural,one{# پیام {status}} other{# پیام {status}}}"
+  },
+  "messageQueue.messageQueue": {
+    "defaultMessage": "صف پیام"
+  },
+  "messageQueue.next": {
+    "defaultMessage": "بعدی"
+  },
+  "messageQueue.paused": {
+    "defaultMessage": "متوقف شده"
+  },
+  "messageQueue.queuePaused": {
+    "defaultMessage": "صف متوقف شد"
+  },
+  "messageQueue.queuePausedCompact": {
+    "defaultMessage": "صف متوقف شد - روی «ارسال» کلیک کنید یا پیام جدید اضافه کنید تا ادامه یابد"
+  },
+  "messageQueue.queuePausedExpanded": {
+    "defaultMessage": "صف به دلیل وقفه متوقف شد. از «اکنون ارسال کن» استفاده کنید یا یک پیام جدید اضافه کنید تا ادامه یابد."
+  },
+  "messageQueue.queued": {
+    "defaultMessage": "در صف"
+  },
+  "messageQueue.removeFromQueue": {
+    "defaultMessage": "حذف این پیام از صف"
+  },
+  "messageQueue.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "messageQueue.sendNow": {
+    "defaultMessage": "این پیام را اکنون ارسال کن"
+  },
+  "messageQueue.stopAndSend": {
+    "defaultMessage": "پردازش فعلی را متوقف کن و این پیام را اکنون ارسال کن"
+  },
+  "messageQueue.waiting": {
+    "defaultMessage": "در انتظار"
+  },
+  "microphoneSelector.chooseDescription": {
+    "defaultMessage": "انتخاب کنید کدام میکروفون برای دیکته استفاده شود"
+  },
+  "microphoneSelector.grantAccess": {
+    "defaultMessage": "اعطای دسترسی"
+  },
+  "microphoneSelector.grantAccessDescription": {
+    "defaultMessage": "برای دیدن میکروفون‌های در دسترس، دسترسی بدهید"
+  },
+  "microphoneSelector.microphone": {
+    "defaultMessage": "میکروفون"
+  },
+  "microphoneSelector.microphoneLabel": {
+    "defaultMessage": "میکروفون {index}"
+  },
+  "microphoneSelector.selectedMicrophone": {
+    "defaultMessage": "میکروفون انتخاب‌شده"
+  },
+  "microphoneSelector.speakToTest": {
+    "defaultMessage": "برای آزمایش میکروفون خود صحبت کنید ({seconds} ثانیه)"
+  },
+  "microphoneSelector.stop": {
+    "defaultMessage": "توقف"
+  },
+  "microphoneSelector.systemDefault": {
+    "defaultMessage": "پیش‌فرض سیستم"
+  },
+  "microphoneSelector.test": {
+    "defaultMessage": "آزمایش"
+  },
+  "modeSelectionItem.autonomousDescription": {
+    "defaultMessage": "قابلیت‌های کامل تغییر فایل، آزادانه ویرایش، ساخت و حذف فایل‌ها."
+  },
+  "modeSelectionItem.autonomousLabel": {
+    "defaultMessage": "خودمختار"
+  },
+  "modeSelectionItem.chatOnlyDescription": {
+    "defaultMessage": "بدون استفاده از ابزارها یا افزونه‌ها با ارائه‌دهنده انتخاب‌شده تعامل کنید."
+  },
+  "modeSelectionItem.chatOnlyLabel": {
+    "defaultMessage": "فقط گفتگو"
+  },
+  "modeSelectionItem.manualDescription": {
+    "defaultMessage": "همه ابزارها، افزونه‌ها و تغییرات فایل نیازمند تأیید انسانی خواهند بود"
+  },
+  "modeSelectionItem.manualLabel": {
+    "defaultMessage": "دستی"
+  },
+  "modeSelectionItem.smartDescription": {
+    "defaultMessage": "به‌صورت هوشمند بر اساس سطح خطر تعیین کنید کدام اقدامات نیاز به تأیید دارند"
+  },
+  "modeSelectionItem.smartLabel": {
+    "defaultMessage": "هوشمند"
+  },
+  "modelAndProviderContext.modelChangeFailed": {
+    "defaultMessage": "{provider}/{model} ناموفق بود"
+  },
+  "modelAndProviderContext.modelChangedTitle": {
+    "defaultMessage": "مدل تغییر کرد"
+  },
+  "modelAndProviderContext.selectModel": {
+    "defaultMessage": "انتخاب مدل"
+  },
+  "modelAndProviderContext.switchModelSuccess": {
+    "defaultMessage": "مدل‌ها با موفقیت تغییر کردند -- استفاده از {model} از {provider}"
+  },
+  "modelAndProviderContext.unknownProviderMsg": {
+    "defaultMessage": "ارائه‌دهنده ناشناخته در پیکربندی -- لطفاً config.yaml خود را بررسی کنید"
+  },
+  "modelAndProviderContext.unknownProviderTitle": {
+    "defaultMessage": "جستجوی نام ارائه‌دهنده"
+  },
+  "modelSettingsButtons.configureProviders": {
+    "defaultMessage": "پیکربندی ارائه‌دهندگان"
+  },
+  "modelSettingsButtons.switchModels": {
+    "defaultMessage": "تغییر مدل‌ها"
+  },
+  "modelSettingsPanel.batchSize": {
+    "defaultMessage": "اندازه دسته"
+  },
+  "modelSettingsPanel.batchSizeDescription": {
+    "defaultMessage": "دسته پردازش پرامپت"
+  },
+  "modelSettingsPanel.builtinChatTemplate": {
+    "defaultMessage": "قالب داخلی"
+  },
+  "modelSettingsPanel.builtinChatTemplateDescription": {
+    "defaultMessage": "یک نام قالب داخلی llama.cpp انتخاب کنید"
+  },
+  "modelSettingsPanel.chatTemplate": {
+    "defaultMessage": "قالب گفتگو"
+  },
+  "modelSettingsPanel.chatTemplateBuiltin": {
+    "defaultMessage": "داخلی"
+  },
+  "modelSettingsPanel.chatTemplateCustomInline": {
+    "defaultMessage": "سفارشی درون‌خطی"
+  },
+  "modelSettingsPanel.chatTemplateDescription": {
+    "defaultMessage": "از فراداده GGUF تعبیه‌شده، یک قالب داخلی llama.cpp یا Jinja درون‌خطی استفاده کنید"
+  },
+  "modelSettingsPanel.chatTemplateEmbedded": {
+    "defaultMessage": "تعبیه‌شده"
+  },
+  "modelSettingsPanel.contextAndGeneration": {
+    "defaultMessage": "زمینه و تولید"
+  },
+  "modelSettingsPanel.contextSize": {
+    "defaultMessage": "اندازه زمینه"
+  },
+  "modelSettingsPanel.contextSizeDescription": {
+    "defaultMessage": "حداکثر پنجره زمینه (۰ = پیش‌فرض مدل)"
+  },
+  "modelSettingsPanel.customChatTemplate": {
+    "defaultMessage": "قالب گفتگوی سفارشی"
+  },
+  "modelSettingsPanel.customChatTemplateDescription": {
+    "defaultMessage": "منبع کامل قالب گفتگوی Jinja را جای‌گذاری کنید"
+  },
+  "modelSettingsPanel.etaLearningRate": {
+    "defaultMessage": "Eta (نرخ یادگیری)"
+  },
+  "modelSettingsPanel.flashAttention": {
+    "defaultMessage": "Flash attention"
+  },
+  "modelSettingsPanel.flashAttentionDescription": {
+    "defaultMessage": "فعال کردن بهینه‌سازی flash attention"
+  },
+  "modelSettingsPanel.frequencyPenalty": {
+    "defaultMessage": "جریمه بسامد"
+  },
+  "modelSettingsPanel.frequencyPenaltyDescription": {
+    "defaultMessage": "۰.۰ = خاموش"
+  },
+  "modelSettingsPanel.gpuLayers": {
+    "defaultMessage": "لایه‌های GPU"
+  },
+  "modelSettingsPanel.gpuLayersDescription": {
+    "defaultMessage": "لایه‌هایی که به GPU منتقل می‌شوند"
+  },
+  "modelSettingsPanel.loadingSettings": {
+    "defaultMessage": "در حال بارگذاری تنظیمات..."
+  },
+  "modelSettingsPanel.lockModelInRam": {
+    "defaultMessage": "قفل کردن مدل در RAM (mlock)"
+  },
+  "modelSettingsPanel.lockModelInRamDescription": {
+    "defaultMessage": "جلوگیری از منتقل شدن مدل به دیسک"
+  },
+  "modelSettingsPanel.maxOutputTokens": {
+    "defaultMessage": "حداکثر توکن‌های خروجی"
+  },
+  "modelSettingsPanel.maxOutputTokensDescription": {
+    "defaultMessage": "سقف توکن‌های تولیدشده"
+  },
+  "modelSettingsPanel.minP": {
+    "defaultMessage": "حداقل P"
+  },
+  "modelSettingsPanel.performance": {
+    "defaultMessage": "کارایی"
+  },
+  "modelSettingsPanel.presencePenalty": {
+    "defaultMessage": "جریمه حضور"
+  },
+  "modelSettingsPanel.presencePenaltyDescription": {
+    "defaultMessage": "۰.۰ = خاموش"
+  },
+  "modelSettingsPanel.repeatPenalty": {
+    "defaultMessage": "جریمه تکرار"
+  },
+  "modelSettingsPanel.repeatPenaltyDescription": {
+    "defaultMessage": "۱.۰ = خاموش"
+  },
+  "modelSettingsPanel.repeatWindow": {
+    "defaultMessage": "پنجره تکرار"
+  },
+  "modelSettingsPanel.repeatWindowDescription": {
+    "defaultMessage": "توکن‌هایی که به عقب نگاه می‌شوند"
+  },
+  "modelSettingsPanel.repetitionPenalty": {
+    "defaultMessage": "جریمه تکرار"
+  },
+  "modelSettingsPanel.reset": {
+    "defaultMessage": "بازنشانی"
+  },
+  "modelSettingsPanel.resetToDefaults": {
+    "defaultMessage": "بازنشانی به پیش‌فرض‌ها"
+  },
+  "modelSettingsPanel.samplingStrategy": {
+    "defaultMessage": "راهبرد نمونه‌برداری"
+  },
+  "modelSettingsPanel.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
+  "modelSettingsPanel.seed": {
+    "defaultMessage": "بذر"
+  },
+  "modelSettingsPanel.tauTargetEntropy": {
+    "defaultMessage": "Tau (آنتروپی هدف)"
+  },
+  "modelSettingsPanel.temperature": {
+    "defaultMessage": "دما"
+  },
+  "modelSettingsPanel.threads": {
+    "defaultMessage": "رشته‌ها"
+  },
+  "modelSettingsPanel.threadsDescription": {
+    "defaultMessage": "رشته‌های CPU برای تولید"
+  },
+  "modelSettingsPanel.toolCalling": {
+    "defaultMessage": "فراخوانی ابزار"
+  },
+  "modelSettingsPanel.toolCallingAuto": {
+    "defaultMessage": "خودکار"
+  },
+  "modelSettingsPanel.toolCallingDescription": {
+    "defaultMessage": "انتخاب کنید مدل‌های محلی چگونه فراخوانی ابزار بومی یا شبیه‌سازی‌شده را انتخاب کنند"
+  },
+  "modelSettingsPanel.toolCallingForceEmulated": {
+    "defaultMessage": "اجبار به شبیه‌سازی‌شده"
+  },
+  "modelSettingsPanel.toolCallingForceNative": {
+    "defaultMessage": "اجبار به بومی"
+  },
+  "modelSettingsPanel.topK": {
+    "defaultMessage": "Top K"
+  },
+  "modelSettingsPanel.topP": {
+    "defaultMessage": "Top P"
+  },
+  "modelsBottomBar.changeModel": {
+    "defaultMessage": "تغییر مدل"
+  },
+  "modelsBottomBar.currentModel": {
+    "defaultMessage": "مدل فعلی"
+  },
+  "modelsBottomBar.loadingModel": {
+    "defaultMessage": "در حال بارگذاری مدل..."
+  },
+  "modelsBottomBar.localModelSettings": {
+    "defaultMessage": "تنظیمات مدل محلی"
+  },
+  "modelsBottomBar.localModelSettingsTitle": {
+    "defaultMessage": "تنظیمات مدل محلی — {modelName}"
+  },
+  "modelsBottomBar.resolvedModel": {
+    "defaultMessage": "مدل تعیین‌شده"
+  },
+  "modelsBottomBar.selectModel": {
+    "defaultMessage": "انتخاب مدل"
+  },
+  "modelsSection.resetDescription": {
+    "defaultMessage": "تنظیمات مدل و ارائه‌دهنده انتخاب‌شده خود را پاک کنید تا از نو شروع کنید"
+  },
+  "modelsSection.resetTitle": {
+    "defaultMessage": "بازنشانی ارائه‌دهنده و مدل"
+  },
+  "navigation.itemApps": {
+    "defaultMessage": "برنامه‌ها"
+  },
+  "navigation.itemExtensions": {
+    "defaultMessage": "افزونه‌ها"
+  },
+  "navigation.itemHome": {
+    "defaultMessage": "گفتگوی جدید"
+  },
+  "navigation.itemRecipes": {
+    "defaultMessage": "دستورهای کار"
+  },
+  "navigation.itemScheduler": {
+    "defaultMessage": "زمان‌بند"
+  },
+  "navigation.itemSessions": {
+    "defaultMessage": "تاریخچه نشست"
+  },
+  "navigation.itemSettings": {
+    "defaultMessage": "تنظیمات"
+  },
+  "navigation.itemSkills": {
+    "defaultMessage": "مهارت‌ها"
+  },
+  "navigationPanel.chats": {
+    "defaultMessage": "گفتگوها"
+  },
+  "navigationPanel.collapseSidebar": {
+    "defaultMessage": "جمع کردن نوار کناری"
+  },
+  "navigationPanel.noChats": {
+    "defaultMessage": "هیچ گفتگوی اخیری وجود ندارد"
+  },
+  "navigationPanel.untitledSession": {
+    "defaultMessage": "نشست بدون عنوان"
+  },
+  "onboardingGuard.checkProviderErrorDescription": {
+    "defaultMessage": "ممکن است سرور در حال راه‌اندازی یا به‌طور موقت در دسترس نباشد."
+  },
+  "onboardingGuard.checkProviderErrorTitle": {
+    "defaultMessage": "اتصال به سرور سها ممکن نیست"
+  },
+  "onboardingGuard.retry": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "onboardingGuard.welcomeDescription": {
+    "defaultMessage": "عامل هوش مصنوعی محلی شما. برای شروع یک ارائه‌دهنده مدل هوش مصنوعی را متصل کنید."
+  },
+  "onboardingGuard.welcomeTitle": {
+    "defaultMessage": "به سها خوش آمدید"
+  },
+  "onboardingSuccess.allSet": {
+    "defaultMessage": "همه چیز آماده است تا استفاده از سها را شروع کنید."
+  },
+  "onboardingSuccess.connectedTo": {
+    "defaultMessage": "متصل به {providerName}"
+  },
+  "onboardingSuccess.getStarted": {
+    "defaultMessage": "شروع کنید"
+  },
+  "onboardingSuccess.learnMore": {
+    "defaultMessage": "بیشتر بدانید"
+  },
+  "onboardingSuccess.localModelReady": {
+    "defaultMessage": "مدل محلی آماده است"
+  },
+  "onboardingSuccess.privacyDescription": {
+    "defaultMessage": "داده‌های استفاده ناشناس به بهبود سها کمک می‌کند. ما هرگز گفتگوها، کد یا داده‌های شخصی شما را جمع‌آوری نمی‌کنیم."
+  },
+  "onboardingSuccess.privacyTitle": {
+    "defaultMessage": "حریم خصوصی"
+  },
+  "onboardingSuccess.shareUsageData": {
+    "defaultMessage": "اشتراک‌گذاری داده‌های استفاده ناشناس"
+  },
+  "parameterInput.defaultValue": {
+    "defaultMessage": "مقدار پیش‌فرض"
+  },
+  "parameterInput.defaultValuePlaceholder": {
+    "defaultMessage": "مقدار پیش‌فرض را وارد کنید"
+  },
+  "parameterInput.deleteParameter": {
+    "defaultMessage": "حذف پارامتر: {key}"
+  },
+  "parameterInput.description": {
+    "defaultMessage": "توضیحات"
+  },
+  "parameterInput.descriptionHelp": {
+    "defaultMessage": "این پیامی است که کاربر نهایی خواهد دید."
+  },
+  "parameterInput.descriptionPlaceholder": {
+    "defaultMessage": "مثلاً «نام مؤلفه جدید را وارد کنید»"
+  },
+  "parameterInput.inputType": {
+    "defaultMessage": "نوع ورودی"
+  },
+  "parameterInput.optional": {
+    "defaultMessage": "اختیاری"
+  },
+  "parameterInput.optionsHelp": {
+    "defaultMessage": "هر گزینه را در یک خط جدید وارد کنید. این‌ها به‌صورت گزینه‌های کشویی نمایش داده می‌شوند."
+  },
+  "parameterInput.optionsLabel": {
+    "defaultMessage": "گزینه‌ها (هر کدام در یک خط)"
+  },
+  "parameterInput.optionsPlaceholder": {
+    "defaultMessage": "گزینه ۱ گزینه ۲ گزینه ۳"
+  },
+  "parameterInput.required": {
+    "defaultMessage": "الزامی"
+  },
+  "parameterInput.requirement": {
+    "defaultMessage": "الزام"
+  },
+  "parameterInput.typeBoolean": {
+    "defaultMessage": "بولی"
+  },
+  "parameterInput.typeNumber": {
+    "defaultMessage": "عدد"
+  },
+  "parameterInput.typeSelect": {
+    "defaultMessage": "انتخابی"
+  },
+  "parameterInput.typeString": {
+    "defaultMessage": "رشته"
+  },
+  "parameterInput.unused": {
+    "defaultMessage": "استفاده‌نشده"
+  },
+  "parameterInput.unusedWarningTitle": {
+    "defaultMessage": "این پارامتر در دستورالعمل‌ها یا پرامپت استفاده نشده است. برای ورود دستی در دسترس خواهد بود اما ممکن است لازم نباشد."
+  },
+  "parameterInputModal.backToForm": {
+    "defaultMessage": "بازگشت به فرم پارامتر"
+  },
+  "parameterInputModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "parameterInputModal.cancelRecipeSetup": {
+    "defaultMessage": "لغو راه‌اندازی دستور کار"
+  },
+  "parameterInputModal.enterValue": {
+    "defaultMessage": "مقدار را برای {key} وارد کنید..."
+  },
+  "parameterInputModal.false": {
+    "defaultMessage": "نادرست"
+  },
+  "parameterInputModal.recipeParameters": {
+    "defaultMessage": "پارامترهای دستور کار"
+  },
+  "parameterInputModal.select": {
+    "defaultMessage": "انتخاب کنید..."
+  },
+  "parameterInputModal.selectOption": {
+    "defaultMessage": "یک گزینه انتخاب کنید..."
+  },
+  "parameterInputModal.startNewChat": {
+    "defaultMessage": "شروع گفتگوی جدید (بدون دستور کار)"
+  },
+  "parameterInputModal.startRecipe": {
+    "defaultMessage": "شروع دستور کار"
+  },
+  "parameterInputModal.true": {
+    "defaultMessage": "درست"
+  },
+  "parameterInputModal.whatToDo": {
+    "defaultMessage": "می‌خواهید چه کاری انجام دهید؟"
+  },
+  "permissionModal.alwaysAllow": {
+    "defaultMessage": "همیشه اجازه بده"
+  },
+  "permissionModal.askBefore": {
+    "defaultMessage": "پیش از انجام بپرس"
+  },
+  "permissionModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "permissionModal.close": {
+    "defaultMessage": "بستن"
+  },
+  "permissionModal.failedToLoadTools": {
+    "defaultMessage": "بارگذاری ابزارها ناموفق بود"
+  },
+  "permissionModal.failedToLoadToolsDescription": {
+    "defaultMessage": "بارگذاری ابزارها برای این افزونه ممکن نشد. ممکن است افزونه در نشست فعلی بارگذاری نشده باشد."
+  },
+  "permissionModal.neverAllow": {
+    "defaultMessage": "هرگز اجازه نده"
+  },
+  "permissionModal.noActiveSession": {
+    "defaultMessage": "نشست فعالی وجود ندارد"
+  },
+  "permissionModal.noActiveSessionDescription": {
+    "defaultMessage": "ابتدا یک نشست گفتگو آغاز کنید تا مجوزهای ابزار برای این افزونه را پیکربندی کنید. مجوزهای ابزار از افزونه‌های نشست فعال بارگذاری می‌شوند."
+  },
+  "permissionModal.noToolsAvailable": {
+    "defaultMessage": "هیچ ابزاری برای این افزونه در دسترس نیست."
+  },
+  "permissionModal.saveChanges": {
+    "defaultMessage": "ذخیره تغییرات"
+  },
+  "permissionRulesModal.description": {
+    "defaultMessage": "مجوزهای ابزار برای افزونه‌ها را پیکربندی کنید تا نحوه تعامل آن‌ها با سیستم شما را کنترل کنید."
+  },
+  "permissionRulesModal.extensionRules": {
+    "defaultMessage": "قوانین افزونه"
+  },
+  "permissionRulesModal.title": {
+    "defaultMessage": "قوانین مجوز"
+  },
+  "permissionSetting.extensionRules": {
+    "defaultMessage": "قوانین افزونه"
+  },
+  "permissionSetting.permissionRules": {
+    "defaultMessage": "قوانین مجوز"
+  },
+  "permissionSetting.permissionRulesDescription": {
+    "defaultMessage": "دستورالعمل‌های پنهانی که به ارائه‌دهنده ارسال می‌شوند تا پاسخ‌های شما را هدایت کرده و زمینه بیشتری به آن‌ها بدهند."
+  },
+  "privacyInfoModal.collectErrors": {
+    "defaultMessage": "انواع خطا (مثلاً «rate_limit»، «auth» - بدون جزئیات)"
+  },
+  "privacyInfoModal.collectExtensions": {
+    "defaultMessage": "تعداد استفاده از افزونه‌ها و ابزارها (فقط نام‌ها)"
+  },
+  "privacyInfoModal.collectOs": {
+    "defaultMessage": "سیستم‌عامل، نسخه و معماری"
+  },
+  "privacyInfoModal.collectProvider": {
+    "defaultMessage": "ارائه‌دهنده و مدل استفاده‌شده"
+  },
+  "privacyInfoModal.collectSession": {
+    "defaultMessage": "سنجه‌های نشست (مدت، تعداد تعامل، مصرف توکن)"
+  },
+  "privacyInfoModal.collectVersion": {
+    "defaultMessage": "نسخه سها و روش نصب"
+  },
+  "privacyInfoModal.description": {
+    "defaultMessage": "داده‌های استفاده ناشناس به ما کمک می‌کند تا بفهمیم سها چگونه استفاده می‌شود و زمینه‌های بهبود را شناسایی کنیم."
+  },
+  "privacyInfoModal.neverCollect": {
+    "defaultMessage": "ما هرگز گفتگوها، کد، آرگومان‌های ابزار، پیام‌های خطا یا هیچ داده شخصی شما را جمع‌آوری نمی‌کنیم. می‌توانید این تنظیم را هر زمان در تنظیمات تغییر دهید."
+  },
+  "privacyInfoModal.title": {
+    "defaultMessage": "جزئیات حریم خصوصی"
+  },
+  "privacyInfoModal.whatWeCollect": {
+    "defaultMessage": "آنچه جمع‌آوری می‌کنیم:"
+  },
+  "progressiveMessageList.loadingMessages": {
+    "defaultMessage": "در حال بارگذاری پیام‌ها... ({renderedCount}/{totalCount})"
+  },
+  "progressiveMessageList.modelChanged": {
+    "defaultMessage": "مدل تغییر کرد: {previousModel} → {currentModel}"
+  },
+  "progressiveMessageList.searchHint": {
+    "defaultMessage": "برای بارگذاری فوری همه پیام‌ها جهت جستجو، Cmd/Ctrl+F را فشار دهید"
+  },
+  "promptsSettings.allPromptsReset": {
+    "defaultMessage": "همه پرامپت‌ها به پیش‌فرض‌ها بازنشانی شدند"
+  },
+  "promptsSettings.backToList": {
+    "defaultMessage": "بازگشت به فهرست"
+  },
+  "promptsSettings.confirmReplaceWithDefault": {
+    "defaultMessage": "محتوای فعلی با پیش‌فرض جایگزین شود؟ تغییرات شما از دست خواهند رفت."
+  },
+  "promptsSettings.confirmResetAll": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید همه پرامپت‌ها را به پیش‌فرض‌ها بازنشانی کنید؟ این کار قابل بازگشت نیست."
+  },
+  "promptsSettings.confirmResetOne": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید این پرامپت را به پیش‌فرض بازنشانی کنید؟ این کار قابل بازگشت نیست."
+  },
+  "promptsSettings.confirmUnsavedBack": {
+    "defaultMessage": "تغییرات ذخیره‌نشده‌ای دارید. آیا مطمئن هستید که می‌خواهید بازگردید؟"
+  },
+  "promptsSettings.customized": {
+    "defaultMessage": "سفارشی‌شده"
+  },
+  "promptsSettings.edit": {
+    "defaultMessage": "ویرایش"
+  },
+  "promptsSettings.editPromptTitle": {
+    "defaultMessage": "ویرایش: {name}"
+  },
+  "promptsSettings.editingLabel": {
+    "defaultMessage": "در حال ویرایش: {name}"
+  },
+  "promptsSettings.enterPromptContent": {
+    "defaultMessage": "محتوای پرامپت را وارد کنید..."
+  },
+  "promptsSettings.failedToLoadPrompt": {
+    "defaultMessage": "بارگذاری پرامپت ناموفق بود"
+  },
+  "promptsSettings.failedToLoadPrompts": {
+    "defaultMessage": "بارگذاری پرامپت‌ها ناموفق بود"
+  },
+  "promptsSettings.failedToResetPrompt": {
+    "defaultMessage": "بازنشانی پرامپت ناموفق بود"
+  },
+  "promptsSettings.failedToResetPrompts": {
+    "defaultMessage": "بازنشانی پرامپت‌ها ناموفق بود"
+  },
+  "promptsSettings.failedToSavePrompt": {
+    "defaultMessage": "ذخیره پرامپت ناموفق بود"
+  },
+  "promptsSettings.promptEditingDescription": {
+    "defaultMessage": "پرامپت‌هایی را که رفتار سها را در زمینه‌های مختلف تعریف می‌کنند سفارشی کنید. این پرامپت‌ها از نحو قالب‌بندی Jinja2 استفاده می‌کنند. هنگام تغییر متغیرهای قالب محتاط باشید، زیرا تغییرات نادرست می‌تواند عملکرد را مختل کند. لطفاً هر بهبودی را با جامعه به اشتراک بگذارید."
+  },
+  "promptsSettings.promptEditingTitle": {
+    "defaultMessage": "ویرایش پرامپت"
+  },
+  "promptsSettings.promptResetToDefault": {
+    "defaultMessage": "پرامپت به پیش‌فرض بازنشانی شد"
+  },
+  "promptsSettings.promptSaved": {
+    "defaultMessage": "پرامپت ذخیره شد"
+  },
+  "promptsSettings.resetAll": {
+    "defaultMessage": "بازنشانی همه"
+  },
+  "promptsSettings.resetToDefault": {
+    "defaultMessage": "بازنشانی به پیش‌فرض"
+  },
+  "promptsSettings.restoreDefault": {
+    "defaultMessage": "بازگردانی پیش‌فرض"
+  },
+  "promptsSettings.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "promptsSettings.templateTip": {
+    "defaultMessage": "متغیرهای قالب مانند {extensionsExample} یا {forExample} در زمان اجرا با مقادیر واقعی جایگزین می‌شوند. مراقب باشید متغیرهای الزامی را حذف نکنید."
+  },
+  "promptsSettings.unsavedChanges": {
+    "defaultMessage": "تغییرات ذخیره‌نشده دارید"
+  },
+  "providerCard.noMetadata": {
+    "defaultMessage": "خطای ProviderCard: هیچ فراداده‌ای ارائه نشد"
+  },
+  "providerCard.unknownProvider": {
+    "defaultMessage": "ارائه‌دهنده ناشناخته"
+  },
+  "providerCatalogPicker.anthropicCompatible": {
+    "defaultMessage": "سازگار با Anthropic"
+  },
+  "providerCatalogPicker.apiFormat": {
+    "defaultMessage": "قالب API"
+  },
+  "providerCatalogPicker.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "providerCatalogPicker.chooseProvider": {
+    "defaultMessage": "انتخاب ارائه‌دهنده"
+  },
+  "providerCatalogPicker.errorPrefix": {
+    "defaultMessage": "خطا: {error}"
+  },
+  "providerCatalogPicker.loadingProviders": {
+    "defaultMessage": "در حال بارگذاری ارائه‌دهندگان..."
+  },
+  "providerCatalogPicker.modelsAvailable": {
+    "defaultMessage": "{count} مدل در دسترس"
+  },
+  "providerCatalogPicker.noProvidersAvailable": {
+    "defaultMessage": "هیچ ارائه‌دهنده‌ای در دسترس نیست"
+  },
+  "providerCatalogPicker.noProvidersFound": {
+    "defaultMessage": "هیچ ارائه‌دهنده‌ای برای «{query}» یافت نشد"
+  },
+  "providerCatalogPicker.openaiCompatible": {
+    "defaultMessage": "سازگار با OpenAI"
+  },
+  "providerCatalogPicker.requiresEnvVar": {
+    "defaultMessage": "• نیازمند {envVar}"
+  },
+  "providerCatalogPicker.searchProviders": {
+    "defaultMessage": "جستجوی ارائه‌دهندگان..."
+  },
+  "providerCatalogPicker.selectFormatDescription": {
+    "defaultMessage": "یک قالب API و ارائه‌دهنده انتخاب کنید. ما پیکربندی را برای شما به‌صورت خودکار پر می‌کنیم."
+  },
+  "providerConfigForm.browserWindowOpen": {
+    "defaultMessage": "یک پنجره مرورگر باز می‌شود تا ورود را تکمیل کنید."
+  },
+  "providerConfigForm.configuring": {
+    "defaultMessage": "در حال پیکربندی..."
+  },
+  "providerConfigForm.continue": {
+    "defaultMessage": "ادامه"
+  },
+  "providerConfigForm.deviceCodeFlowHint": {
+    "defaultMessage": "یک پنجره مرورگر باز می‌شود و کد تأیید در کلیپ‌بورد شما کپی می‌شود. برای تکمیل ورود، آن را در مرورگر جای‌گذاری کنید."
+  },
+  "providerConfigForm.noApiKey": {
+    "defaultMessage": "کلید API ندارید؟"
+  },
+  "providerConfigForm.signInWith": {
+    "defaultMessage": "ورود با {providerName}"
+  },
+  "providerConfigForm.signingIn": {
+    "defaultMessage": "در حال ورود..."
+  },
+  "providerConfigurationModal.addApiKeyDescription": {
+    "defaultMessage": "کلید(های) API خود را برای این ارائه‌دهنده اضافه کنید تا در سها یکپارچه شود"
+  },
+  "providerConfigurationModal.browserWindowHint": {
+    "defaultMessage": "یک پنجره مرورگر باز می‌شود تا ورود را تکمیل کنید."
+  },
+  "providerConfigurationModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "providerConfigurationModal.cannotDeleteActive": {
+    "defaultMessage": "نمی‌توانید این ارائه‌دهنده را در حالی که در حال استفاده است حذف کنید. لطفاً ابتدا به مدل دیگری تغییر دهید."
+  },
+  "providerConfigurationModal.checkConfigAgain": {
+    "defaultMessage": "برای استفاده از این ارائه‌دهنده، پیکربندی خود را دوباره بررسی کنید."
+  },
+  "providerConfigurationModal.close": {
+    "defaultMessage": "بستن"
+  },
+  "providerConfigurationModal.configureHeader": {
+    "defaultMessage": "پیکربندی {providerName}"
+  },
+  "providerConfigurationModal.deleteConfigHeader": {
+    "defaultMessage": "حذف پیکربندی برای {providerName}"
+  },
+  "providerConfigurationModal.deleteConfirmation": {
+    "defaultMessage": "این کار پیکربندی فعلی ارائه‌دهنده را برای همیشه حذف می‌کند."
+  },
+  "providerConfigurationModal.deviceCodeFlowHint": {
+    "defaultMessage": "یک پنجره مرورگر باز می‌شود و کد تأیید در کلیپ‌بورد شما کپی می‌شود. برای تکمیل ورود، آن را در مرورگر جای‌گذاری کنید."
+  },
+  "providerConfigurationModal.errorCheckingConfig": {
+    "defaultMessage": "هنگام بررسی پیکربندی این ارائه‌دهنده خطایی رخ داد."
+  },
+  "providerConfigurationModal.errorTitle": {
+    "defaultMessage": "خطا"
+  },
+  "providerConfigurationModal.externalSetupIntro": {
+    "defaultMessage": "این ارائه‌دهنده خارج از سها پیکربندی می‌شود. این مراحل را دنبال کنید:"
+  },
+  "providerConfigurationModal.goBack": {
+    "defaultMessage": "بازگشت"
+  },
+  "providerConfigurationModal.huggingFaceOAuthDescription": {
+    "defaultMessage": "برای استفاده از ارائه‌دهندگان استنتاج Hugging Face بدون وارد کردن دستی توکن API وارد شوید."
+  },
+  "providerConfigurationModal.oauthLoginFailed": {
+    "defaultMessage": "ورود OAuth ناموفق بود: {error}"
+  },
+  "providerConfigurationModal.oauthSignInDescription": {
+    "defaultMessage": "با حساب {providerName} خود برای استفاده از این ارائه‌دهنده وارد شوید"
+  },
+  "providerConfigurationModal.parameterRequired": {
+    "defaultMessage": "{paramName} الزامی است"
+  },
+  "providerConfigurationModal.removeConfiguration": {
+    "defaultMessage": "حذف پیکربندی"
+  },
+  "providerConfigurationModal.seeDocumentation": {
+    "defaultMessage": "برای جزئیات بیشتر <link>مستندات</link> را ببینید."
+  },
+  "providerConfigurationModal.signInWith": {
+    "defaultMessage": "ورود با {providerName}"
+  },
+  "providerConfigurationModal.signingIn": {
+    "defaultMessage": "در حال ورود..."
+  },
+  "providerGrid.addProvider": {
+    "defaultMessage": "افزودن ارائه‌دهنده"
+  },
+  "providerGrid.addProviderTitle": {
+    "defaultMessage": "افزودن ارائه‌دهنده"
+  },
+  "providerGrid.chooseModel": {
+    "defaultMessage": "انتخاب مدل"
+  },
+  "providerGrid.configureProvider": {
+    "defaultMessage": "پیکربندی ارائه‌دهنده"
+  },
+  "providerGrid.editProvider": {
+    "defaultMessage": "ویرایش ارائه‌دهنده"
+  },
+  "providerGrid.fromTemplateOrManual": {
+    "defaultMessage": "از قالب یا راه‌اندازی دستی"
+  },
+  "providerLogo.alt": {
+    "defaultMessage": "نشان {providerName}"
+  },
+  "providerSelector.addCustomProvider": {
+    "defaultMessage": "افزودن یک ارائه‌دهنده سفارشی"
+  },
+  "providerSelector.addCustomProviderTitle": {
+    "defaultMessage": "افزودن ارائه‌دهنده سفارشی"
+  },
+  "providerSelector.connectProvider": {
+    "defaultMessage": "اتصال به یک ارائه‌دهنده"
+  },
+  "providerSelector.connectProviderDescription": {
+    "defaultMessage": "اتصال OpenAI، Anthropic، Google و غیره"
+  },
+  "providerSelector.freeLocalDescription": {
+    "defaultMessage": "از یک مدل محلی یا ارائه‌دهنده‌ای با اعتبار رایگان استفاده کنید"
+  },
+  "providerSelector.selectProvider": {
+    "defaultMessage": "یک ارائه‌دهنده انتخاب کنید"
+  },
+  "providerSelector.useFreeLocal": {
+    "defaultMessage": "استفاده از ارائه‌دهندگان رایگان/محلی"
+  },
+  "providerSettings.configurationSettings": {
+    "defaultMessage": "تنظیمات پیکربندی ارائه‌دهنده"
+  },
+  "providerSettings.loadingProviders": {
+    "defaultMessage": "در حال بارگذاری ارائه‌دهندگان..."
+  },
+  "providerSettings.onboardingDescription": {
+    "defaultMessage": "برای شروع با سها یک ارائه‌دهنده مدل هوش مصنوعی انتخاب کنید. باید از کلیدهای API تولیدشده توسط هر ارائه‌دهنده استفاده کنید که رمزگذاری شده و به‌صورت محلی ذخیره می‌شوند. می‌توانید ارائه‌دهنده خود را هر زمان در تنظیمات تغییر دهید."
+  },
+  "providerSettings.otherProviders": {
+    "defaultMessage": "ارائه‌دهندگان دیگر"
+  },
+  "providerSetupActions.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "providerSetupActions.cannotDeleteActive": {
+    "defaultMessage": "نمی‌توانید {providerName} را در حالی که در حال استفاده است حذف کنید. لطفاً پیش از حذف این ارائه‌دهنده به مدل دیگری تغییر دهید."
+  },
+  "providerSetupActions.confirmDelete": {
+    "defaultMessage": "تأیید حذف"
+  },
+  "providerSetupActions.confirmDeleteMessage": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید پارامترهای پیکربندی برای {providerName} را حذف کنید؟ این عمل قابل بازگشت نیست."
+  },
+  "providerSetupActions.deleteProvider": {
+    "defaultMessage": "حذف ارائه‌دهنده"
+  },
+  "providerSetupActions.enableProvider": {
+    "defaultMessage": "فعال کردن ارائه‌دهنده"
+  },
+  "providerSetupActions.ok": {
+    "defaultMessage": "تأیید"
+  },
+  "providerSetupActions.submit": {
+    "defaultMessage": "ثبت"
+  },
+  "recipeActivityEditor.activitiesDescription": {
+    "defaultMessage": "پرامپت‌های اصلی و دکمه‌های فعالیتی که در پنجره گفتگوی دستور کار نمایش داده می‌شوند."
+  },
+  "recipeActivityEditor.activitiesLabel": {
+    "defaultMessage": "فعالیت‌ها"
+  },
+  "recipeActivityEditor.activityButtonsDescription": {
+    "defaultMessage": "دکمه‌های قابل‌کلیکی که زیر پیام نمایش داده می‌شوند تا به کاربران در تعامل با دستور کار شما کمک کنند."
+  },
+  "recipeActivityEditor.activityButtonsLabel": {
+    "defaultMessage": "دکمه‌های فعالیت"
+  },
+  "recipeActivityEditor.addActivity": {
+    "defaultMessage": "افزودن فعالیت"
+  },
+  "recipeActivityEditor.addNewActivityPlaceholder": {
+    "defaultMessage": "افزودن فعالیت جدید..."
+  },
+  "recipeActivityEditor.messageDescription": {
+    "defaultMessage": "پیامی قالب‌بندی‌شده که در بالای دستور کار نمایش داده می‌شود. از قالب‌بندی markdown پشتیبانی می‌کند."
+  },
+  "recipeActivityEditor.messageLabel": {
+    "defaultMessage": "پیام"
+  },
+  "recipeActivityEditor.messagePlaceholder": {
+    "defaultMessage": "یک پیام معرفی برای کاربر برای دستور کار خود وارد کنید (از **پررنگ**، *مورب*، `کد` و غیره پشتیبانی می‌کند)"
+  },
+  "recipeExtensionSelector.description": {
+    "defaultMessage": "انتخاب کنید کدام افزونه‌ها هنگام اجرای این دستور کار در دسترس باشند. برای استفاده از افزونه‌های پیش‌فرض خالی بگذارید."
+  },
+  "recipeExtensionSelector.extensionsSelected": {
+    "defaultMessage": "{count,plural,one{# افزونه انتخاب شد} other{# افزونه انتخاب شد}}"
+  },
+  "recipeExtensionSelector.label": {
+    "defaultMessage": "افزونه‌ها (اختیاری)"
+  },
+  "recipeExtensionSelector.noExtensionsAvailable": {
+    "defaultMessage": "هیچ افزونه‌ای در دسترس نیست"
+  },
+  "recipeExtensionSelector.noExtensionsFound": {
+    "defaultMessage": "هیچ افزونه‌ای یافت نشد"
+  },
+  "recipeExtensionSelector.searchPlaceholder": {
+    "defaultMessage": "جستجوی افزونه‌ها..."
+  },
+  "recipeFormFields.addParameter": {
+    "defaultMessage": "افزودن پارامتر"
+  },
+  "recipeFormFields.advancedOptions": {
+    "defaultMessage": "گزینه‌های پیشرفته"
+  },
+  "recipeFormFields.advancedOptionsHint": {
+    "defaultMessage": "فعالیت‌ها، پارامترها، مدل، افزونه‌ها، طرحواره پاسخ، زیردستورها"
+  },
+  "recipeFormFields.descriptionLabel": {
+    "defaultMessage": "توضیحات"
+  },
+  "recipeFormFields.descriptionPlaceholder": {
+    "defaultMessage": "توضیح کوتاهی درباره کاری که این دستور کار انجام می‌دهد"
+  },
+  "recipeFormFields.enterValueFor": {
+    "defaultMessage": "مقدار را برای {key} وارد کنید"
+  },
+  "recipeFormFields.initialPrompt": {
+    "defaultMessage": "پرامپت اولیه"
+  },
+  "recipeFormFields.instructionsLabel": {
+    "defaultMessage": "دستورالعمل‌ها"
+  },
+  "recipeFormFields.instructionsPlaceholder": {
+    "defaultMessage": "دستورالعمل‌های دقیق برای هوش مصنوعی، پنهان از کاربر"
+  },
+  "recipeFormFields.openEditor": {
+    "defaultMessage": "باز کردن ویرایشگر"
+  },
+  "recipeFormFields.parameterNamePlaceholder": {
+    "defaultMessage": "نام پارامتر را وارد کنید..."
+  },
+  "recipeFormFields.parametersDescription": {
+    "defaultMessage": "پارامترها به‌صورت خودکار از نحو '{{parameter_name}}' در دستورالعمل‌ها/پرامپت/فعالیت‌ها شناسایی می‌شوند یا می‌توانید آن‌ها را به‌صورت دستی در زیر اضافه کنید."
+  },
+  "recipeFormFields.parametersLabel": {
+    "defaultMessage": "پارامترها"
+  },
+  "recipeFormFields.promptOptionalHint": {
+    "defaultMessage": "(اختیاری - دستورالعمل‌ها یا پرامپت الزامی هستند)"
+  },
+  "recipeFormFields.promptPlaceholder": {
+    "defaultMessage": "پرامپت از پیش پرشده هنگام شروع دستور کار"
+  },
+  "recipeFormFields.responseJsonSchema": {
+    "defaultMessage": "طرحواره JSON پاسخ"
+  },
+  "recipeFormFields.responseJsonSchemaDescription": {
+    "defaultMessage": "ساختار مورد انتظار پاسخ هوش مصنوعی را با استفاده از قالب JSON Schema تعریف کنید"
+  },
+  "recipeFormFields.templateVarHint": {
+    "defaultMessage": "از '{{parameter_name}}' برای تعریف پارامترهایی که می‌توان هنگام اجرای دستور کار پر کرد استفاده کنید."
+  },
+  "recipeFormFields.titleLabel": {
+    "defaultMessage": "عنوان"
+  },
+  "recipeFormFields.titlePlaceholder": {
+    "defaultMessage": "عنوان دستور کار"
+  },
+  "recipeHeader.recipeLabel": {
+    "defaultMessage": "دستور کار"
+  },
+  "recipeModelSelector.backToModelList": {
+    "defaultMessage": "بازگشت به فهرست مدل‌ها"
+  },
+  "recipeModelSelector.enterCustomModel": {
+    "defaultMessage": "نام مدل سفارشی را وارد کنید"
+  },
+  "recipeModelSelector.enterModelNotListed": {
+    "defaultMessage": "مدلی که در فهرست نیست را وارد کنید..."
+  },
+  "recipeModelSelector.fetchError": {
+    "defaultMessage": "دریافت مدل‌ها ناموفق بود. لطفاً بعداً دوباره تلاش کنید."
+  },
+  "recipeModelSelector.loadingModels": {
+    "defaultMessage": "در حال بارگذاری مدل‌ها…"
+  },
+  "recipeModelSelector.modelHint": {
+    "defaultMessage": "برای استفاده از مدل پیش‌فرض ارائه‌دهنده انتخاب‌شده خالی بگذارید"
+  },
+  "recipeModelSelector.modelLabel": {
+    "defaultMessage": "مدل (اختیاری)"
+  },
+  "recipeModelSelector.providerHint": {
+    "defaultMessage": "برای استفاده از ارائه‌دهنده پیش‌فرض پیکربندی‌شده در تنظیمات خالی بگذارید"
+  },
+  "recipeModelSelector.providerLabel": {
+    "defaultMessage": "ارائه‌دهنده (اختیاری)"
+  },
+  "recipeModelSelector.selectModel": {
+    "defaultMessage": "یک مدل انتخاب کنید"
+  },
+  "recipeModelSelector.selectProvider": {
+    "defaultMessage": "انتخاب ارائه‌دهنده"
+  },
+  "recipeModelSelector.useDefaultProvider": {
+    "defaultMessage": "استفاده از ارائه‌دهنده پیش‌فرض"
+  },
+  "recipeNameField.defaultLabel": {
+    "defaultMessage": "نام دستور کار"
+  },
+  "recipeNameField.formatHint": {
+    "defaultMessage": "به‌صورت خودکار قالب‌بندی می‌شود (حروف کوچک، خط تیره برای فاصله‌ها)"
+  },
+  "recipeWarningModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "recipeWarningModal.descriptionLabel": {
+    "defaultMessage": "توضیحات:"
+  },
+  "recipeWarningModal.firstTimeDescription": {
+    "defaultMessage": "شما در شرف اجرای دستور کاری هستید که قبلاً آن را اجرا نکرده‌اید."
+  },
+  "recipeWarningModal.hiddenCharsWarning": {
+    "defaultMessage": "این دستور کار حاوی نویسه‌های پنهانی است که برای ایمنی شما نادیده گرفته می‌شوند، زیرا ممکن است برای مقاصد مخرب استفاده شوند."
+  },
+  "recipeWarningModal.instructionsLabel": {
+    "defaultMessage": "دستورالعمل‌ها:"
+  },
+  "recipeWarningModal.newRecipeWarningTitle": {
+    "defaultMessage": "⚠️ هشدار دستور کار جدید"
+  },
+  "recipeWarningModal.recipePreview": {
+    "defaultMessage": "پیش‌نمایش دستور کار:"
+  },
+  "recipeWarningModal.securityWarningTitle": {
+    "defaultMessage": "⚠️ هشدار امنیتی"
+  },
+  "recipeWarningModal.titleLabel": {
+    "defaultMessage": "عنوان:"
+  },
+  "recipeWarningModal.trustAndExecute": {
+    "defaultMessage": "اعتماد و اجرا"
+  },
+  "recipeWarningModal.trustSource": {
+    "defaultMessage": "فقط در صورتی ادامه دهید که به منبع این دستور کار اعتماد دارید."
+  },
+  "recipesView.addSchedule": {
+    "defaultMessage": "افزودن زمان‌بندی"
+  },
+  "recipesView.addSlashCommand": {
+    "defaultMessage": "افزودن دستور اسلش"
+  },
+  "recipesView.adjustSearchTerms": {
+    "defaultMessage": "عبارت‌های جستجوی خود را تنظیم کنید"
+  },
+  "recipesView.allFiles": {
+    "defaultMessage": "همه فایل‌ها"
+  },
+  "recipesView.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "recipesView.copyDeeplink": {
+    "defaultMessage": "کپی پیوند عمیق"
+  },
+  "recipesView.copyDeeplinkFailedMsg": {
+    "defaultMessage": "کپی پیوند عمیق در کلیپ‌بورد ناموفق بود"
+  },
+  "recipesView.copyFailedTitle": {
+    "defaultMessage": "کپی ناموفق بود"
+  },
+  "recipesView.copyYaml": {
+    "defaultMessage": "کپی YAML"
+  },
+  "recipesView.copyYamlFailedMsg": {
+    "defaultMessage": "کپی YAML دستور کار در کلیپ‌بورد ناموفق بود"
+  },
+  "recipesView.createRecipe": {
+    "defaultMessage": "ساخت دستور کار"
+  },
+  "recipesView.deeplinkCopiedMsg": {
+    "defaultMessage": "پیوند عمیق دستور کار در کلیپ‌بورد کپی شد"
+  },
+  "recipesView.deeplinkCopiedTitle": {
+    "defaultMessage": "پیوند عمیق کپی شد"
+  },
+  "recipesView.deleteRecipe": {
+    "defaultMessage": "حذف دستور کار"
+  },
+  "recipesView.deleteRecipeConfirm": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید «{title}» را حذف کنید؟"
+  },
+  "recipesView.deleteRecipeDetail": {
+    "defaultMessage": "فایل دستور کار حذف خواهد شد."
+  },
+  "recipesView.deleteRecipeTitle": {
+    "defaultMessage": "حذف دستور کار"
+  },
+  "recipesView.editRecipe": {
+    "defaultMessage": "ویرایش دستور کار"
+  },
+  "recipesView.editSchedule": {
+    "defaultMessage": "ویرایش زمان‌بندی"
+  },
+  "recipesView.editSlashCommand": {
+    "defaultMessage": "ویرایش دستور اسلش"
+  },
+  "recipesView.errorLoadingRecipes": {
+    "defaultMessage": "خطا در بارگذاری دستورهای کار"
+  },
+  "recipesView.exportFailedMsg": {
+    "defaultMessage": "صدور دستور کار به فایل ناموفق بود"
+  },
+  "recipesView.exportFailedTitle": {
+    "defaultMessage": "صدور ناموفق بود"
+  },
+  "recipesView.exportRecipeDialogTitle": {
+    "defaultMessage": "صدور دستور کار"
+  },
+  "recipesView.exportToFile": {
+    "defaultMessage": "صدور به فایل"
+  },
+  "recipesView.noMatchingRecipes": {
+    "defaultMessage": "هیچ دستور کار مطابقی یافت نشد"
+  },
+  "recipesView.noSavedRecipes": {
+    "defaultMessage": "هیچ دستور کار ذخیره‌شده‌ای وجود ندارد"
+  },
+  "recipesView.noSavedRecipesDescription": {
+    "defaultMessage": "دستورهای کار ذخیره‌شده از گفتگوها اینجا نمایش داده می‌شوند."
+  },
+  "recipesView.openInNewWindow": {
+    "defaultMessage": "باز کردن در پنجره جدید"
+  },
+  "recipesView.recipeDeletedSuccess": {
+    "defaultMessage": "دستور کار با موفقیت حذف شد"
+  },
+  "recipesView.recipeExportedMsg": {
+    "defaultMessage": "دستور کار در {filePath} ذخیره شد"
+  },
+  "recipesView.recipeExportedTitle": {
+    "defaultMessage": "دستور کار صادر شد"
+  },
+  "recipesView.recipesDescription": {
+    "defaultMessage": "دستورهای کار ذخیره‌شده خود را مشاهده و مدیریت کنید تا به‌سرعت نشست‌های جدید با پیکربندی‌های از پیش تعریف‌شده آغاز کنید. برای جستجو {shortcut}."
+  },
+  "recipesView.recipesTitle": {
+    "defaultMessage": "دستورهای کار"
+  },
+  "recipesView.remove": {
+    "defaultMessage": "حذف"
+  },
+  "recipesView.removeSchedule": {
+    "defaultMessage": "حذف زمان‌بندی"
+  },
+  "recipesView.runs": {
+    "defaultMessage": "اجرا می‌شود {schedule}"
+  },
+  "recipesView.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "recipesView.scheduleDialogTitle": {
+    "defaultMessage": "{action} زمان‌بندی"
+  },
+  "recipesView.scheduleRemovedMsg": {
+    "defaultMessage": "دستور کار دیگر به‌صورت خودکار اجرا نخواهد شد"
+  },
+  "recipesView.scheduleRemovedTitle": {
+    "defaultMessage": "زمان‌بندی حذف شد"
+  },
+  "recipesView.scheduleSavedMsg": {
+    "defaultMessage": "دستور کار {schedule} اجرا خواهد شد"
+  },
+  "recipesView.scheduleSavedTitle": {
+    "defaultMessage": "زمان‌بندی ذخیره شد"
+  },
+  "recipesView.searchRecipesPlaceholder": {
+    "defaultMessage": "جستجوی دستورهای کار..."
+  },
+  "recipesView.shareRecipe": {
+    "defaultMessage": "اشتراک‌گذاری دستور کار"
+  },
+  "recipesView.slashCommandDescription": {
+    "defaultMessage": "یک دستور اسلش تنظیم کنید تا این دستور کار را به‌سرعت از هر گفتگویی اجرا کنید"
+  },
+  "recipesView.slashCommandPlaceholder": {
+    "defaultMessage": "command-name"
+  },
+  "recipesView.slashCommandRemovedMsg": {
+    "defaultMessage": "دستور اسلش دستور کار حذف شد"
+  },
+  "recipesView.slashCommandRemovedTitle": {
+    "defaultMessage": "دستور اسلش حذف شد"
+  },
+  "recipesView.slashCommandSavedMsg": {
+    "defaultMessage": "برای اجرای این دستور کار از /{command} استفاده کنید"
+  },
+  "recipesView.slashCommandSavedTitle": {
+    "defaultMessage": "دستور اسلش ذخیره شد"
+  },
+  "recipesView.slashCommandTitle": {
+    "defaultMessage": "دستور اسلش"
+  },
+  "recipesView.slashCommandUsageHint": {
+    "defaultMessage": "از /{command} در هر گفتگویی برای اجرای این دستور کار استفاده کنید"
+  },
+  "recipesView.tryAgain": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "recipesView.useRecipe": {
+    "defaultMessage": "استفاده از دستور کار"
+  },
+  "recipesView.yamlCopiedMsg": {
+    "defaultMessage": "YAML دستور کار در کلیپ‌بورد کپی شد"
+  },
+  "recipesView.yamlCopiedTitle": {
+    "defaultMessage": "YAML کپی شد"
+  },
+  "recipesView.yamlFiles": {
+    "defaultMessage": "فایل‌های YAML"
+  },
+  "resetProviderSection.resetButton": {
+    "defaultMessage": "بازنشانی ارائه‌دهنده و مدل"
+  },
+  "resetProviderSection.resetDescription": {
+    "defaultMessage": "این کار تنظیمات مدل و ارائه‌دهنده انتخاب‌شده شما را پاک می‌کند. اگر هیچ پیش‌فرضی در دسترس نباشد، به صفحه خوش‌آمدگویی هدایت می‌شوید تا دوباره آن‌ها را راه‌اندازی کنید."
+  },
+  "responseStyle.conciseDescription": {
+    "defaultMessage": "فراخوانی‌های ابزار به‌صورت پیش‌فرض بسته هستند و فقط ابزار استفاده‌شده را نشان می‌دهند"
+  },
+  "responseStyle.conciseLabel": {
+    "defaultMessage": "مختصر"
+  },
+  "responseStyle.detailedDescription": {
+    "defaultMessage": "فراخوانی‌های ابزار به‌صورت پیش‌فرض باز نمایش داده می‌شوند تا جزئیات را آشکار کنند"
+  },
+  "responseStyle.detailedLabel": {
+    "defaultMessage": "مفصل"
+  },
+  "scheduleDetailView.actions": {
+    "defaultMessage": "اقدامات"
+  },
+  "scheduleDetailView.cannotModifyRunning": {
+    "defaultMessage": "نمی‌توان یک زمان‌بندی را در حالی که از قبل در حال اجراست راه‌اندازی یا تغییر داد."
+  },
+  "scheduleDetailView.created": {
+    "defaultMessage": "ساخته شد: {date}"
+  },
+  "scheduleDetailView.cronExpression": {
+    "defaultMessage": "عبارت Cron:"
+  },
+  "scheduleDetailView.currentSession": {
+    "defaultMessage": "نشست فعلی:"
+  },
+  "scheduleDetailView.currentlyRunning": {
+    "defaultMessage": "در حال حاضر در حال اجرا"
+  },
+  "scheduleDetailView.dir": {
+    "defaultMessage": "پوشه: {path}"
+  },
+  "scheduleDetailView.editSchedule": {
+    "defaultMessage": "ویرایش زمان‌بندی"
+  },
+  "scheduleDetailView.errorPrefix": {
+    "defaultMessage": "خطا: {error}"
+  },
+  "scheduleDetailView.failedToLoadSession": {
+    "defaultMessage": "بارگذاری نشست ناموفق بود"
+  },
+  "scheduleDetailView.idLabel": {
+    "defaultMessage": "شناسه:"
+  },
+  "scheduleDetailView.inspectJobError": {
+    "defaultMessage": "خطای بازرسی وظیفه"
+  },
+  "scheduleDetailView.inspectNoInfo": {
+    "defaultMessage": "هیچ اطلاعات دقیقی در دسترس نیست"
+  },
+  "scheduleDetailView.inspectRunningJob": {
+    "defaultMessage": "بازرسی وظیفه در حال اجرا"
+  },
+  "scheduleDetailView.jobCancelled": {
+    "defaultMessage": "وظیفه لغو شد"
+  },
+  "scheduleDetailView.jobCancelledMsg": {
+    "defaultMessage": "وظیفه هنگام راه‌اندازی لغو شد."
+  },
+  "scheduleDetailView.jobInspection": {
+    "defaultMessage": "بازرسی وظیفه"
+  },
+  "scheduleDetailView.jobKilled": {
+    "defaultMessage": "وظیفه متوقف شد"
+  },
+  "scheduleDetailView.killJobError": {
+    "defaultMessage": "خطای توقف وظیفه"
+  },
+  "scheduleDetailView.killRunningJob": {
+    "defaultMessage": "توقف وظیفه در حال اجرا"
+  },
+  "scheduleDetailView.lastRun": {
+    "defaultMessage": "آخرین اجرا:"
+  },
+  "scheduleDetailView.loadingSchedule": {
+    "defaultMessage": "در حال بارگذاری زمان‌بندی..."
+  },
+  "scheduleDetailView.loadingSessions": {
+    "defaultMessage": "در حال بارگذاری نشست‌ها..."
+  },
+  "scheduleDetailView.messages": {
+    "defaultMessage": "پیام‌ها: {count}"
+  },
+  "scheduleDetailView.newSession": {
+    "defaultMessage": "نشست جدید: {sessionId}"
+  },
+  "scheduleDetailView.noScheduleId": {
+    "defaultMessage": "هیچ شناسه زمان‌بندی ارائه نشد. به فهرست زمان‌بندی‌ها بازگردید."
+  },
+  "scheduleDetailView.noSessions": {
+    "defaultMessage": "هیچ نشستی برای این زمان‌بندی یافت نشد."
+  },
+  "scheduleDetailView.pauseSchedule": {
+    "defaultMessage": "توقف موقت زمان‌بندی"
+  },
+  "scheduleDetailView.pauseUnpauseError": {
+    "defaultMessage": "خطای توقف موقت/ادامه"
+  },
+  "scheduleDetailView.paused": {
+    "defaultMessage": "متوقف شده"
+  },
+  "scheduleDetailView.pausedMsg": {
+    "defaultMessage": "«{id}» متوقف شد"
+  },
+  "scheduleDetailView.pausedWarning": {
+    "defaultMessage": "این زمان‌بندی متوقف شده است و به‌صورت خودکار اجرا نخواهد شد. از «اکنون زمان‌بندی را اجرا کن» برای راه‌اندازی دستی استفاده کنید یا برای از سرگیری اجرای خودکار آن را ادامه دهید."
+  },
+  "scheduleDetailView.processStarted": {
+    "defaultMessage": "فرایند شروع شد:"
+  },
+  "scheduleDetailView.recentSessions": {
+    "defaultMessage": "نشست‌های اخیر"
+  },
+  "scheduleDetailView.recipeSource": {
+    "defaultMessage": "منبع دستور کار:"
+  },
+  "scheduleDetailView.runScheduleError": {
+    "defaultMessage": "خطای اجرای زمان‌بندی"
+  },
+  "scheduleDetailView.runScheduleNow": {
+    "defaultMessage": "اکنون زمان‌بندی را اجرا کن"
+  },
+  "scheduleDetailView.scheduleDetails": {
+    "defaultMessage": "جزئیات زمان‌بندی"
+  },
+  "scheduleDetailView.scheduleInformation": {
+    "defaultMessage": "اطلاعات زمان‌بندی"
+  },
+  "scheduleDetailView.scheduleLabel": {
+    "defaultMessage": "زمان‌بندی:"
+  },
+  "scheduleDetailView.scheduleNotFound": {
+    "defaultMessage": "زمان‌بندی یافت نشد"
+  },
+  "scheduleDetailView.scheduleNotFoundError": {
+    "defaultMessage": "زمان‌بندی یافت نشد"
+  },
+  "scheduleDetailView.schedulePaused": {
+    "defaultMessage": "زمان‌بندی متوقف شد"
+  },
+  "scheduleDetailView.scheduleTriggered": {
+    "defaultMessage": "زمان‌بندی راه‌اندازی شد"
+  },
+  "scheduleDetailView.scheduleUnpaused": {
+    "defaultMessage": "زمان‌بندی ادامه یافت"
+  },
+  "scheduleDetailView.scheduleUpdated": {
+    "defaultMessage": "زمان‌بندی به‌روزرسانی شد"
+  },
+  "scheduleDetailView.sessionId": {
+    "defaultMessage": "شناسه نشست: {id}"
+  },
+  "scheduleDetailView.tokens": {
+    "defaultMessage": "توکن‌ها: {count}"
+  },
+  "scheduleDetailView.unpauseSchedule": {
+    "defaultMessage": "ادامه زمان‌بندی"
+  },
+  "scheduleDetailView.unpausedMsg": {
+    "defaultMessage": "«{id}» ادامه یافت"
+  },
+  "scheduleDetailView.updateScheduleError": {
+    "defaultMessage": "خطای به‌روزرسانی زمان‌بندی"
+  },
+  "scheduleDetailView.updatedMsg": {
+    "defaultMessage": "«{id}» به‌روزرسانی شد"
+  },
+  "scheduleDetailView.viewingScheduleId": {
+    "defaultMessage": "در حال مشاهده شناسه زمان‌بندی: {id}"
+  },
+  "scheduleModal.browseYaml": {
+    "defaultMessage": "مرور برای فایل YAML..."
+  },
+  "scheduleModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "scheduleModal.createNewSchedule": {
+    "defaultMessage": "ساخت زمان‌بندی جدید"
+  },
+  "scheduleModal.createSchedule": {
+    "defaultMessage": "ساخت زمان‌بندی"
+  },
+  "scheduleModal.creating": {
+    "defaultMessage": "در حال ساخت..."
+  },
+  "scheduleModal.deepLink": {
+    "defaultMessage": "پیوند عمیق"
+  },
+  "scheduleModal.deepLinkPlaceholder": {
+    "defaultMessage": "پیوند goose://recipe را اینجا جای‌گذاری کنید..."
+  },
+  "scheduleModal.editSchedule": {
+    "defaultMessage": "ویرایش زمان‌بندی"
+  },
+  "scheduleModal.failedParseRecipe": {
+    "defaultMessage": "تجزیه دستور کار از فایل ناموفق بود."
+  },
+  "scheduleModal.failedReadFile": {
+    "defaultMessage": "خواندن فایل انتخاب‌شده ناموفق بود."
+  },
+  "scheduleModal.invalidDeepLink": {
+    "defaultMessage": "پیوند عمیق نامعتبر. لطفاً از یک پیوند goose://recipe استفاده کنید."
+  },
+  "scheduleModal.invalidFileType": {
+    "defaultMessage": "نوع فایل نامعتبر: لطفاً یک فایل YAML انتخاب کنید (.yaml یا .yml)"
+  },
+  "scheduleModal.nameLabel": {
+    "defaultMessage": "نام:"
+  },
+  "scheduleModal.namePlaceholder": {
+    "defaultMessage": "مثلاً daily-summary-job"
+  },
+  "scheduleModal.provideValidRecipe": {
+    "defaultMessage": "لطفاً یک منبع دستور کار معتبر ارائه دهید."
+  },
+  "scheduleModal.recipeDescription": {
+    "defaultMessage": "توضیحات: {description}"
+  },
+  "scheduleModal.recipeParsed": {
+    "defaultMessage": "دستور کار با موفقیت تجزیه شد"
+  },
+  "scheduleModal.recipeTitle": {
+    "defaultMessage": "عنوان: {title}"
+  },
+  "scheduleModal.scheduleIdRequired": {
+    "defaultMessage": "شناسه زمان‌بندی الزامی است."
+  },
+  "scheduleModal.scheduleLabel": {
+    "defaultMessage": "زمان‌بندی:"
+  },
+  "scheduleModal.selected": {
+    "defaultMessage": "انتخاب‌شده: {path}"
+  },
+  "scheduleModal.sourceLabel": {
+    "defaultMessage": "منبع:"
+  },
+  "scheduleModal.updateSchedule": {
+    "defaultMessage": "به‌روزرسانی زمان‌بندی"
+  },
+  "scheduleModal.updating": {
+    "defaultMessage": "در حال به‌روزرسانی..."
+  },
+  "scheduleModal.yaml": {
+    "defaultMessage": "YAML"
+  },
+  "schedulesView.confirmDelete": {
+    "defaultMessage": "زمان‌بندی «{id}» حذف شود؟ دستور کار حفظ خواهد شد."
+  },
+  "schedulesView.createSchedule": {
+    "defaultMessage": "ساخت زمان‌بندی"
+  },
+  "schedulesView.description": {
+    "defaultMessage": "وظایف زمان‌بندی‌شده برای اجرای خودکار دستورهای کار در زمان‌های مشخص را بسازید و مدیریت کنید."
+  },
+  "schedulesView.edit": {
+    "defaultMessage": "ویرایش"
+  },
+  "schedulesView.errorPrefix": {
+    "defaultMessage": "خطا: {error}"
+  },
+  "schedulesView.inspect": {
+    "defaultMessage": "بازرسی"
+  },
+  "schedulesView.inspectError": {
+    "defaultMessage": "خطای بازرسی وظیفه"
+  },
+  "schedulesView.inspectNoInfo": {
+    "defaultMessage": "هیچ اطلاعات دقیقی برای این وظیفه در دسترس نیست"
+  },
+  "schedulesView.jobInspection": {
+    "defaultMessage": "بازرسی وظیفه"
+  },
+  "schedulesView.jobKilled": {
+    "defaultMessage": "وظیفه متوقف شد"
+  },
+  "schedulesView.kill": {
+    "defaultMessage": "توقف"
+  },
+  "schedulesView.killError": {
+    "defaultMessage": "خطای توقف وظیفه"
+  },
+  "schedulesView.lastRun": {
+    "defaultMessage": "آخرین اجرا: {date}"
+  },
+  "schedulesView.noSchedules": {
+    "defaultMessage": "هنوز هیچ زمان‌بندی‌ای وجود ندارد"
+  },
+  "schedulesView.pause": {
+    "defaultMessage": "توقف موقت"
+  },
+  "schedulesView.pauseError": {
+    "defaultMessage": "خطای توقف موقت زمان‌بندی"
+  },
+  "schedulesView.paused": {
+    "defaultMessage": "متوقف شده"
+  },
+  "schedulesView.refresh": {
+    "defaultMessage": "تازه‌سازی"
+  },
+  "schedulesView.refreshing": {
+    "defaultMessage": "در حال تازه‌سازی..."
+  },
+  "schedulesView.resume": {
+    "defaultMessage": "ادامه"
+  },
+  "schedulesView.running": {
+    "defaultMessage": "در حال اجرا"
+  },
+  "schedulesView.schedulePaused": {
+    "defaultMessage": "زمان‌بندی متوقف شد"
+  },
+  "schedulesView.schedulePausedMsg": {
+    "defaultMessage": "زمان‌بندی «{id}» با موفقیت متوقف شد"
+  },
+  "schedulesView.scheduleUnpaused": {
+    "defaultMessage": "زمان‌بندی ادامه یافت"
+  },
+  "schedulesView.scheduleUnpausedMsg": {
+    "defaultMessage": "زمان‌بندی «{id}» با موفقیت ادامه یافت"
+  },
+  "schedulesView.scheduleUpdated": {
+    "defaultMessage": "زمان‌بندی به‌روزرسانی شد"
+  },
+  "schedulesView.scheduleUpdatedMsg": {
+    "defaultMessage": "زمان‌بندی «{id}» با موفقیت به‌روزرسانی شد"
+  },
+  "schedulesView.scheduler": {
+    "defaultMessage": "زمان‌بند"
+  },
+  "schedulesView.unpauseError": {
+    "defaultMessage": "خطای ادامه زمان‌بندی"
+  },
+  "searchBar.caseSensitive": {
+    "defaultMessage": "حساس به حروف کوچک و بزرگ"
+  },
+  "searchBar.close": {
+    "defaultMessage": "بستن ({shortcut})"
+  },
+  "searchBar.next": {
+    "defaultMessage": "بعدی ({shortcut})"
+  },
+  "searchBar.placeholder": {
+    "defaultMessage": "جستجوی گفتگو..."
+  },
+  "searchBar.previous": {
+    "defaultMessage": "قبلی ({shortcut})"
+  },
+  "secureStorageNotice.defaultMessage": {
+    "defaultMessage": "کلیدها به‌صورت ایمن در زنجیره کلید ذخیره می‌شوند"
+  },
+  "securityToggle.apiTokenDescription": {
+    "defaultMessage": "توکن احراز هویت برای سرویس طبقه‌بندی"
+  },
+  "securityToggle.apiTokenOptional": {
+    "defaultMessage": "توکن API (اختیاری)"
+  },
+  "securityToggle.classificationEndpoint": {
+    "defaultMessage": "نقطه پایانی طبقه‌بندی"
+  },
+  "securityToggle.classificationEndpointDescription": {
+    "defaultMessage": "نشانی کامل سرویس طبقه‌بندی خود را وارد کنید"
+  },
+  "securityToggle.commandClassifierActive": {
+    "defaultMessage": "طبقه‌بند دستور فعال است (به‌صورت خودکار از محیط پیکربندی شده)"
+  },
+  "securityToggle.commandEndpointDescription": {
+    "defaultMessage": "نشانی کامل سرویس طبقه‌بندی تزریق دستور خود را وارد کنید"
+  },
+  "securityToggle.commandInjectionDescription": {
+    "defaultMessage": "از مدل‌های یادگیری ماشین برای تشخیص دستورهای پوسته مخرب استفاده کنید"
+  },
+  "securityToggle.detectionModel": {
+    "defaultMessage": "مدل تشخیص"
+  },
+  "securityToggle.detectionModelDescription": {
+    "defaultMessage": "انتخاب کنید کدام مدل یادگیری ماشین برای تشخیص تزریق پرامپت استفاده شود"
+  },
+  "securityToggle.detectionThreshold": {
+    "defaultMessage": "آستانه تشخیص"
+  },
+  "securityToggle.enableCommandInjection": {
+    "defaultMessage": "فعال کردن تشخیص یادگیری ماشین تزریق دستور"
+  },
+  "securityToggle.enablePromptInjection": {
+    "defaultMessage": "فعال کردن تشخیص تزریق پرامپت"
+  },
+  "securityToggle.enablePromptInjectionMl": {
+    "defaultMessage": "فعال کردن تشخیص یادگیری ماشین تزریق پرامپت"
+  },
+  "securityToggle.mlEndpointDescription": {
+    "defaultMessage": "نشانی کامل سرویس طبقه‌بندی یادگیری ماشین خود را وارد کنید (شامل شناسه مدل)"
+  },
+  "securityToggle.mlTokenDescription": {
+    "defaultMessage": "توکن احراز هویت برای سرویس یادگیری ماشین (مثلاً توکن HuggingFace)"
+  },
+  "securityToggle.overrideNotice": {
+    "defaultMessage": "این تنظیم توسط سازمان شما مدیریت می‌شود و قابل تغییر نیست."
+  },
+  "securityToggle.promptInjectionDescription": {
+    "defaultMessage": "تشخیص و جلوگیری از حملات احتمالی تزریق پرامپت"
+  },
+  "securityToggle.promptInjectionMlDescription": {
+    "defaultMessage": "از مدل‌های یادگیری ماشین برای تشخیص تزریق احتمالی پرامپت در گفتگوی خود استفاده کنید"
+  },
+  "securityToggle.thresholdDescription": {
+    "defaultMessage": "مقادیر بالاتر سخت‌گیرانه‌تر هستند (۰.۰۱ = بسیار آسان‌گیر، ۱.۰ = حداکثر سخت‌گیری)"
+  },
+  "securityToggle.warpNotice": {
+    "defaultMessage": "تشخیص تزریق دستور هنگام اتصال به WARP بهترین عملکرد را دارد (برای دسترسی به سرویس طبقه‌بندی الزامی است)."
+  },
+  "sessionActionsHeader.close": {
+    "defaultMessage": "بستن"
+  },
+  "sessionActionsHeader.copiedJson": {
+    "defaultMessage": "JSON نشست کپی شد"
+  },
+  "sessionActionsHeader.copiedText": {
+    "defaultMessage": "متن کپی شد"
+  },
+  "sessionActionsHeader.copyJson": {
+    "defaultMessage": "کپی JSON"
+  },
+  "sessionActionsHeader.copyText": {
+    "defaultMessage": "کپی متن"
+  },
+  "sessionActionsHeader.fullTextTitle": {
+    "defaultMessage": "مقدار متن"
+  },
+  "sessionActionsHeader.jsonFailed": {
+    "defaultMessage": "بارگذاری JSON نشست ناموفق بود: {error}"
+  },
+  "sessionActionsHeader.jsonTitle": {
+    "defaultMessage": "JSON نشست"
+  },
+  "sessionActionsHeader.loadingJson": {
+    "defaultMessage": "در حال بارگذاری JSON..."
+  },
+  "sessionActionsHeader.viewJson": {
+    "defaultMessage": "مشاهده JSON نشست"
+  },
+  "sessionHistory.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "sessionHistory.copy": {
+    "defaultMessage": "کپی"
+  },
+  "sessionHistory.empty.description": {
+    "defaultMessage": "این نشست حاوی هیچ پیامی نیست"
+  },
+  "sessionHistory.empty.title": {
+    "defaultMessage": "هیچ پیامی یافت نشد"
+  },
+  "sessionHistory.error.loading": {
+    "defaultMessage": "خطا در بارگذاری جزئیات نشست"
+  },
+  "sessionHistory.error.tryAgain": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "sessionHistory.loading": {
+    "defaultMessage": "در حال بارگذاری جزئیات نشست..."
+  },
+  "sessionHistory.resume": {
+    "defaultMessage": "ادامه"
+  },
+  "sessionHistory.searchPlaceholder": {
+    "defaultMessage": "جستجوی تاریخچه..."
+  },
+  "sessionHistory.share": {
+    "defaultMessage": "اشتراک‌گذاری"
+  },
+  "sessionHistory.shareModal.description": {
+    "defaultMessage": "این پیوند نشست را به اشتراک بگذارید تا به دیگران نمای فقط‌خواندنی از گفتگوی سها خود بدهید."
+  },
+  "sessionHistory.shareModal.title": {
+    "defaultMessage": "اشتراک‌گذاری نشست (نسخه آزمایشی)"
+  },
+  "sessionHistory.shareTooltip": {
+    "defaultMessage": "برای فعال کردن اشتراک‌گذاری نشست، به <b>تنظیمات</b> > <b>نشست</b> > <b>اشتراک‌گذاری نشست</b> بروید."
+  },
+  "sessionHistory.sharing": {
+    "defaultMessage": "در حال اشتراک‌گذاری..."
+  },
+  "sessionHistory.toast.copyFailed": {
+    "defaultMessage": "کپی پیوند در کلیپ‌بورد ناموفق بود"
+  },
+  "sessionHistory.toast.launchFailed": {
+    "defaultMessage": "اجرای نشست ممکن نشد: {error}"
+  },
+  "sessionHistory.toast.shareFailed": {
+    "defaultMessage": "اشتراک‌گذاری نشست ناموفق بود: {error}"
+  },
+  "sessionIndicators.error": {
+    "defaultMessage": "نشست با خطا مواجه شد"
+  },
+  "sessionIndicators.newActivity": {
+    "defaultMessage": "فعالیت جدید دارد"
+  },
+  "sessionIndicators.streaming": {
+    "defaultMessage": "در حال جریان"
+  },
+  "sessionSharingSection.alreadyConfigured": {
+    "defaultMessage": "اشتراک‌گذاری نشست از قبل پیکربندی شده است"
+  },
+  "sessionSharingSection.baseUrl": {
+    "defaultMessage": "نشانی پایه"
+  },
+  "sessionSharingSection.connectionFailed": {
+    "defaultMessage": "اتصال ناموفق بود."
+  },
+  "sessionSharingSection.connectionSuccess": {
+    "defaultMessage": "اتصال موفق بود!"
+  },
+  "sessionSharingSection.connectionTimedOut": {
+    "defaultMessage": "مهلت اتصال به پایان رسید. ممکن است سرور کند یا غیرقابل‌دسترس باشد."
+  },
+  "sessionSharingSection.descriptionConfigured": {
+    "defaultMessage": "اشتراک‌گذاری نشست پیکربندی شده اما کاملاً اختیاری است — نشست‌های شما فقط زمانی به اشتراک گذاشته می‌شوند که صراحتاً روی دکمه اشتراک‌گذاری کلیک کنید."
+  },
+  "sessionSharingSection.descriptionDefault": {
+    "defaultMessage": "می‌توانید اشتراک‌گذاری نشست را فعال کنید تا نشست‌های خود را با دیگران به اشتراک بگذارید."
+  },
+  "sessionSharingSection.enableSharing": {
+    "defaultMessage": "فعال کردن اشتراک‌گذاری نشست"
+  },
+  "sessionSharingSection.invalidUrl": {
+    "defaultMessage": "قالب نشانی نامعتبر است. لطفاً یک نشانی معتبر وارد کنید (مثلاً https://example.com/api)."
+  },
+  "sessionSharingSection.serverError": {
+    "defaultMessage": "خطای سرور: HTTP {status}. ممکن است سرور به‌درستی پیکربندی نشده باشد."
+  },
+  "sessionSharingSection.testConnection": {
+    "defaultMessage": "آزمایش اتصال"
+  },
+  "sessionSharingSection.testing": {
+    "defaultMessage": "در حال آزمایش..."
+  },
+  "sessionSharingSection.testingConnection": {
+    "defaultMessage": "در حال آزمایش اتصال..."
+  },
+  "sessionSharingSection.title": {
+    "defaultMessage": "اشتراک‌گذاری نشست"
+  },
+  "sessionSharingSection.unknownError": {
+    "defaultMessage": "خطای ناشناخته‌ای رخ داد."
+  },
+  "sessionSharingSection.unreachableServer": {
+    "defaultMessage": "دسترسی به سرور ممکن نیست. لطفاً نشانی و اتصال شبکه خود را بررسی کنید."
+  },
+  "sessionSharingSection.urlPlaceholder": {
+    "defaultMessage": "https://example.com/api"
+  },
+  "sessionViewComponents.empty.description": {
+    "defaultMessage": "این نشست حاوی هیچ پیامی نیست"
+  },
+  "sessionViewComponents.empty.title": {
+    "defaultMessage": "هیچ پیامی یافت نشد"
+  },
+  "sessionViewComponents.error.loading": {
+    "defaultMessage": "خطا در بارگذاری جزئیات نشست"
+  },
+  "sessionViewComponents.error.tryAgain": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "sessionViewComponents.role.assistant": {
+    "defaultMessage": "سها"
+  },
+  "sessionViewComponents.role.user": {
+    "defaultMessage": "شما"
+  },
+  "sessions.action.delete": {
+    "defaultMessage": "حذف نشست"
+  },
+  "sessions.action.duplicate": {
+    "defaultMessage": "تکثیر نشست"
+  },
+  "sessions.action.editName": {
+    "defaultMessage": "ویرایش نام نشست"
+  },
+  "sessions.action.export": {
+    "defaultMessage": "صدور نشست"
+  },
+  "sessions.action.openNewWindow": {
+    "defaultMessage": "باز کردن در پنجره جدید"
+  },
+  "sessions.action.shareNostr": {
+    "defaultMessage": "اشتراک‌گذاری پیوند رمزگذاری‌شده Nostr"
+  },
+  "sessions.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "sessions.chatHistory": {
+    "defaultMessage": "تاریخچه گفتگو"
+  },
+  "sessions.chatHistoryDesc": {
+    "defaultMessage": "گفتگوهای گذشته خود با سها را مشاهده و جستجو کنید. برای جستجو {shortcut}."
+  },
+  "sessions.close": {
+    "defaultMessage": "بستن"
+  },
+  "sessions.delete.message": {
+    "defaultMessage": "آیا مطمئن هستید که می‌خواهید نشست «{name}» را حذف کنید؟ این عمل قابل بازگشت نیست."
+  },
+  "sessions.delete.title": {
+    "defaultMessage": "حذف نشست"
+  },
+  "sessions.edit.placeholder": {
+    "defaultMessage": "توضیحات نشست را وارد کنید"
+  },
+  "sessions.edit.title": {
+    "defaultMessage": "ویرایش توضیحات نشست"
+  },
+  "sessions.empty.description": {
+    "defaultMessage": "تاریخچه گفتگوی شما اینجا نمایش داده می‌شود"
+  },
+  "sessions.empty.title": {
+    "defaultMessage": "هیچ نشست گفتگویی یافت نشد"
+  },
+  "sessions.error.loading": {
+    "defaultMessage": "خطا در بارگذاری نشست‌ها"
+  },
+  "sessions.error.tryAgain": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "sessions.import": {
+    "defaultMessage": "ورود نشست"
+  },
+  "sessions.importNostr": {
+    "defaultMessage": "ورود پیوند"
+  },
+  "sessions.importNostr.description": {
+    "defaultMessage": "یک پیوند اشتراک‌گذاری Nostr سها را جای‌گذاری کنید تا نشست را دریافت، رمزگشایی و وارد کنید."
+  },
+  "sessions.importNostr.placeholder": {
+    "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
+  },
+  "sessions.importNostr.title": {
+    "defaultMessage": "ورود نشست Nostr"
+  },
+  "sessions.importing": {
+    "defaultMessage": "در حال ورود..."
+  },
+  "sessions.loadingMore": {
+    "defaultMessage": "در حال بارگذاری نشست‌های بیشتر..."
+  },
+  "sessions.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "sessions.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
+  "sessions.search.noResults": {
+    "defaultMessage": "هیچ نشست مطابقی یافت نشد"
+  },
+  "sessions.search.noResultsDesc": {
+    "defaultMessage": "عبارت‌های جستجوی خود را تنظیم کنید"
+  },
+  "sessions.searchPlaceholder": {
+    "defaultMessage": "جستجوی تاریخچه..."
+  },
+  "sessions.shareNostr.description": {
+    "defaultMessage": "هر کسی با این پیوند می‌تواند نشست را دریافت و رمزگشایی کند. با آن مانند یک راز رفتار کنید."
+  },
+  "sessions.shareNostr.title": {
+    "defaultMessage": "پیوند اشتراک‌گذاری رمزگذاری‌شده Nostr"
+  },
+  "sessions.toast.copied": {
+    "defaultMessage": "در کلیپ‌بورد کپی شد"
+  },
+  "sessions.toast.deleteFailed": {
+    "defaultMessage": "حذف نشست «{name}» ناموفق بود: {error}"
+  },
+  "sessions.toast.deleted": {
+    "defaultMessage": "نشست با موفقیت حذف شد"
+  },
+  "sessions.toast.duplicateFailed": {
+    "defaultMessage": "تکثیر نشست ناموفق بود: {error}"
+  },
+  "sessions.toast.duplicated": {
+    "defaultMessage": "نشست «{name}» با موفقیت تکثیر شد"
+  },
+  "sessions.toast.exported": {
+    "defaultMessage": "نشست با موفقیت صادر شد"
+  },
+  "sessions.toast.importFailed": {
+    "defaultMessage": "ورود نشست ناموفق بود: {error}"
+  },
+  "sessions.toast.imported": {
+    "defaultMessage": "نشست با موفقیت وارد شد"
+  },
+  "sessions.toast.shareNostr": {
+    "defaultMessage": "پیوند اشتراک‌گذاری رمزگذاری‌شده Nostr ساخته شد"
+  },
+  "sessions.toast.shareNostrFailed": {
+    "defaultMessage": "ساخت پیوند اشتراک‌گذاری Nostr ناموفق بود: {error}"
+  },
+  "sessions.toast.updateFailed": {
+    "defaultMessage": "به‌روزرسانی توضیحات نشست ناموفق بود: {error}"
+  },
+  "sessions.toast.updated": {
+    "defaultMessage": "توضیحات نشست با موفقیت به‌روزرسانی شد"
+  },
+  "sessionsView.error.failedToLoad": {
+    "defaultMessage": "بارگذاری جزئیات نشست ناموفق بود. لطفاً بعداً دوباره تلاش کنید."
+  },
+  "sessionsView.loading": {
+    "defaultMessage": "در حال بارگذاری..."
+  },
+  "settings.appearance.description": {
+    "defaultMessage": "نحوه نمایش سها در سیستم خود را پیکربندی کنید"
+  },
+  "settings.appearance.title": {
+    "defaultMessage": "ظاهر"
+  },
+  "settings.close": {
+    "defaultMessage": "بستن"
+  },
+  "settings.costTracking.description": {
+    "defaultMessage": "نمایش قیمت‌گذاری مدل و هزینه‌های استفاده"
+  },
+  "settings.costTracking.title": {
+    "defaultMessage": "ردیابی هزینه"
+  },
+  "settings.dockIcon.description": {
+    "defaultMessage": "نمایش سها در داک"
+  },
+  "settings.dockIcon.title": {
+    "defaultMessage": "نماد داک"
+  },
+  "settings.help.description": {
+    "defaultMessage": "با گزارش مشکلات یا درخواست قابلیت‌های جدید به ما در بهبود سها کمک کنید"
+  },
+  "settings.help.reportBug": {
+    "defaultMessage": "گزارش یک اشکال"
+  },
+  "settings.help.requestFeature": {
+    "defaultMessage": "درخواست یک قابلیت"
+  },
+  "settings.help.title": {
+    "defaultMessage": "راهنما و بازخورد"
+  },
+  "settings.language.description": {
+    "defaultMessage": "زبان نمایش سها را انتخاب کنید"
+  },
+  "settings.language.english": {
+    "defaultMessage": "انگلیسی"
+  },
+  "settings.language.hindi": {
+    "defaultMessage": "هندی"
+  },
+  "settings.language.japanese": {
+    "defaultMessage": "ژاپنی"
+  },
+  "settings.language.persian": {
+    "defaultMessage": "فارسی"
+  },
+  "settings.language.russian": {
+    "defaultMessage": "روسی"
+  },
+  "settings.language.systemDefault": {
+    "defaultMessage": "پیش‌فرض سیستم"
+  },
+  "settings.language.title": {
+    "defaultMessage": "زبان"
+  },
+  "settings.language.turkish": {
+    "defaultMessage": "ترکی"
+  },
+  "settings.language.zhCN": {
+    "defaultMessage": "چینی (ساده‌شده)"
+  },
+  "settings.menuBarIcon.description": {
+    "defaultMessage": "نمایش سها در نوار منو"
+  },
+  "settings.menuBarIcon.title": {
+    "defaultMessage": "نماد نوار منو"
+  },
+  "settings.notifications.configGuide": {
+    "defaultMessage": "راهنمای پیکربندی"
+  },
+  "settings.notifications.description": {
+    "defaultMessage": "اعلان‌ها توسط سیستم‌عامل شما مدیریت می‌شوند - {link}"
+  },
+  "settings.notifications.modal.macInstructions": {
+    "defaultMessage": "برای فعال کردن اعلان‌ها در macOS:"
+  },
+  "settings.notifications.modal.macStep1": {
+    "defaultMessage": "تنظیمات سیستم را باز کنید"
+  },
+  "settings.notifications.modal.macStep2": {
+    "defaultMessage": "روی اعلان‌ها کلیک کنید"
+  },
+  "settings.notifications.modal.macStep3": {
+    "defaultMessage": "سها را در فهرست برنامه‌ها پیدا و انتخاب کنید"
+  },
+  "settings.notifications.modal.macStep4": {
+    "defaultMessage": "اعلان‌ها را فعال کنید و تنظیمات را مطابق میل خود تنظیم کنید"
+  },
+  "settings.notifications.modal.title": {
+    "defaultMessage": "نحوه فعال کردن اعلان‌ها"
+  },
+  "settings.notifications.modal.winInstructions": {
+    "defaultMessage": "برای فعال کردن اعلان‌ها در Windows:"
+  },
+  "settings.notifications.modal.winStep1": {
+    "defaultMessage": "تنظیمات را باز کنید"
+  },
+  "settings.notifications.modal.winStep2": {
+    "defaultMessage": "به سیستم > اعلان‌ها بروید"
+  },
+  "settings.notifications.modal.winStep3": {
+    "defaultMessage": "سها را در فهرست برنامه‌ها پیدا و انتخاب کنید"
+  },
+  "settings.notifications.modal.winStep4": {
+    "defaultMessage": "اعلان‌ها را روشن کنید و تنظیمات را مطابق میل خود تنظیم کنید"
+  },
+  "settings.notifications.openSettings": {
+    "defaultMessage": "باز کردن تنظیمات"
+  },
+  "settings.notifications.task.description": {
+    "defaultMessage": "هنگامی که سها وظیفه‌ای را در حالی که پنجره در پس‌زمینه است به پایان می‌رساند، اطلاع بده"
+  },
+  "settings.notifications.task.title": {
+    "defaultMessage": "اعلان‌های تکمیل وظیفه"
+  },
+  "settings.notifications.title": {
+    "defaultMessage": "اعلان‌ها"
+  },
+  "settings.preventSleep.description": {
+    "defaultMessage": "رایانه خود را در حالی که سها در حال اجرای یک وظیفه است بیدار نگه دارید (صفحه‌نمایش همچنان می‌تواند قفل شود)"
+  },
+  "settings.preventSleep.title": {
+    "defaultMessage": "جلوگیری از خواب"
+  },
+  "settings.theme.description": {
+    "defaultMessage": "ظاهر و حس سها را سفارشی کنید"
+  },
+  "settings.theme.title": {
+    "defaultMessage": "پوسته"
+  },
+  "settings.updates.description": {
+    "defaultMessage": "به‌روزرسانی‌ها را بررسی و نصب کنید تا سها در بهترین حالت اجرا شود"
+  },
+  "settings.updates.title": {
+    "defaultMessage": "به‌روزرسانی‌ها"
+  },
+  "settings.version.title": {
+    "defaultMessage": "نسخه"
+  },
+  "settingsView.tabApp": {
+    "defaultMessage": "برنامه"
+  },
+  "settingsView.tabAuth": {
+    "defaultMessage": "احراز هویت"
+  },
+  "settingsView.tabChat": {
+    "defaultMessage": "گفتگو"
+  },
+  "settingsView.tabKeyboard": {
+    "defaultMessage": "صفحه‌کلید"
+  },
+  "settingsView.tabLocalInference": {
+    "defaultMessage": "استنتاج محلی"
+  },
+  "settingsView.tabModels": {
+    "defaultMessage": "مدل‌ها"
+  },
+  "settingsView.tabPrompts": {
+    "defaultMessage": "پرامپت‌ها"
+  },
+  "settingsView.tabSession": {
+    "defaultMessage": "نشست"
+  },
+  "settingsView.title": {
+    "defaultMessage": "تنظیمات"
+  },
+  "sharedSession.loading": {
+    "defaultMessage": "در حال بارگذاری جزئیات نشست..."
+  },
+  "sharedSession.title": {
+    "defaultMessage": "نشست اشتراکی"
+  },
+  "sheet.close": {
+    "defaultMessage": "بستن"
+  },
+  "shortcutRecorder.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "shortcutRecorder.clickToRecord": {
+    "defaultMessage": "برای ضبط کلیک کنید..."
+  },
+  "shortcutRecorder.conflictWarning": {
+    "defaultMessage": "این میانبر از قبل توسط {label} استفاده می‌شود. ذخیره آن، آن را به این اقدام تخصیص مجدد می‌دهد."
+  },
+  "shortcutRecorder.pressShortcut": {
+    "defaultMessage": "میانبر را فشار دهید..."
+  },
+  "shortcutRecorder.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "skillsView.addSkill": {
+    "defaultMessage": "افزودن مهارت"
+  },
+  "skillsView.adjustSearchTerms": {
+    "defaultMessage": "عبارت‌های جستجوی خود را تنظیم کنید"
+  },
+  "skillsView.comingSoon": {
+    "defaultMessage": "به‌زودی"
+  },
+  "skillsView.errorLoadingSkills": {
+    "defaultMessage": "خطا در بارگذاری مهارت‌ها"
+  },
+  "skillsView.noMatchingSkills": {
+    "defaultMessage": "هیچ مهارت مطابقی یافت نشد"
+  },
+  "skillsView.noSkillsDescription": {
+    "defaultMessage": "مهارت‌ها از فایل‌های SKILL.md در ~/.config/agents/skills/، .goose/skills/ یا دیگر پوشه‌های پشتیبانی‌شده بارگذاری می‌شوند."
+  },
+  "skillsView.noSkillsInstalled": {
+    "defaultMessage": "هیچ مهارتی نصب نشده است"
+  },
+  "skillsView.searchSkillsPlaceholder": {
+    "defaultMessage": "جستجوی مهارت‌ها..."
+  },
+  "skillsView.skillsDescription": {
+    "defaultMessage": "مهارت‌های نصب‌شده که قابلیت‌های سها را گسترش می‌دهند مشاهده کنید. برای جستجو {shortcut}."
+  },
+  "skillsView.skillsTitle": {
+    "defaultMessage": "مهارت‌ها"
+  },
+  "skillsView.tryAgain": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "spellcheckToggle.description": {
+    "defaultMessage": "غلط‌یابی املایی در ورودی گفتگو. برای اعمال نیازمند راه‌اندازی مجدد است."
+  },
+  "spellcheckToggle.title": {
+    "defaultMessage": "فعال کردن غلط‌یاب املایی"
+  },
+  "standaloneAppView.failedToLoad": {
+    "defaultMessage": "بارگذاری برنامه ناموفق بود"
+  },
+  "standaloneAppView.initializing": {
+    "defaultMessage": "در حال راه‌اندازی برنامه..."
+  },
+  "standaloneAppView.missingParams": {
+    "defaultMessage": "پارامترهای الزامی وجود ندارند"
+  },
+  "stringUtils.configuredProvider": {
+    "defaultMessage": "ارائه‌دهنده {name} پیکربندی شده است"
+  },
+  "stringUtils.ollamaApp": {
+    "defaultMessage": "برنامه Ollama"
+  },
+  "stringUtils.ollamaNotConfiguredPrefix": {
+    "defaultMessage": "برای استفاده، یا"
+  },
+  "stringUtils.ollamaNotConfiguredSuffix": {
+    "defaultMessage": "باید روی دستگاه شما نصب و باز باشد، یا باید مقداری برای OLLAMA_HOST وارد کنید."
+  },
+  "subRecipeEditor.addExisting": {
+    "defaultMessage": "افزودن موجود"
+  },
+  "subRecipeEditor.createNew": {
+    "defaultMessage": "ساخت زیردستور جدید"
+  },
+  "subRecipeEditor.deleteSubrecipe": {
+    "defaultMessage": "حذف زیردستور {name}"
+  },
+  "subRecipeEditor.description": {
+    "defaultMessage": "زیردستورها دستورهای کاری هستند که می‌توان هنگام اجرا به‌عنوان ابزار فراخوانی کرد. آن‌ها جریان‌های کاری چندمرحله‌ای و مؤلفه‌های قابل‌استفاده مجدد را امکان‌پذیر می‌کنند."
+  },
+  "subRecipeEditor.duplicateName": {
+    "defaultMessage": "نام تکراری"
+  },
+  "subRecipeEditor.duplicateNameMsg": {
+    "defaultMessage": "زیردستوری با نام «{name}» از قبل وجود دارد. لطفاً از یک نام منحصربه‌فرد استفاده کنید."
+  },
+  "subRecipeEditor.editSubrecipe": {
+    "defaultMessage": "ویرایش زیردستور {name}"
+  },
+  "subRecipeEditor.label": {
+    "defaultMessage": "زیردستورها"
+  },
+  "subRecipeEditor.preconfiguredValues": {
+    "defaultMessage": "مقادیر از پیش پیکربندی‌شده:"
+  },
+  "subRecipeEditor.sequential": {
+    "defaultMessage": "ترتیبی"
+  },
+  "subRecipeModal.addTitle": {
+    "defaultMessage": "افزودن زیردستور"
+  },
+  "subRecipeModal.apply": {
+    "defaultMessage": "اعمال"
+  },
+  "subRecipeModal.browse": {
+    "defaultMessage": "مرور"
+  },
+  "subRecipeModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "subRecipeModal.closeModal": {
+    "defaultMessage": "بستن پنجره زیردستور"
+  },
+  "subRecipeModal.configureTitle": {
+    "defaultMessage": "پیکربندی زیردستور"
+  },
+  "subRecipeModal.descriptionLabel": {
+    "defaultMessage": "توضیحات"
+  },
+  "subRecipeModal.descriptionPlaceholder": {
+    "defaultMessage": "توضیحات اختیاری درباره کاری که این زیردستور انجام می‌دهد..."
+  },
+  "subRecipeModal.invalidFile": {
+    "defaultMessage": "فایل نامعتبر"
+  },
+  "subRecipeModal.invalidFileMsg": {
+    "defaultMessage": "لطفاً یک فایل YAML انتخاب کنید (.yaml یا .yml)."
+  },
+  "subRecipeModal.nameHint": {
+    "defaultMessage": "شناسه منحصربه‌فردی که برای ساخت نام ابزار استفاده می‌شود"
+  },
+  "subRecipeModal.nameLabel": {
+    "defaultMessage": "نام"
+  },
+  "subRecipeModal.namePlaceholder": {
+    "defaultMessage": "مثلاً security_scan"
+  },
+  "subRecipeModal.pathHint": {
+    "defaultMessage": "برای یک فایل دستور کار موجود مرور کنید یا مسیری را به‌صورت دستی وارد کنید"
+  },
+  "subRecipeModal.pathLabel": {
+    "defaultMessage": "مسیر"
+  },
+  "subRecipeModal.pathPlaceholder": {
+    "defaultMessage": "مثلاً ./subrecipes/security-analysis.yaml"
+  },
+  "subRecipeModal.preconfiguredValues": {
+    "defaultMessage": "مقادیر از پیش پیکربندی‌شده"
+  },
+  "subRecipeModal.preconfiguredValuesHint": {
+    "defaultMessage": "مقادیر پارامتر اختیاری که همیشه به زیردستور ارسال می‌شوند"
+  },
+  "subRecipeModal.sequentialHint": {
+    "defaultMessage": "(اجرای ترتیبی چند نمونه زیردستور را اجباری می‌کند)"
+  },
+  "subRecipeModal.sequentialLabel": {
+    "defaultMessage": "ترتیبی هنگام تکرار"
+  },
+  "subRecipeModal.subtitle": {
+    "defaultMessage": "یک زیردستور پیکربندی کنید که می‌توان هنگام اجرای دستور کار به‌عنوان ابزار فراخوانی کرد"
+  },
+  "switchModelModal.backToModelList": {
+    "defaultMessage": "بازگشت به فهرست مدل‌ها"
+  },
+  "switchModelModal.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "switchModelModal.checkProviderConfig": {
+    "defaultMessage": "پیکربندی ارائه‌دهنده خود را در تنظیمات ← ارائه‌دهندگان بررسی کنید"
+  },
+  "switchModelModal.chooseModel": {
+    "defaultMessage": "یک مدل انتخاب کنید:"
+  },
+  "switchModelModal.claudeAdaptive": {
+    "defaultMessage": "تطبیقی - Claude تصمیم می‌گیرد چه زمان و چقدر فکر کند"
+  },
+  "switchModelModal.claudeDisabled": {
+    "defaultMessage": "غیرفعال - بدون تفکر گسترده"
+  },
+  "switchModelModal.claudeEffortHigh": {
+    "defaultMessage": "بالا - استدلال عمیق (پیش‌فرض)"
+  },
+  "switchModelModal.claudeEffortLow": {
+    "defaultMessage": "پایین - حداقل تفکر، سریع‌ترین پاسخ‌ها"
+  },
+  "switchModelModal.claudeEffortMax": {
+    "defaultMessage": "حداکثر - بدون محدودیت روی عمق تفکر"
+  },
+  "switchModelModal.claudeEffortMedium": {
+    "defaultMessage": "متوسط - تفکر معتدل"
+  },
+  "switchModelModal.claudeEnabled": {
+    "defaultMessage": "فعال - بودجه توکن ثابت برای تفکر"
+  },
+  "switchModelModal.couldNotContactProvider": {
+    "defaultMessage": "ارتباط با ارائه‌دهنده ممکن نشد"
+  },
+  "switchModelModal.customModelName": {
+    "defaultMessage": "نام مدل سفارشی"
+  },
+  "switchModelModal.description": {
+    "defaultMessage": "یک ارائه‌دهنده و مدل برای استفاده در گفتگوهای خود انتخاب کنید."
+  },
+  "switchModelModal.enterModelNotListed": {
+    "defaultMessage": "مدلی که در فهرست نیست را وارد کنید..."
+  },
+  "switchModelModal.extendedThinking": {
+    "defaultMessage": "تفکر گسترده"
+  },
+  "switchModelModal.geminiOnly": {
+    "defaultMessage": "(فقط مدل‌های Gemini 3)"
+  },
+  "switchModelModal.goToSettings": {
+    "defaultMessage": "رفتن به تنظیمات"
+  },
+  "switchModelModal.loadingModels": {
+    "defaultMessage": "در حال بارگذاری مدل‌ها…"
+  },
+  "switchModelModal.localModelsDescription": {
+    "defaultMessage": "برای استفاده از استنتاج محلی، ابتدا باید یک مدل را روی رایانه خود دانلود کنید. برای مدیریت مدل‌های محلی به تنظیمات ← مدل‌ها بروید."
+  },
+  "switchModelModal.localModelsTitle": {
+    "defaultMessage": "مدل‌های محلی ابتدا باید دانلود شوند"
+  },
+  "switchModelModal.providerPlaceholder": {
+    "defaultMessage": "ارائه‌دهنده، برای جستجو تایپ کنید"
+  },
+  "switchModelModal.quickStartGuide": {
+    "defaultMessage": "راهنمای شروع سریع"
+  },
+  "switchModelModal.recommended": {
+    "defaultMessage": "توصیه‌شده"
+  },
+  "switchModelModal.selectEffortLevel": {
+    "defaultMessage": "انتخاب سطح تلاش"
+  },
+  "switchModelModal.selectModel": {
+    "defaultMessage": "لطفاً یک مدل انتخاب کنید"
+  },
+  "switchModelModal.selectModelButton": {
+    "defaultMessage": "انتخاب مدل"
+  },
+  "switchModelModal.selectModelPlaceholder": {
+    "defaultMessage": "یک مدل انتخاب کنید، برای جستجو تایپ کنید"
+  },
+  "switchModelModal.selectOrEnterModel": {
+    "defaultMessage": "لطفاً یک مدل انتخاب یا وارد کنید"
+  },
+  "switchModelModal.selectProvider": {
+    "defaultMessage": "لطفاً یک ارائه‌دهنده انتخاب کنید"
+  },
+  "switchModelModal.selectThinkingLevel": {
+    "defaultMessage": "انتخاب سطح تفکر"
+  },
+  "switchModelModal.selectThinkingMode": {
+    "defaultMessage": "انتخاب حالت تفکر"
+  },
+  "switchModelModal.thinkingBudget": {
+    "defaultMessage": "بودجه تفکر (توکن)"
+  },
+  "switchModelModal.thinkingEffort": {
+    "defaultMessage": "تلاش تفکر"
+  },
+  "switchModelModal.thinkingEffortOff": {
+    "defaultMessage": "خاموش - بدون تفکر گسترده"
+  },
+  "switchModelModal.thinkingLevel": {
+    "defaultMessage": "سطح تفکر"
+  },
+  "switchModelModal.thinkingLevelHigh": {
+    "defaultMessage": "بالا - استدلال عمیق‌تر، تأخیر بیشتر"
+  },
+  "switchModelModal.thinkingLevelLow": {
+    "defaultMessage": "پایین - تأخیر بهتر، استدلال سبک‌تر"
+  },
+  "switchModelModal.title": {
+    "defaultMessage": "تغییر مدل‌ها"
+  },
+  "switchModelModal.typeModelName": {
+    "defaultMessage": "نام مدل را اینجا تایپ کنید"
+  },
+  "switchModelModal.useOtherProvider": {
+    "defaultMessage": "استفاده از ارائه‌دهنده دیگر"
+  },
+  "telemetryConsentPrompt.description": {
+    "defaultMessage": "آیا مایلید داده‌های استفاده ناشناس را برای کمک به بهبود سها به اشتراک بگذارید؟ ما هرگز گفتگوها، کد یا داده‌های شخصی شما را جمع‌آوری نمی‌کنیم."
+  },
+  "telemetryConsentPrompt.heading": {
+    "defaultMessage": "به بهبود سها کمک کنید"
+  },
+  "telemetryConsentPrompt.learnMore": {
+    "defaultMessage": "بیشتر بدانید"
+  },
+  "telemetryConsentPrompt.optIn": {
+    "defaultMessage": "بله، داده‌های استفاده ناشناس را به اشتراک بگذار"
+  },
+  "telemetryConsentPrompt.optOut": {
+    "defaultMessage": "نه، ممنون"
+  },
+  "telemetrySettings.configErrorTitle": {
+    "defaultMessage": "خطای پیکربندی"
+  },
+  "telemetrySettings.description": {
+    "defaultMessage": "کنترل کنید داده‌های شما چگونه استفاده می‌شوند"
+  },
+  "telemetrySettings.learnMore": {
+    "defaultMessage": "بیشتر بدانید"
+  },
+  "telemetrySettings.loadError": {
+    "defaultMessage": "بارگذاری تنظیمات تله‌متری ناموفق بود."
+  },
+  "telemetrySettings.title": {
+    "defaultMessage": "حریم خصوصی"
+  },
+  "telemetrySettings.toggleDescription": {
+    "defaultMessage": "با اشتراک‌گذاری آمار استفاده ناشناس به بهبود سها کمک کنید."
+  },
+  "telemetrySettings.toggleLabel": {
+    "defaultMessage": "داده‌های استفاده ناشناس"
+  },
+  "telemetrySettings.updateError": {
+    "defaultMessage": "به‌روزرسانی تنظیمات تله‌متری ناموفق بود."
+  },
+  "themeSelector.dark": {
+    "defaultMessage": "تیره"
+  },
+  "themeSelector.light": {
+    "defaultMessage": "روشن"
+  },
+  "themeSelector.system": {
+    "defaultMessage": "سیستم"
+  },
+  "themeSelector.theme": {
+    "defaultMessage": "پوسته"
+  },
+  "toolApprovalButtons.allowOnce": {
+    "defaultMessage": "یک‌بار اجازه بده"
+  },
+  "toolApprovalButtons.allowedOnce": {
+    "defaultMessage": "یک‌بار اجازه داده شد"
+  },
+  "toolApprovalButtons.alwaysAllow": {
+    "defaultMessage": "همیشه اجازه بده"
+  },
+  "toolApprovalButtons.alwaysAllowed": {
+    "defaultMessage": "همیشه اجازه داده شد"
+  },
+  "toolApprovalButtons.cancelled": {
+    "defaultMessage": "لغو شد"
+  },
+  "toolApprovalButtons.denied": {
+    "defaultMessage": "رد شد"
+  },
+  "toolApprovalButtons.deniedOnce": {
+    "defaultMessage": "یک‌بار رد شد"
+  },
+  "toolApprovalButtons.deny": {
+    "defaultMessage": "رد کن"
+  },
+  "toolCallStatusIndicator.toolStatus": {
+    "defaultMessage": "وضعیت ابزار: {status}"
+  },
+  "toolCallWithResponse.activityCount": {
+    "defaultMessage": "فعالیت ({count})"
+  },
+  "toolCallWithResponse.code": {
+    "defaultMessage": "کد"
+  },
+  "toolCallWithResponse.loadingSpinner": {
+    "defaultMessage": "چرخنده بارگذاری"
+  },
+  "toolCallWithResponse.logs": {
+    "defaultMessage": "گزارش‌ها"
+  },
+  "toolCallWithResponse.mcpUiExperimental": {
+    "defaultMessage": "رابط کاربری MCP آزمایشی است و ممکن است هر زمان تغییر کند."
+  },
+  "toolCallWithResponse.output": {
+    "defaultMessage": "خروجی"
+  },
+  "toolCallWithResponse.toolDetails": {
+    "defaultMessage": "جزئیات ابزار"
+  },
+  "toolCallWithResponse.toolResultAlt": {
+    "defaultMessage": "نتیجه ابزار"
+  },
+  "toolCallWithResponse.viewSubagentSession": {
+    "defaultMessage": "مشاهده نشست زیرعامل"
+  },
+  "toolConfirmation.allowToolCallWithName": {
+    "defaultMessage": "{toolName} اجازه داده شود؟"
+  },
+  "toolConfirmation.gooseWouldLikeToCallWithName": {
+    "defaultMessage": "سها می‌خواهد {toolName} را فراخوانی کند. اجازه می‌دهید؟"
+  },
+  "tunnelSection.appStoreQrInstructions": {
+    "defaultMessage": "این کد QR را با دوربین آیفون خود اسکن کنید تا برنامه موبایل سها را از App Store نصب کنید"
+  },
+  "tunnelSection.close": {
+    "defaultMessage": "بستن"
+  },
+  "tunnelSection.connectionDetails": {
+    "defaultMessage": "جزئیات اتصال"
+  },
+  "tunnelSection.downloadIosApp": {
+    "defaultMessage": "دانلود برنامه iOS سها"
+  },
+  "tunnelSection.failedToLoadStatus": {
+    "defaultMessage": "بارگذاری وضعیت تونل ناموفق بود"
+  },
+  "tunnelSection.failedToStartTunnel": {
+    "defaultMessage": "شروع تونل ناموفق بود"
+  },
+  "tunnelSection.failedToStopTunnel": {
+    "defaultMessage": "توقف تونل ناموفق بود"
+  },
+  "tunnelSection.getIosApp": {
+    "defaultMessage": "دریافت برنامه iOS"
+  },
+  "tunnelSection.mobileApp": {
+    "defaultMessage": "برنامه موبایل"
+  },
+  "tunnelSection.mobileAppConnection": {
+    "defaultMessage": "اتصال برنامه موبایل"
+  },
+  "tunnelSection.openInAppStore": {
+    "defaultMessage": "باز کردن در App Store"
+  },
+  "tunnelSection.or": {
+    "defaultMessage": "یا"
+  },
+  "tunnelSection.previewDescription": {
+    "defaultMessage": "دسترسی از راه دور به سها را از دستگاه‌های موبایل با استفاده از تونل‌سازی ایمن فعال کنید."
+  },
+  "tunnelSection.previewFeature": {
+    "defaultMessage": "قابلیت پیش‌نمایش:"
+  },
+  "tunnelSection.qrCodeInstructions": {
+    "defaultMessage": "این کد QR را با برنامه موبایل سها اسکن کنید. این کد را با دیگران به اشتراک نگذارید زیرا برای دسترسی شخصی شماست."
+  },
+  "tunnelSection.retry": {
+    "defaultMessage": "تلاش مجدد"
+  },
+  "tunnelSection.scanQrCode": {
+    "defaultMessage": "اسکن کد QR"
+  },
+  "tunnelSection.secretKey": {
+    "defaultMessage": "کلید محرمانه"
+  },
+  "tunnelSection.showQrCode": {
+    "defaultMessage": "نمایش کد QR"
+  },
+  "tunnelSection.startTunnel": {
+    "defaultMessage": "شروع تونل"
+  },
+  "tunnelSection.starting": {
+    "defaultMessage": "در حال شروع..."
+  },
+  "tunnelSection.statusDisabled": {
+    "defaultMessage": "تونل غیرفعال است"
+  },
+  "tunnelSection.statusError": {
+    "defaultMessage": "تونل با خطا مواجه شد"
+  },
+  "tunnelSection.statusIdle": {
+    "defaultMessage": "تونل در حال اجرا نیست"
+  },
+  "tunnelSection.statusRunning": {
+    "defaultMessage": "تونل فعال است"
+  },
+  "tunnelSection.statusStarting": {
+    "defaultMessage": "در حال شروع تونل..."
+  },
+  "tunnelSection.stopTunnel": {
+    "defaultMessage": "توقف تونل"
+  },
+  "tunnelSection.tunnelStatus": {
+    "defaultMessage": "وضعیت تونل"
+  },
+  "tunnelSection.tunnelUrl": {
+    "defaultMessage": "نشانی تونل"
+  },
+  "tunnelSection.url": {
+    "defaultMessage": "نشانی:"
+  },
+  "updateSection.autoDownload": {
+    "defaultMessage": "به‌روزرسانی به‌صورت خودکار در پس‌زمینه دانلود خواهد شد."
+  },
+  "updateSection.autoInstallNote": {
+    "defaultMessage": "به‌روزرسانی هنگام خروج از برنامه به‌صورت خودکار نصب خواهد شد."
+  },
+  "updateSection.checkForUpdates": {
+    "defaultMessage": "بررسی به‌روزرسانی‌ها"
+  },
+  "updateSection.checking": {
+    "defaultMessage": "در حال بررسی به‌روزرسانی‌ها..."
+  },
+  "updateSection.currentVersion": {
+    "defaultMessage": "نسخه فعلی"
+  },
+  "updateSection.downloadReady": {
+    "defaultMessage": "به‌روزرسانی دانلود شد و آماده نصب است!"
+  },
+  "updateSection.downloadingProgress": {
+    "defaultMessage": "در حال دانلود به‌روزرسانی... {percent}%"
+  },
+  "updateSection.downloadingUpdate": {
+    "defaultMessage": "در حال دانلود به‌روزرسانی..."
+  },
+  "updateSection.installAndRestart": {
+    "defaultMessage": "نصب و راه‌اندازی مجدد"
+  },
+  "updateSection.installNowHint": {
+    "defaultMessage": "یا برای به‌روزرسانی اکنون روی «نصب و راه‌اندازی مجدد» کلیک کنید."
+  },
+  "updateSection.latestVersion": {
+    "defaultMessage": "شما در حال اجرای آخرین نسخه هستید!"
+  },
+  "updateSection.loading": {
+    "defaultMessage": "در حال بارگذاری..."
+  },
+  "updateSection.manualInstallNote": {
+    "defaultMessage": "پس از دانلود، باید به‌روزرسانی را به‌صورت دستی نصب کنید."
+  },
+  "updateSection.manualInstallRequired": {
+    "defaultMessage": "برای این روش به‌روزرسانی، نصب دستی لازم است."
+  },
+  "updateSection.readyInstallAuto": {
+    "defaultMessage": "✓ به‌روزرسانی آماده است! هنگام خروج از سها نصب خواهد شد."
+  },
+  "updateSection.readyInstallManual": {
+    "defaultMessage": "✓ به‌روزرسانی آماده است! برای دستورالعمل‌های نصب روی «نصب و راه‌اندازی مجدد» کلیک کنید."
+  },
+  "updateSection.upToDate": {
+    "defaultMessage": "(به‌روز)"
+  },
+  "updateSection.updateAvailable": {
+    "defaultMessage": "به‌روزرسانی در دسترس است!"
+  },
+  "updateSection.versionAvailable": {
+    "defaultMessage": "→ {version} در دسترس است"
+  },
+  "updateSection.versionIsAvailable": {
+    "defaultMessage": "نسخه {version} در دسترس است"
+  },
+  "userMessage.cancel": {
+    "defaultMessage": "لغو"
+  },
+  "userMessage.cancelAriaLabel": {
+    "defaultMessage": "لغو ویرایش"
+  },
+  "userMessage.editAriaLabel": {
+    "defaultMessage": "ویرایش محتوای پیام"
+  },
+  "userMessage.editButton": {
+    "defaultMessage": "ویرایش"
+  },
+  "userMessage.editInPlace": {
+    "defaultMessage": "ویرایش در همان مکان"
+  },
+  "userMessage.editInPlaceAriaLabel": {
+    "defaultMessage": "ویرایش پیام در همان مکان"
+  },
+  "userMessage.editInPlaceDescription": {
+    "defaultMessage": "<b>ویرایش در همان مکان</b> این نشست را به‌روزرسانی می‌کند • <b>انشعاب نشست</b> یک نشست جدید می‌سازد"
+  },
+  "userMessage.editInPlaceTitle": {
+    "defaultMessage": "به‌روزرسانی پیام در این نشست"
+  },
+  "userMessage.editMessageAriaLabel": {
+    "defaultMessage": "ویرایش پیام: {preview}"
+  },
+  "userMessage.editMessageTitle": {
+    "defaultMessage": "ویرایش پیام"
+  },
+  "userMessage.editPlaceholder": {
+    "defaultMessage": "پیام خود را ویرایش کنید..."
+  },
+  "userMessage.emptyError": {
+    "defaultMessage": "پیام نمی‌تواند خالی باشد"
+  },
+  "userMessage.forkSession": {
+    "defaultMessage": "انشعاب نشست"
+  },
+  "userMessage.forkSessionAriaLabel": {
+    "defaultMessage": "انشعاب نشست با پیام ویرایش‌شده"
+  },
+  "userMessage.forkSessionTitle": {
+    "defaultMessage": "ساخت یک نشست جدید با پیام ویرایش‌شده"
+  }
+}

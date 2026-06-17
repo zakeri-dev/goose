@@ -1,0 +1,46 @@
+version: 1.0.0
+title: مقاله‌نویس
+description: نوشتن مقاله‌ای ساختارمند و روان به زبان فارسی درباره‌ی موضوع دلخواه شما.
+author:
+  contact: SOHA
+parameters:
+  - key: topic
+    input_type: string
+    requirement: required
+    description: موضوع مقاله
+  - key: tone
+    input_type: string
+    requirement: optional
+    default: رسمی و حرفه‌ای
+    description: لحن نوشتار (مثلاً رسمی، صمیمی، علمی، خبری)
+  - key: length
+    input_type: string
+    requirement: optional
+    default: متوسط (حدود ۷۰۰ کلمه)
+    description: طول تقریبی مقاله
+activities:
+  - نوشتن مقاله درباره موضوع دلخواه
+  - تعیین لحن و طول دلخواه
+  - ساختاردهی با عنوان و زیرعنوان
+prompt: |
+  تو یک نویسنده‌ی حرفه‌ای فارسی‌زبان هستی. یک مقاله‌ی کامل و باکیفیت به زبان فارسی بنویس.
+
+  موضوع: {{ topic }}
+  لحن: {{ tone }}
+  طول تقریبی: {{ length }}
+
+  راهنما:
+  - با یک عنوان جذاب شروع کن.
+  - مقدمه‌ای کوتاه که خواننده را درگیر کند بنویس.
+  - بدنه را با زیرعنوان‌های مشخص و پاراگراف‌های منسجم سازمان بده.
+  - در صورت لزوم از فهرست یا نکات کلیدی استفاده کن.
+  - با یک جمع‌بندی روشن پایان بده.
+  - نگارش روان، بدون غلط املایی و با رعایت نیم‌فاصله باشد.
+
+  اگر موضوع نیاز به اطلاعات به‌روز یا منبع دارد و افزونه‌ای در دسترس است، از آن برای دقت بیشتر کمک بگیر.
+extensions:
+  - type: builtin
+    name: developer
+    display_name: Developer
+    timeout: 300
+    bundled: true

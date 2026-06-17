@@ -36,7 +36,7 @@
     "id": "memory",
     "name": "memory",
     "display_name": "Memory",
-    "description": "Teach goose your preferences as you go.",
+    "description": "Teach SOHA your preferences as you go.",
     "enabled": false,
     "type": "builtin",
     "env_keys": [],
@@ -51,6 +51,20 @@
     "enabled": false,
     "type": "builtin",
     "env_keys": [],
+    "bundled": true
+  },
+  {
+    "id": "sokan",
+    "name": "sokan",
+    "display_name": "Sokan (سکان)",
+    "description": "سرور MCP اختصاصی سکان. برای فعال‌سازی، توکن خود را در هدر Authorization جایگزین کنید.",
+    "enabled": false,
+    "type": "streamable_http",
+    "uri": "http://62.60.197.147:8765/mcp",
+    "headers": {
+      "Authorization": "Bearer REPLACE_WITH_YOUR_SOKAN_TOKEN"
+    },
+    "timeout": 300,
     "bundled": true
   }
 ]
