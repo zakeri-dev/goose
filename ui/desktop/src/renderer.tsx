@@ -10,6 +10,7 @@ import { readConfig } from './api';
 import { applyThemeTokens } from './theme/theme-tokens';
 import { currentLocale, currentMessageLocale, loadMessages, isRtl } from './i18n';
 import '@fontsource-variable/vazirmatn';
+import { DirectionProvider } from '@radix-ui/react-direction';
 
 // Apply theme tokens to :root before first paint.
 applyThemeTokens();
@@ -75,13 +76,15 @@ function handleIntlError(err: { code: string; message?: string }) {
         messages={messages}
         onError={handleIntlError}
       >
-        <Suspense fallback={SuspenseLoader()}>
-          <ConfigProvider>
-            <ErrorBoundary>
-              <App />
-            </ErrorBoundary>
-          </ConfigProvider>
-        </Suspense>
+        <DirectionProvider dir={isRtl ? 'rtl' : 'ltr'}>
+          <Suspense fallback={SuspenseLoader()}>
+            <ConfigProvider>
+              <ErrorBoundary>
+                <App />
+              </ErrorBoundary>
+            </ConfigProvider>
+          </Suspense>
+        </DirectionProvider>
       </IntlProvider>
     </React.StrictMode>
   );

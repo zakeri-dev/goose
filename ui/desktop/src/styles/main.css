@@ -247,6 +247,14 @@
   }
 }
 
+/* RTL: flip explicit physical text alignment so Persian content aligns correctly. */
+[dir='rtl'] .text-left {
+  text-align: right;
+}
+[dir='rtl'] .text-right {
+  text-align: left;
+}
+
 @font-face {
   font-family: 'Cash Sans';
   src:
