@@ -218,7 +218,7 @@ export default function SettingsView({
                       data-testid="settings-mesh-tab"
                     >
                       <Network className="h-4 w-4" />
-                      Mesh
+                      شبکه
                     </TabsTrigger>
                   )}
                   <TabsTrigger value="chat" className="flex gap-2" data-testid="settings-chat-tab">

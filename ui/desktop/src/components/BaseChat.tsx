@@ -37,7 +37,7 @@ import CreateRecipeFromSessionModal from './recipes/CreateRecipeFromSessionModal
 import { toastSuccess } from '../toasts';
 import { Recipe } from '../recipe';
 import { useAutoSubmit } from '../hooks/useAutoSubmit';
-import { Goose } from './icons';
+import sohaTypo from '../images/soha-typo.png';
 import EnvironmentBadge from './GooseSidebar/EnvironmentBadge';
 import SessionActionsHeader from './SessionActionsHeader';
 
@@ -414,10 +414,7 @@ export default function BaseChat({
               rel="noopener noreferrer"
               className="no-drag flex flex-row items-center gap-1 hover:opacity-80 transition-opacity"
             >
-              <Goose className="size-5 goose-icon-animation" />
-              <span className="text-sm leading-none text-text-secondary -translate-y-px">
-                سها
-              </span>
+              <img src={sohaTypo} alt="SOHA" className="h-5 w-auto" />
             </a>
             <EnvironmentBadge className="translate-y-px" />
           </div>
