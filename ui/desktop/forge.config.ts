@@ -66,7 +66,7 @@ module.exports = {
       config: {
         repository: {
           owner: process.env.GITHUB_OWNER || 'zakeri-dev',
-          name: process.env.GITHUB_REPO || 'goose',
+          name: process.env.GITHUB_REPO || 'soha-agent',
         },
         prerelease: false,
         draft: true,
@@ -101,7 +101,7 @@ module.exports = {
         name: 'SOHA',
         bin: 'SOHA',
         maintainer: 'SOHA',
-        homepage: 'https://github.com/zakeri-dev/goose',
+        homepage: 'https://github.com/zakeri-dev/soha-agent',
         categories: ['Development'],
         desktopTemplate: './forge.deb.desktop',
         options: {
@@ -117,7 +117,7 @@ module.exports = {
         name: 'SOHA',
         bin: 'SOHA',
         maintainer: 'SOHA',
-        homepage: 'https://github.com/zakeri-dev/goose',
+        homepage: 'https://github.com/zakeri-dev/soha-agent',
         categories: ['Development'],
         desktopTemplate: './forge.rpm.desktop',
         options: {
@@ -137,7 +137,7 @@ module.exports = {
             scalable: 'src/images/icon.svg',
             '512x512': 'src/images/icon-512.png',
           },
-          homepage: 'https://github.com/zakeri-dev/goose',
+          homepage: 'https://github.com/zakeri-dev/soha-agent',
           runtimeVersion: '25.08',
           baseVersion: '25.08',
           bin: 'SOHA',
