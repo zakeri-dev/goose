@@ -92,6 +92,11 @@ export const currentLocale = resolvedLocale.locale;
 /** Base language for loading message catalogs (e.g. "en"). */
 export const currentMessageLocale = resolvedLocale.messageLocale;
 
+/** Locales that render right-to-left. */
+export const RTL_LOCALES = new Set(['fa', 'ar', 'he', 'ur']);
+/** Whether the active locale is right-to-left. */
+export const isRtl = RTL_LOCALES.has(currentMessageLocale);
+
 /**
  * Load compiled messages for a given locale.
  * Returns an empty object for English (react-intl uses defaultMessage as fallback).

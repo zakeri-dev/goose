@@ -406,8 +406,8 @@ export default function BaseChat({
 
         {/* Chat container with sticky recipe header */}
         <div className="flex flex-col flex-1 min-h-0 relative">
-          {/* Goose watermark - top right */}
-          <div className="absolute top-[14px] right-4 z-[60] flex flex-row items-center gap-1">
+          {/* SOHA watermark - top trailing corner (flips for RTL) */}
+          <div className="absolute top-[14px] end-4 z-[60] flex flex-row items-center gap-1">
             <span className="no-drag flex flex-row items-center gap-1">
               <img src={sohaTypo} alt="SOHA" className="h-5 w-auto" />
             </span>

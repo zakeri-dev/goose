@@ -13,6 +13,8 @@ import { type SharedSessionDetails } from './sharedSessions';
 import { ErrorUI } from './components/ErrorBoundary';
 import { ExtensionInstallModal } from './components/ExtensionInstallModal';
 import { toast, ToastContainer } from 'react-toastify';
+import { isRtl } from './i18n';
+import { createPortal } from 'react-dom';
 import AnnouncementModal from './components/AnnouncementModal';
 import TelemetryConsentPrompt from './components/TelemetryConsentPrompt';
 import OnboardingGuard from './components/onboarding/OnboardingGuard';
@@ -637,21 +639,25 @@ export function AppInner() {
   return (
     <>
       <PageViewTracker />
-      <ToastContainer
-        aria-label="اعلان‌ها"
-        toastClassName={() =>
-          `relative min-h-16 mb-4 p-2 rounded-lg
+      {createPortal(
+        <ToastContainer
+          aria-label="اعلان‌ها"
+          toastClassName={() =>
+            `relative min-h-16 mb-4 p-2 rounded-lg
                flex justify-between overflow-hidden cursor-pointer
                text-text-inverse bg-background-inverse
               `
-        }
-        style={{ width: '450px' }}
-        className="mt-6"
-        position="top-right"
-        autoClose={3000}
-        closeOnClick
-        pauseOnHover
-      />
+          }
+          style={{ width: '450px' }}
+          className="mt-6"
+          position="top-right"
+          rtl={isRtl}
+          autoClose={3000}
+          closeOnClick
+          pauseOnHover
+        />,
+        document.body
+      )}
       <ExtensionInstallModal addExtension={addExtension} setView={setView} />
       <div className="relative w-screen h-screen overflow-hidden bg-background-secondary flex flex-col">
         <div className="titlebar-drag-region" />

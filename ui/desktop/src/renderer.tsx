@@ -8,10 +8,14 @@ import { client } from './api/client.gen';
 import { setTelemetryEnabled } from './utils/analytics';
 import { readConfig } from './api';
 import { applyThemeTokens } from './theme/theme-tokens';
-import { currentLocale, currentMessageLocale, loadMessages } from './i18n';
+import { currentLocale, currentMessageLocale, loadMessages, isRtl } from './i18n';
 
 // Apply theme tokens to :root before first paint.
 applyThemeTokens();
+
+// Set document direction so Persian (and other RTL locales) mirror the layout.
+document.documentElement.dir = isRtl ? 'rtl' : 'ltr';
+document.documentElement.lang = currentMessageLocale;
 
 const App = lazy(() => import('./App'));
 
