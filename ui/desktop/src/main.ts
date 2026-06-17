@@ -1013,19 +1013,14 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
   });
 
   const mainWindow = new BrowserWindow({
-    // Unified, chromeless window on every platform. macOS hides the title bar
-    // and keeps traffic lights; Windows/Linux use the Window Controls Overlay
-    // (native min/max/close themed to match the app) and hide the menu bar so
-    // the whole window reads as one branded surface.
+    // Fully frameless on every platform so the window chrome belongs to the app:
+    // macOS keeps the inset traffic lights, Windows/Linux get a custom title bar
+    // (see TitleBar.tsx) with branded minimize/maximize/close controls. This also
+    // removes the native menu bar; its accelerators stay registered via the app menu.
     titleBarStyle: 'hidden',
     trafficLightPosition: process.platform === 'darwin' ? { x: 20, y: 16 } : undefined,
     vibrancy: process.platform === 'darwin' ? 'window' : undefined,
-    frame: process.platform === 'darwin' ? false : true,
-    autoHideMenuBar: process.platform !== 'darwin',
-    titleBarOverlay:
-      process.platform === 'darwin'
-        ? undefined
-        : { color: '#0e1626', symbolColor: '#e8edf7', height: 32 },
+    frame: false,
     // windowStateKeeper persists the outer window bounds (getBounds), so the
     // window must be restored by outer bounds too. With useContentSize the saved
     // outer height is reapplied as the content height, growing the window by the
@@ -1345,6 +1340,10 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
   };
   mainWindow.on('enter-full-screen', broadcastFullScreenState);
   mainWindow.on('leave-full-screen', broadcastFullScreenState);
+
+  // Keep the custom title bar's maximize/restore button in sync with the window.
+  mainWindow.on('maximize', () => mainWindow.webContents.send('window-maximized-change', true));
+  mainWindow.on('unmaximize', () => mainWindow.webContents.send('window-maximized-change', false));
 
   // Handle mouse back button (button 3)
   // Use type assertion for non-standard Electron event
@@ -2660,16 +2659,22 @@ async function appMain() {
     }
   });
 
-  ipcMain.on('set-titlebar-overlay', (event, overlay: { color: string; symbolColor: string; height?: number }) => {
-    if (process.platform === 'darwin') return;
+  ipcMain.on('window-minimize', (event) => {
+    BrowserWindow.fromWebContents(event.sender)?.minimize();
+  });
+
+  ipcMain.on('window-maximize-toggle', (event) => {
     const win = BrowserWindow.fromWebContents(event.sender);
-    if (win && typeof win.setTitleBarOverlay === 'function') {
-      try {
-        win.setTitleBarOverlay(overlay);
-      } catch {
-        // Overlay is only available when titleBarStyle is 'hidden'; ignore otherwise.
-      }
+    if (!win) return;
+    if (win.isMaximized()) {
+      win.unmaximize();
+    } else {
+      win.maximize();
     }
+  });
+
+  ipcMain.handle('window-is-maximized', (event) => {
+    return BrowserWindow.fromWebContents(event.sender)?.isMaximized() ?? false;
   });
 
   ipcMain.on('create-chat-window', (event, options = {}) => {

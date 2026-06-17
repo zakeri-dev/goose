@@ -154,7 +154,9 @@ type ElectronAPI = {
   openNotificationsSettings: () => Promise<boolean>;
   isAnyWindowFocused: () => Promise<boolean>;
   getIsFullScreen: () => Promise<boolean>;
-  setTitleBarOverlay: (overlay: { color: string; symbolColor: string; height?: number }) => void;
+  windowMinimize: () => void;
+  windowMaximizeToggle: () => void;
+  windowIsMaximized: () => Promise<boolean>;
   onMouseBackButtonClicked: (callback: () => void) => void;
   offMouseBackButtonClicked: (callback: () => void) => void;
   on: (
@@ -213,8 +215,9 @@ const electronAPI: ElectronAPI = {
     return config;
   },
   hideWindow: () => ipcRenderer.send('hide-window'),
-  setTitleBarOverlay: (overlay: { color: string; symbolColor: string; height?: number }) =>
-    ipcRenderer.send('set-titlebar-overlay', overlay),
+  windowMinimize: () => ipcRenderer.send('window-minimize'),
+  windowMaximizeToggle: () => ipcRenderer.send('window-maximize-toggle'),
+  windowIsMaximized: () => ipcRenderer.invoke('window-is-maximized'),
   directoryChooser: () => ipcRenderer.invoke('directory-chooser'),
   createChatWindow: (options?: CreateChatWindowOptions) =>
     ipcRenderer.send('create-chat-window', options || {}),

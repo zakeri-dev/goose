@@ -143,18 +143,6 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   useEffect(() => {
     applyThemeToDocument(resolvedTheme);
     applyThemeTokens(resolvedTheme);
-    // Keep the Windows/Linux caption buttons (Window Controls Overlay) in sync
-    // with the active theme so the title bar reads as part of the app surface.
-    if (window.electron?.platform && window.electron.platform !== 'darwin') {
-      requestAnimationFrame(() => {
-        const styles = getComputedStyle(document.documentElement);
-        const color = styles.getPropertyValue('--color-background-primary').trim();
-        const symbolColor = styles.getPropertyValue('--color-text-primary').trim();
-        if (color && symbolColor) {
-          window.electron.setTitleBarOverlay?.({ color, symbolColor, height: 32 });
-        }
-      });
-    }
   }, [resolvedTheme]);
 
   const value: ThemeContextValue = {

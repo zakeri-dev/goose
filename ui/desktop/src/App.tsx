@@ -34,6 +34,7 @@ import SharedSessionView from './components/sessions/SharedSessionView';
 import SchedulesView from './components/schedule/SchedulesView';
 import ProviderSettings from './components/settings/providers/ProviderSettingsPage';
 import { AppLayout } from './components/Layout/AppLayout';
+import TitleBar from './components/Layout/TitleBar';
 import { ChatProvider, DEFAULT_CHAT_TITLE } from './contexts/ChatContext';
 import LauncherView from './components/LauncherView';
 
@@ -664,8 +665,8 @@ export function AppInner() {
       )}
       <ExtensionInstallModal addExtension={addExtension} setView={setView} />
       <div className="relative w-screen h-screen overflow-hidden bg-background-secondary flex flex-col">
-        <div className="titlebar-drag-region" />
-        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+        <TitleBar />
+        <div style={{ position: 'relative', width: '100%', flex: '1 1 0%', minHeight: 0 }}>
           <Routes>
             <Route path="launcher" element={<LauncherView />} />
             <Route path="configure-providers" element={<ConfigureProvidersRoute />} />
