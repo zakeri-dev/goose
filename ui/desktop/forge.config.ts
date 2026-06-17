@@ -85,6 +85,14 @@ module.exports = {
       },
     },
     {
+      name: '@electron-forge/maker-squirrel',
+      platforms: ['win32'],
+      config: {
+        name: 'SOHA',
+        setupIcon: 'src/images/icon.ico',
+      },
+    },
+    {
       name: '@electron-forge/maker-deb',
       config: {
         name: 'SOHA',
