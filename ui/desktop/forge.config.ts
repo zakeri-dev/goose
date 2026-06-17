@@ -19,8 +19,8 @@ let cfg = {
   // Protocol registration
   protocols: [
     {
-      name: 'GooseProtocol',
-      schemes: ['goose'],
+      name: 'SohaProtocol',
+      schemes: ['soha'],
     },
   ],
   // macOS Info.plist extensions for drag-and-drop support

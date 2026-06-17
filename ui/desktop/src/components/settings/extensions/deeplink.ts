@@ -108,7 +108,7 @@ export async function addExtensionFromDeepLink(
   if (parsedUrl.protocol !== 'goose:') {
     toastService.handleError(
       'Invalid Protocol',
-      'Failed to install extension: Invalid protocol: URL must use the goose:// scheme',
+      'Failed to install extension: Invalid protocol: URL must use the soha:// scheme',
       { shouldThrow: true }
     );
   }

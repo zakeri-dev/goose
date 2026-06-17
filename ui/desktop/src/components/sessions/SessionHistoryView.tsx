@@ -249,7 +249,7 @@ const SessionHistoryView: React.FC<SessionHistoryViewProps> = ({
         session.total_tokens || 0
       );
 
-      const shareableLink = `goose://sessions/${shareToken}`;
+      const shareableLink = `soha://sessions/${shareToken}`;
       setShareLink(shareableLink);
       setIsShareModalOpen(true);
     } catch (error) {

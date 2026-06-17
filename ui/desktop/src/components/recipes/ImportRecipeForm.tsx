@@ -23,11 +23,11 @@ const i18n = defineMessages({
   },
   deeplinkPlaceholder: {
     id: 'importRecipeForm.deeplinkPlaceholder',
-    defaultMessage: 'Paste your goose://recipe?config=... deeplink here',
+    defaultMessage: 'Paste your soha://recipe?config=... deeplink here',
   },
   deeplinkHint: {
     id: 'importRecipeForm.deeplinkHint',
-    defaultMessage: 'Paste a recipe deeplink starting with "goose://recipe?config="',
+    defaultMessage: 'Paste a recipe deeplink starting with "soha://recipe?config="',
   },
   or: {
     id: 'importRecipeForm.or',
@@ -83,8 +83,8 @@ const importRecipeSchema = z
     deeplink: z
       .string()
       .refine(
-        (value) => !value || value.trim().startsWith('goose://recipe?config='),
-        'قالب پیوند عمیق نامعتبر است. قالب مورد انتظار: goose://recipe?config=...'
+        (value) => !value || value.trim().startsWith('soha://recipe?config='),
+        'قالب پیوند عمیق نامعتبر است. قالب مورد انتظار: soha://recipe?config=...'
       ),
     recipeUploadFile: z
       .instanceof(File)

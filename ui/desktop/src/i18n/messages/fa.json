@@ -1548,10 +1548,10 @@
     "defaultMessage": "لغو"
   },
   "importRecipeForm.deeplinkHint": {
-    "defaultMessage": "یک پیوند عمیق دستور کار که با «goose://recipe?config=» شروع می‌شود جای‌گذاری کنید"
+    "defaultMessage": "یک پیوند عمیق دستور کار که با «soha://recipe?config=» شروع می‌شود جای‌گذاری کنید"
   },
   "importRecipeForm.deeplinkPlaceholder": {
-    "defaultMessage": "پیوند عمیق goose://recipe?config=... خود را اینجا جای‌گذاری کنید"
+    "defaultMessage": "پیوند عمیق soha://recipe?config=... خود را اینجا جای‌گذاری کنید"
   },
   "importRecipeForm.example": {
     "defaultMessage": "نمونه"
@@ -3525,7 +3525,7 @@
     "defaultMessage": "پیوند عمیق"
   },
   "scheduleModal.deepLinkPlaceholder": {
-    "defaultMessage": "پیوند goose://recipe را اینجا جای‌گذاری کنید..."
+    "defaultMessage": "پیوند soha://recipe را اینجا جای‌گذاری کنید..."
   },
   "scheduleModal.editSchedule": {
     "defaultMessage": "ویرایش زمان‌بندی"
@@ -3537,7 +3537,7 @@
     "defaultMessage": "خواندن فایل انتخاب‌شده ناموفق بود."
   },
   "scheduleModal.invalidDeepLink": {
-    "defaultMessage": "پیوند عمیق نامعتبر. لطفاً از یک پیوند goose://recipe استفاده کنید."
+    "defaultMessage": "پیوند عمیق نامعتبر. لطفاً از یک پیوند soha://recipe استفاده کنید."
   },
   "scheduleModal.invalidFileType": {
     "defaultMessage": "نوع فایل نامعتبر: لطفاً یک فایل YAML انتخاب کنید (.yaml یا .yml)"
@@ -3969,7 +3969,7 @@
     "defaultMessage": "یک پیوند اشتراک‌گذاری Nostr سها را جای‌گذاری کنید تا نشست را دریافت، رمزگشایی و وارد کنید."
   },
   "sessions.importNostr.placeholder": {
-    "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
+    "defaultMessage": "soha://sessions/nostr?nevent=...&key=..."
   },
   "sessions.importNostr.title": {
     "defaultMessage": "ورود نشست Nostr"

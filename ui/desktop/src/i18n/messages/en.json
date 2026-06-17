@@ -1548,10 +1548,10 @@
     "defaultMessage": "Cancel"
   },
   "importRecipeForm.deeplinkHint": {
-    "defaultMessage": "Paste a recipe deeplink starting with \"goose://recipe?config=\""
+    "defaultMessage": "Paste a recipe deeplink starting with \"soha://recipe?config=\""
   },
   "importRecipeForm.deeplinkPlaceholder": {
-    "defaultMessage": "Paste your goose://recipe?config=... deeplink here"
+    "defaultMessage": "Paste your soha://recipe?config=... deeplink here"
   },
   "importRecipeForm.example": {
     "defaultMessage": "example"
@@ -3525,7 +3525,7 @@
     "defaultMessage": "Deep link"
   },
   "scheduleModal.deepLinkPlaceholder": {
-    "defaultMessage": "Paste goose://recipe link here..."
+    "defaultMessage": "Paste soha://recipe link here..."
   },
   "scheduleModal.editSchedule": {
     "defaultMessage": "Edit Schedule"
@@ -3537,7 +3537,7 @@
     "defaultMessage": "Failed to read the selected file."
   },
   "scheduleModal.invalidDeepLink": {
-    "defaultMessage": "Invalid deep link. Please use a goose://recipe link."
+    "defaultMessage": "Invalid deep link. Please use a soha://recipe link."
   },
   "scheduleModal.invalidFileType": {
     "defaultMessage": "Invalid file type: Please select a YAML file (.yaml or .yml)"
@@ -3969,7 +3969,7 @@
     "defaultMessage": "Paste a SOHA Nostr share link to fetch, decrypt, and import the session."
   },
   "sessions.importNostr.placeholder": {
-    "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
+    "defaultMessage": "soha://sessions/nostr?nevent=...&key=..."
   },
   "sessions.importNostr.title": {
     "defaultMessage": "Import Nostr Session"

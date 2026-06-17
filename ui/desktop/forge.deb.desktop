@@ -5,4 +5,4 @@ Icon=/usr/share/pixmaps/SOHA.png
 Terminal=false
 Type=Application
 Categories=Development;
-MimeType=x-scheme-handler/goose;
+MimeType=x-scheme-handler/soha;

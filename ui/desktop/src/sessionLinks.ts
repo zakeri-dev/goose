@@ -16,7 +16,7 @@ export async function importNostrSessionFromDeepLink(url: string): Promise<void>
 
 /**
  * Handles opening a shared session from a deep link
- * @param url The deep link URL (goose://sessions/:shareToken)
+ * @param url The deep link URL (soha://sessions/:shareToken)
  * @param setView Function to set the current view
  * @param baseUrl Optional base URL for the session sharing API
  * @returns Promise that resolves when the session is opened
@@ -27,12 +27,12 @@ export async function openSharedSessionFromDeepLink(
   baseUrl?: string
 ): Promise<SharedSessionDetails | null> {
   try {
-    if (!url.startsWith('goose://sessions/')) {
-      throw new Error('Invalid URL: URL must use the goose://sessions/ scheme');
+    if (!url.startsWith('soha://sessions/')) {
+      throw new Error('Invalid URL: URL must use the soha://sessions/ scheme');
     }
 
     // Extract the share token from the URL
-    const shareToken: string = url.replace('goose://sessions/', '');
+    const shareToken: string = url.replace('soha://sessions/', '');
 
     if (!shareToken || shareToken.trim() === '') {
       throw new Error('Invalid URL: Missing share token');
@@ -70,7 +70,7 @@ export async function openSharedSessionFromDeepLink(
     setView('sharedSession', {
       sessionDetails: null,
       error: errMsg,
-      shareToken: url.replace('goose://sessions/', ''),
+      shareToken: url.replace('soha://sessions/', ''),
       baseUrl,
     });
 
