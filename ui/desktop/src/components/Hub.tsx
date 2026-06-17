@@ -31,7 +31,7 @@ const i18n = defineMessages({
   goodEvening: { id: 'hub.goodEvening', defaultMessage: 'Good evening' },
 });
 
-function useClock(): { time: string; meridiem: string; hour: number } {
+function useClock(locale: string): { time: string; meridiem: string; hour: number } {
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
     const interval = setInterval(() => setNow(new Date()), 30_000);
@@ -39,10 +39,16 @@ function useClock(): { time: string; meridiem: string; hour: number } {
   }, []);
 
   const hour = now.getHours();
-  const minutes = now.getMinutes();
-  const meridiem = hour >= 12 ? 'PM' : 'AM';
-  const displayHour = ((hour + 11) % 12) + 1;
-  const time = `${displayHour}:${String(minutes).padStart(2, '0')}`;
+  // Locale-aware time + day period: Persian gets Persian digits (۱۰:۳۷) and
+  // localized markers (ق.ظ / ب.ظ); English keeps 10:37 / AM / PM.
+  const parts = new Intl.DateTimeFormat(locale, {
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  }).formatToParts(now);
+  const part = (type: string) => parts.find((p) => p.type === type)?.value ?? '';
+  const time = `${part('hour')}:${part('minute')}`;
+  const meridiem = part('dayPeriod');
   return { time, meridiem, hour };
 }
 
@@ -56,7 +62,7 @@ export default function Hub({
   const [workingDir, setWorkingDir] = useState(getInitialWorkingDir());
   const [isCreatingSession, setIsCreatingSession] = useState(false);
   const inputRef = useRef<HTMLTextAreaElement>(null);
-  const { time, meridiem, hour } = useClock();
+  const { time, meridiem, hour } = useClock(intl.locale);
 
   const greeting = useMemo(() => {
     if (hour < 12) return intl.formatMessage(i18n.goodMorning);
