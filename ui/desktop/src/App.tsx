@@ -648,9 +648,13 @@ export function AppInner() {
                text-text-inverse bg-background-inverse
               `
           }
-          style={{ width: '450px' }}
+          style={
+            isRtl
+              ? { width: '450px', top: '1rem', left: '1rem', right: 'auto' }
+              : { width: '450px', top: '1rem', right: '1rem', left: 'auto' }
+          }
           className="mt-6"
-          position="top-right"
+          position={isRtl ? 'top-left' : 'top-right'}
           rtl={isRtl}
           autoClose={3000}
           closeOnClick
