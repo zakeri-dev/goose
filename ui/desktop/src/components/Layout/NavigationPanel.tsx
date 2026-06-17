@@ -163,11 +163,6 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
   const location = useLocation();
   const { extensionsList } = useConfig();
 
-  // On macOS the sidebar header must clear the inset traffic lights. On
-  // Windows/Linux the custom title bar already reserves the top strip, so the
-  // header only needs ordinary breathing room.
-  const isMac = (window?.electron?.platform || 'darwin') === 'darwin';
-
   const appsExtensionEnabled = !!extensionsList?.find((ext) => ext.name === 'apps')?.enabled;
 
   const visibleItems = useMemo<NavItem[]>(() => {
@@ -240,10 +235,7 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
           onClick={() => setIsNavExpanded(true)}
           title={intl.formatMessage(i18n.expandSidebar)}
           aria-label={intl.formatMessage(i18n.expandSidebar)}
-          className={cn(
-            'no-drag mb-2 p-1.5 rounded-xl hover:bg-background-tertiary transition-colors',
-            isMac ? 'mt-[26px]' : 'mt-3'
-          )}
+          className="no-drag mt-[26px] mb-2 p-1.5 rounded-xl hover:bg-background-tertiary transition-colors"
         >
           <Goose className="w-8 h-8" />
         </button>
@@ -286,12 +278,7 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
       )}
     >
       {/* Header: logo + collapse button. Top padding clears the macOS traffic lights. */}
-      <div
-        className={cn(
-          'flex items-center justify-between px-4 pb-2 no-drag',
-          isMac ? 'pt-[34px]' : 'pt-4'
-        )}
-      >
+      <div className="flex items-center justify-between px-4 pt-[34px] pb-2 no-drag">
         <div className="flex items-center gap-2.5">
           <Goose className="w-9 h-9" />
           <span className="text-lg font-bold tracking-wide text-text-primary">SOHA</span>

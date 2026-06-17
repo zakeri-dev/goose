@@ -1013,14 +1013,10 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
   });
 
   const mainWindow = new BrowserWindow({
-    // Fully frameless on every platform so the window chrome belongs to the app:
-    // macOS keeps the inset traffic lights, Windows/Linux get a custom title bar
-    // (see TitleBar.tsx) with branded minimize/maximize/close controls. This also
-    // removes the native menu bar; its accelerators stay registered via the app menu.
-    titleBarStyle: 'hidden',
+    titleBarStyle: process.platform === 'darwin' ? 'hidden' : 'default',
     trafficLightPosition: process.platform === 'darwin' ? { x: 20, y: 16 } : undefined,
     vibrancy: process.platform === 'darwin' ? 'window' : undefined,
-    frame: false,
+    frame: process.platform !== 'darwin',
     // windowStateKeeper persists the outer window bounds (getBounds), so the
     // window must be restored by outer bounds too. With useContentSize the saved
     // outer height is reapplied as the content height, growing the window by the
@@ -1340,10 +1336,6 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
   };
   mainWindow.on('enter-full-screen', broadcastFullScreenState);
   mainWindow.on('leave-full-screen', broadcastFullScreenState);
-
-  // Keep the custom title bar's maximize/restore button in sync with the window.
-  mainWindow.on('maximize', () => mainWindow.webContents.send('window-maximized-change', true));
-  mainWindow.on('unmaximize', () => mainWindow.webContents.send('window-maximized-change', false));
 
   // Handle mouse back button (button 3)
   // Use type assertion for non-standard Electron event
@@ -2657,24 +2649,6 @@ async function appMain() {
     if (BrowserWindow.getAllWindows().length === 0) {
       createNewWindow(app);
     }
-  });
-
-  ipcMain.on('window-minimize', (event) => {
-    BrowserWindow.fromWebContents(event.sender)?.minimize();
-  });
-
-  ipcMain.on('window-maximize-toggle', (event) => {
-    const win = BrowserWindow.fromWebContents(event.sender);
-    if (!win) return;
-    if (win.isMaximized()) {
-      win.unmaximize();
-    } else {
-      win.maximize();
-    }
-  });
-
-  ipcMain.handle('window-is-maximized', (event) => {
-    return BrowserWindow.fromWebContents(event.sender)?.isMaximized() ?? false;
   });
 
   ipcMain.on('create-chat-window', (event, options = {}) => {
