@@ -255,6 +255,19 @@
   text-align: left;
 }
 
+/* Premium SOHA sidebar: royal-navy gradient with light content (both themes).
+   Local token overrides make children using text/background tokens adapt. */
+.soha-sidebar {
+  background: linear-gradient(170deg, #1f2e57 0%, #131d36 55%, #0b1322 100%);
+  --color-text-primary: #eef2fb;
+  --color-text-secondary: #aab8d4;
+  --color-text-tertiary: #7587a8;
+  --color-background-secondary: rgba(255, 255, 255, 0.08);
+  --color-background-tertiary: rgba(255, 255, 255, 0.06);
+  --color-border-primary: rgba(255, 255, 255, 0.08);
+  --color-border-secondary: rgba(255, 255, 255, 0.1);
+}
+
 @font-face {
   font-family: 'Cash Sans';
   src:

@@ -206,13 +206,16 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.15 }}
       className={cn(
-        'bg-background-primary outline-none flex flex-col h-full',
+        'soha-sidebar outline-none flex flex-col h-full',
         className
       )}
     >
       {/* Header: logo + collapse button. Top padding clears the macOS traffic lights. */}
       <div className="flex items-center justify-between px-4 pt-[34px] pb-2 no-drag">
-        <Goose className="w-6 h-6 text-text-primary" />
+        <div className="flex items-center gap-2.5">
+          <Goose className="w-9 h-9" />
+          <span className="text-lg font-bold tracking-wide text-text-primary">SOHA</span>
+        </div>
         <button
           onClick={() => setIsNavExpanded(false)}
           className="p-1.5 rounded-md hover:bg-background-tertiary transition-colors"
