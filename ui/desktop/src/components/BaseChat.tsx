@@ -408,14 +408,9 @@ export default function BaseChat({
         <div className="flex flex-col flex-1 min-h-0 relative">
           {/* Goose watermark - top right */}
           <div className="absolute top-[14px] right-4 z-[60] flex flex-row items-center gap-1">
-            <a
-              href="https://goose-docs.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="no-drag flex flex-row items-center gap-1 hover:opacity-80 transition-opacity"
-            >
+            <span className="no-drag flex flex-row items-center gap-1">
               <img src={sohaTypo} alt="SOHA" className="h-5 w-auto" />
-            </a>
+            </span>
             <EnvironmentBadge className="translate-y-px" />
           </div>
 

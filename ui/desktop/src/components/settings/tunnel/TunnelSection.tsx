@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '../../ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '../../ui/dialog';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import { QRCodeSVG } from 'qrcode.react';
 import {
   Loader2,
@@ -9,9 +9,6 @@ import {
   Check,
   ChevronDown,
   ChevronUp,
-  Info,
-  ExternalLink,
-  QrCode,
 } from 'lucide-react';
 import { errorMessage } from '../../../utils/conversionUtils';
 import { startTunnel, stopTunnel, getTunnelStatus } from '../../../api/sdk.gen';
@@ -42,26 +39,6 @@ const i18n = defineMessages({
   mobileApp: {
     id: 'tunnelSection.mobileApp',
     defaultMessage: 'Mobile App',
-  },
-  previewFeature: {
-    id: 'tunnelSection.previewFeature',
-    defaultMessage: 'Preview feature:',
-  },
-  previewDescription: {
-    id: 'tunnelSection.previewDescription',
-    defaultMessage: 'Enable remote access to goose from mobile devices using secure tunneling.',
-  },
-  getIosApp: {
-    id: 'tunnelSection.getIosApp',
-    defaultMessage: 'Get the iOS app',
-  },
-  or: {
-    id: 'tunnelSection.or',
-    defaultMessage: 'or',
-  },
-  scanQrCode: {
-    id: 'tunnelSection.scanQrCode',
-    defaultMessage: 'scan QR code',
   },
   tunnelStatus: {
     id: 'tunnelSection.tunnelStatus',
@@ -115,18 +92,6 @@ const i18n = defineMessages({
     id: 'tunnelSection.close',
     defaultMessage: 'Close',
   },
-  downloadIosApp: {
-    id: 'tunnelSection.downloadIosApp',
-    defaultMessage: 'Download goose iOS App',
-  },
-  appStoreQrInstructions: {
-    id: 'tunnelSection.appStoreQrInstructions',
-    defaultMessage: 'Scan this QR code with your iPhone camera to install the goose mobile app from the App Store',
-  },
-  openInAppStore: {
-    id: 'tunnelSection.openInAppStore',
-    defaultMessage: 'Open in App Store',
-  },
   failedToLoadStatus: {
     id: 'tunnelSection.failedToLoadStatus',
     defaultMessage: 'Failed to load tunnel status',
@@ -140,8 +105,6 @@ const i18n = defineMessages({
     defaultMessage: 'Failed to start tunnel',
   },
 });
-
-const IOS_APP_STORE_URL = 'https://apps.apple.com/us/app/goose-ai/id6752889295';
 
 const STATUS_MESSAGE_KEYS = {
   idle: 'statusIdle',
@@ -160,7 +123,6 @@ export default function TunnelSection() {
     secret: '',
   });
   const [showQRModal, setShowQRModal] = useState(false);
-  const [showAppStoreQRModal, setShowAppStoreQRModal] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [copiedUrl, setCopiedUrl] = useState(false);
   const [copiedSecret, setCopiedSecret] = useState(false);
@@ -253,31 +215,6 @@ export default function TunnelSection() {
       <Card className="rounded-lg">
         <CardHeader className="pb-0">
           <CardTitle className="mb-1">{intl.formatMessage(i18n.mobileApp)}</CardTitle>
-          <CardDescription className="flex flex-col gap-2">
-            <div className="flex items-start gap-2 p-2 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded">
-              <Info className="h-4 w-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-              <div className="text-xs text-blue-800 dark:text-blue-200">
-                <strong>{intl.formatMessage(i18n.previewFeature)}</strong> {intl.formatMessage(i18n.previewDescription)}{' '}
-                <a
-                  href={IOS_APP_STORE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 underline hover:no-underline"
-                >
-                  {intl.formatMessage(i18n.getIosApp)}
-                  <ExternalLink className="h-3 w-3" />
-                </a>
-                {' '}{intl.formatMessage(i18n.or)}{' '}
-                <button
-                  onClick={() => setShowAppStoreQRModal(true)}
-                  className="inline-flex items-center gap-1 underline hover:no-underline"
-                >
-                  {intl.formatMessage(i18n.scanQrCode)}
-                  <QrCode className="h-3 w-3" />
-                </button>
-              </div>
-            </div>
-          </CardDescription>
         </CardHeader>
         <CardContent className="pt-4 px-4 space-y-4">
           {error && (
@@ -415,43 +352,6 @@ export default function TunnelSection() {
         </DialogContent>
       </Dialog>
 
-      <Dialog open={showAppStoreQRModal} onOpenChange={setShowAppStoreQRModal}>
-        <DialogContent className="sm:max-w-[400px]">
-          <DialogHeader>
-            <DialogTitle>{intl.formatMessage(i18n.downloadIosApp)}</DialogTitle>
-          </DialogHeader>
-
-          <div className="py-4 space-y-4">
-            <div className="flex justify-center">
-              <div className="p-4 bg-white rounded-lg">
-                <QRCodeSVG value={IOS_APP_STORE_URL} size={200} />
-              </div>
-            </div>
-
-            <div className="text-center text-sm text-text-secondary">
-              {intl.formatMessage(i18n.appStoreQrInstructions)}
-            </div>
-
-            <div className="text-center">
-              <a
-                href={IOS_APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                <ExternalLink className="h-4 w-4" />
-                {intl.formatMessage(i18n.openInAppStore)}
-              </a>
-            </div>
-          </div>
-
-          <DialogFooter>
-            <Button variant="outline" onClick={() => setShowAppStoreQRModal(false)}>
-              {intl.formatMessage(i18n.close)}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </>
   );
 }

@@ -489,10 +489,7 @@ export default function AppSettingsSection({ scrollToSection }: AppSettingsSecti
           <div className="flex space-x-4">
             <Button
               onClick={() => {
-                window.open(
-                  'https://github.com/aaif-goose/goose/issues/new?template=bug_report.md',
-                  '_blank'
-                );
+                window.open('https://github.com/zakeri-dev/goose/issues/new', '_blank');
               }}
               variant="secondary"
               size="sm"
@@ -501,10 +498,7 @@ export default function AppSettingsSection({ scrollToSection }: AppSettingsSecti
             </Button>
             <Button
               onClick={() => {
-                window.open(
-                  'https://github.com/aaif-goose/goose/issues/new?template=feature_request.md',
-                  '_blank'
-                );
+                window.open('https://github.com/zakeri-dev/goose/issues/new', '_blank');
               }}
               variant="secondary"
               size="sm"
