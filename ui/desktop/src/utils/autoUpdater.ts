@@ -276,7 +276,39 @@ export function registerUpdateIpcHandlers() {
       log.info('Installing update from GitHub fallback...');
 
       try {
-        // Use the stored extracted path if available, otherwise download path
+        // Windows: we downloaded the Squirrel installer (.exe). Run it — it
+        // updates the install in place and relaunches SOHA — then quit.
+        if (process.platform === 'win32' && githubUpdateInfo.downloadPath?.endsWith('.exe')) {
+          const installerPath = githubUpdateInfo.downloadPath;
+          try {
+            await fs.access(installerPath);
+          } catch {
+            throw new Error('Update file not found. Please download the update first.');
+          }
+
+          const winResult = (await dialog.showMessageBox({
+            type: 'info',
+            title: 'نصب بروزرسانی',
+            message: `نسخه ${githubUpdateInfo.latestVersion} آماده‌ی نصب است.`,
+            detail: 'نصب‌کننده‌ی سها اجرا می‌شود؛ این پنجره بسته و پس از نصب، نسخه‌ی جدید باز می‌شود.',
+            buttons: ['نصب و راه‌اندازی مجدد', 'انصراف'],
+            defaultId: 0,
+            cancelId: 1,
+          })) as unknown as { response: number };
+
+          if (winResult.response === 0) {
+            trackUpdateInstallInitiated(
+              githubUpdateInfo.latestVersion || 'unknown',
+              'github-fallback',
+              'quit_and_install'
+            );
+            await shell.openPath(installerPath);
+            setTimeout(() => app.quit(), 1000);
+          }
+          return;
+        }
+
+        // macOS / other: download is a folder/zip the user applies manually.
         const updatePath = githubUpdateInfo.extractedPath || githubUpdateInfo.downloadPath;
 
         if (!updatePath) {

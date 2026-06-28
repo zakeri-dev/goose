@@ -109,8 +109,8 @@ export class GitHubUpdater {
           assetName = `${this.bundleName}_intel_mac.zip`;
         }
       } else if (platform === 'win32') {
-        // Windows - for future support
-        assetName = `${this.bundleName}-win32-x64.zip`;
+        // Windows: the Squirrel installer updates in place and relaunches the app.
+        assetName = `${this.bundleName}-${latestVersion}.Setup.exe`;
       } else {
         // Linux - for future support
         assetName = `${this.bundleName}-linux-${arch}.zip`;
@@ -252,9 +252,11 @@ export class GitHubUpdater {
       const buffer = Buffer.concat(chunks.map((chunk) => Buffer.from(chunk)));
       log.info(`GitHubUpdater: Buffer created - ${buffer.length} bytes`);
 
-      // Save to Downloads directory
+      // Save to Downloads directory. Preserve the asset's real extension so the
+      // Windows Squirrel installer (.exe) can be launched directly.
       const downloadsDir = path.join(os.homedir(), 'Downloads');
-      const fileName = `${this.bundleName}-${latestVersion}.zip`;
+      const ext = downloadUrl.toLowerCase().split('?')[0].endsWith('.exe') ? 'exe' : 'zip';
+      const fileName = `${this.bundleName}-${latestVersion}.${ext}`;
       const downloadPath = path.join(downloadsDir, fileName);
 
       log.info(`GitHubUpdater: Writing file to ${downloadPath}...`);
