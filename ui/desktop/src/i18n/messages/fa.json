@@ -11,9 +11,6 @@
   "announcementModal.gotIt": {
     "defaultMessage": "متوجه شدم!"
   },
-  "appLayout.openNavigation": {
-    "defaultMessage": "باز کردن منوی ناوبری"
-  },
   "appsView.customApp": {
     "defaultMessage": "برنامه سفارشی"
   },
@@ -113,18 +110,6 @@
   "baseChat.goHome": {
     "defaultMessage": "رفتن به خانه"
   },
-  "baseChat.noSession": {
-    "defaultMessage": "نشستی وجود ندارد"
-  },
-  "baseChat.recipeCreatedMessage": {
-    "defaultMessage": "«{title}» ذخیره شد و آماده استفاده است."
-  },
-  "baseChat.recipeCreatedTitle": {
-    "defaultMessage": "دستور کار با موفقیت ساخته شد!"
-  },
-  "bottomMenuExtensionSelection.extensionToggleError": {
-    "defaultMessage": "خطا در تغییر وضعیت افزونه"
-  },
   "bottomMenuExtensionSelection.extensionUpdated": {
     "defaultMessage": "افزونه به‌روزرسانی شد"
   },
@@ -142,9 +127,6 @@
   },
   "bottomMenuExtensionSelection.manageExtensions": {
     "defaultMessage": "مدیریت افزونه‌ها"
-  },
-  "bottomMenuExtensionSelection.noActiveSession": {
-    "defaultMessage": "هیچ نشست فعالی یافت نشد. لطفاً ابتدا یک نشست گفتگو آغاز کنید."
   },
   "bottomMenuExtensionSelection.noExtensionsAvailable": {
     "defaultMessage": "هیچ افزونه‌ای در دسترس نیست"
@@ -169,9 +151,6 @@
   },
   "chatInput.contextWindow": {
     "defaultMessage": "پنجره زمینه"
-  },
-  "chatInput.createRecipeFromSession": {
-    "defaultMessage": "ساخت دستور کار از نشست"
   },
   "chatInput.dictationError": {
     "defaultMessage": "خطای دیکته"
@@ -200,9 +179,6 @@
   "chatInput.send": {
     "defaultMessage": "ارسال"
   },
-  "chatInput.tooManyTools": {
-    "defaultMessage": "تعداد زیاد ابزارها می‌تواند کارایی را کاهش دهد. تعداد ابزار: {toolCount} (توصیه‌شده: {recommended})"
-  },
   "chatInput.transcribing": {
     "defaultMessage": "در حال رونویسی..."
   },
@@ -215,8 +191,8 @@
   "chatInput.viewEditRecipe": {
     "defaultMessage": "مشاهده/ویرایش دستور کار"
   },
-  "chatInput.viewExtensions": {
-    "defaultMessage": "مشاهده افزونه‌ها"
+  "chatInput.waitingForCancellation": {
+    "defaultMessage": "در انتظار اتمام لغو"
   },
   "chatInput.waitingForImages": {
     "defaultMessage": "در انتظار ذخیره تصاویر..."
@@ -365,9 +341,6 @@
   "createEditRecipe.generatingDeeplink": {
     "defaultMessage": "در حال ساخت پیوند عمیق..."
   },
-  "createEditRecipe.learnMore": {
-    "defaultMessage": "بیشتر بدانید"
-  },
   "createEditRecipe.recipeSavedAndLaunchedMsg": {
     "defaultMessage": "دستور کار با موفقیت ذخیره و اجرا شد"
   },
@@ -403,54 +376,6 @@
   },
   "createEditRecipe.viewEditRecipeTitle": {
     "defaultMessage": "مشاهده/ویرایش دستور کار"
-  },
-  "createRecipeFromSession.analyzingTitle": {
-    "defaultMessage": "در حال تحلیل گفتگوی شما"
-  },
-  "createRecipeFromSession.cancel": {
-    "defaultMessage": "لغو"
-  },
-  "createRecipeFromSession.createAndRunRecipe": {
-    "defaultMessage": "ساخت و اجرای دستور کار"
-  },
-  "createRecipeFromSession.createRecipe": {
-    "defaultMessage": "ساخت دستور کار"
-  },
-  "createRecipeFromSession.creating": {
-    "defaultMessage": "در حال ساخت..."
-  },
-  "createRecipeFromSession.extractingInsights": {
-    "defaultMessage": "در حال استخراج بینش‌ها از گفتگوی شما"
-  },
-  "createRecipeFromSession.failedToCreateDefaultMsg": {
-    "defaultMessage": "هنگام ساخت دستور کار خطای غیرمنتظره‌ای رخ داد. لطفاً دوباره تلاش کنید."
-  },
-  "createRecipeFromSession.failedToCreateTitle": {
-    "defaultMessage": "ساخت دستور کار ناموفق بود"
-  },
-  "createRecipeFromSession.stageComplete": {
-    "defaultMessage": "تکمیل شد!"
-  },
-  "createRecipeFromSession.stageExtracting": {
-    "defaultMessage": "در حال استخراج موضوعات اصلی..."
-  },
-  "createRecipeFromSession.stageFinalizing": {
-    "defaultMessage": "در حال نهایی‌سازی جزئیات..."
-  },
-  "createRecipeFromSession.stageGenerating": {
-    "defaultMessage": "در حال ساخت ساختار دستور کار..."
-  },
-  "createRecipeFromSession.stageIdentifying": {
-    "defaultMessage": "در حال شناسایی الگوهای کلیدی..."
-  },
-  "createRecipeFromSession.stageReading": {
-    "defaultMessage": "در حال خواندن گفتگوی شما..."
-  },
-  "createRecipeFromSession.subtitle": {
-    "defaultMessage": "یک دستور کار قابل‌استفاده مجدد بر اساس گفتگوی فعلی خود بسازید."
-  },
-  "createRecipeFromSession.title": {
-    "defaultMessage": "ساخت دستور کار از نشست"
   },
   "createSubRecipeInline.cancel": {
     "defaultMessage": "لغو"
@@ -992,6 +917,9 @@
   "elicitationRequest.submit": {
     "defaultMessage": "ثبت"
   },
+  "elicitationRequest.submitError": {
+    "defaultMessage": "این درخواست دیگر فعال نیست. افزونه باید دوباره درخواست کند."
+  },
   "elicitationRequest.submitted": {
     "defaultMessage": "اطلاعات ثبت شد"
   },
@@ -1190,9 +1118,6 @@
   "extensionsSection.addExtension": {
     "defaultMessage": "افزودن افزونه"
   },
-  "extensionsSection.browseExtensions": {
-    "defaultMessage": "مرور افزونه‌ها"
-  },
   "extensionsSection.saveChanges": {
     "defaultMessage": "ذخیره تغییرات"
   },
@@ -1204,9 +1129,6 @@
   },
   "extensionsView.addExtension": {
     "defaultMessage": "افزودن افزونه"
-  },
-  "extensionsView.browseExtensions": {
-    "defaultMessage": "مرور افزونه‌ها"
   },
   "extensionsView.defaultNote": {
     "defaultMessage": "افزونه‌هایی که اینجا فعال می‌شوند به‌عنوان پیش‌فرض برای گفتگوهای جدید استفاده می‌شوند. همچنین می‌توانید افزونه‌های فعال را در حین گفتگو تغییر دهید."
@@ -1292,66 +1214,6 @@
   "freeOptionCards.unexpectedError": {
     "defaultMessage": "خطای غیرمنتظره‌ای در حین راه‌اندازی رخ داد."
   },
-  "gatewaySettings.botFatherInstructions": {
-    "defaultMessage": "‏@BotFather را روی تلفن خود باز کنید، /newbot را ارسال کنید و دستورها را برای نام‌گذاری ربات خود دنبال کنید. BotFather با یک توکن API پاسخ می‌دهد — آن را در زیر جای‌گذاری کنید."
-  },
-  "gatewaySettings.close": {
-    "defaultMessage": "بستن"
-  },
-  "gatewaySettings.expiresIn": {
-    "defaultMessage": "انقضا تا {time}"
-  },
-  "gatewaySettings.failedToGeneratePairingCode": {
-    "defaultMessage": "ساخت کد جفت‌سازی ناموفق بود"
-  },
-  "gatewaySettings.failedToRemove": {
-    "defaultMessage": "حذف ناموفق بود"
-  },
-  "gatewaySettings.failedToStart": {
-    "defaultMessage": "شروع ناموفق بود"
-  },
-  "gatewaySettings.failedToStop": {
-    "defaultMessage": "توقف ناموفق بود"
-  },
-  "gatewaySettings.failedToUnpairUser": {
-    "defaultMessage": "لغو جفت‌سازی کاربر ناموفق بود"
-  },
-  "gatewaySettings.loading": {
-    "defaultMessage": "در حال بارگذاری..."
-  },
-  "gatewaySettings.pairDevice": {
-    "defaultMessage": "جفت‌سازی دستگاه"
-  },
-  "gatewaySettings.pairedUsers": {
-    "defaultMessage": "کاربران جفت‌شده"
-  },
-  "gatewaySettings.pairingCode": {
-    "defaultMessage": "کد جفت‌سازی"
-  },
-  "gatewaySettings.pasteBotToken": {
-    "defaultMessage": "توکن ربات را اینجا جای‌گذاری کنید"
-  },
-  "gatewaySettings.remove": {
-    "defaultMessage": "حذف"
-  },
-  "gatewaySettings.running": {
-    "defaultMessage": "در حال اجرا"
-  },
-  "gatewaySettings.sendCodeToPair": {
-    "defaultMessage": "این کد را به ربات {gatewayType} خود ارسال کنید تا جفت شود."
-  },
-  "gatewaySettings.start": {
-    "defaultMessage": "شروع"
-  },
-  "gatewaySettings.stop": {
-    "defaultMessage": "توقف"
-  },
-  "gatewaySettings.stopped": {
-    "defaultMessage": "متوقف شد"
-  },
-  "gatewaySettings.telegram": {
-    "defaultMessage": "تلگرام"
-  },
   "goosehintsModal.close": {
     "defaultMessage": "بستن"
   },
@@ -1384,12 +1246,6 @@
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "لطفاً مطمئن شوید که افزونه {bold} در صفحه افزونه‌ها فعال است. این افزونه برای استفاده از .goosehints الزامی است. برای اعمال به‌روزرسانی‌های .goosehints باید نشست خود را مجدداً راه‌اندازی کنید."
-  },
-  "goosehintsModal.helpText3": {
-    "defaultMessage": "برای اطلاعات بیشتر {link} را ببینید."
-  },
-  "goosehintsModal.helpTextLink": {
-    "defaultMessage": "استفاده از .goosehints"
   },
   "goosehintsModal.placeholder": {
     "defaultMessage": "راهنماهای پروژه را اینجا وارد کنید..."
@@ -1853,8 +1709,14 @@
   "localInferenceSettings.description": {
     "defaultMessage": "مدل‌های زبانی محلی را برای استنتاج بدون کلید API دانلود و مدیریت کنید. در HuggingFace هر مدل GGUF را جستجو کنید یا از گزینه‌های ویژه زیر استفاده کنید."
   },
+  "localInferenceSettings.dismiss": {
+    "defaultMessage": "نادیده گرفتن"
+  },
   "localInferenceSettings.download": {
     "defaultMessage": "دانلود"
+  },
+  "localInferenceSettings.downloadCancelled": {
+    "defaultMessage": "دانلود لغو شد"
   },
   "localInferenceSettings.downloadFailed": {
     "defaultMessage": "دانلود ناموفق بود"
@@ -1888,6 +1750,9 @@
   },
   "localInferenceSettings.remaining": {
     "defaultMessage": "{time} باقی‌مانده"
+  },
+  "localInferenceSettings.retry": {
+    "defaultMessage": "تلاش مجدد"
   },
   "localInferenceSettings.showAllFeatured": {
     "defaultMessage": "نمایش همه موارد ویژه ({count} مورد دیگر)"
@@ -3356,6 +3221,9 @@
   "scheduleDetailView.cannotModifyRunning": {
     "defaultMessage": "نمی‌توان یک زمان‌بندی را در حالی که از قبل در حال اجراست راه‌اندازی یا تغییر داد."
   },
+  "scheduleDetailView.completedSession": {
+    "defaultMessage": "نشست: {sessionId}"
+  },
   "scheduleDetailView.created": {
     "defaultMessage": "ساخته شد: {date}"
   },
@@ -3376,9 +3244,6 @@
   },
   "scheduleDetailView.errorPrefix": {
     "defaultMessage": "خطا: {error}"
-  },
-  "scheduleDetailView.failedToLoadSession": {
-    "defaultMessage": "بارگذاری نشست ناموفق بود"
   },
   "scheduleDetailView.idLabel": {
     "defaultMessage": "شناسه:"
@@ -3422,9 +3287,6 @@
   "scheduleDetailView.messages": {
     "defaultMessage": "پیام‌ها: {count}"
   },
-  "scheduleDetailView.newSession": {
-    "defaultMessage": "نشست جدید: {sessionId}"
-  },
   "scheduleDetailView.noScheduleId": {
     "defaultMessage": "هیچ شناسه زمان‌بندی ارائه نشد. به فهرست زمان‌بندی‌ها بازگردید."
   },
@@ -3461,6 +3323,9 @@
   "scheduleDetailView.runScheduleNow": {
     "defaultMessage": "اکنون زمان‌بندی را اجرا کن"
   },
+  "scheduleDetailView.scheduleCompleted": {
+    "defaultMessage": "اجرا کامل شد"
+  },
   "scheduleDetailView.scheduleDetails": {
     "defaultMessage": "جزئیات زمان‌بندی"
   },
@@ -3479,9 +3344,6 @@
   "scheduleDetailView.schedulePaused": {
     "defaultMessage": "زمان‌بندی متوقف شد"
   },
-  "scheduleDetailView.scheduleTriggered": {
-    "defaultMessage": "زمان‌بندی راه‌اندازی شد"
-  },
   "scheduleDetailView.scheduleUnpaused": {
     "defaultMessage": "زمان‌بندی ادامه یافت"
   },
@@ -3490,9 +3352,6 @@
   },
   "scheduleDetailView.sessionId": {
     "defaultMessage": "شناسه نشست: {id}"
-  },
-  "scheduleDetailView.tokens": {
-    "defaultMessage": "توکن‌ها: {count}"
   },
   "scheduleDetailView.unpauseSchedule": {
     "defaultMessage": "ادامه زمان‌بندی"
@@ -3749,6 +3608,12 @@
   "securityToggle.warpNotice": {
     "defaultMessage": "تشخیص تزریق دستور هنگام اتصال به WARP بهترین عملکرد را دارد (برای دسترسی به سرویس طبقه‌بندی الزامی است)."
   },
+  "sessionActionsHeader.actionsLabel": {
+    "defaultMessage": "عملیات نشست"
+  },
+  "sessionActionsHeader.cancel": {
+    "defaultMessage": "انصراف"
+  },
   "sessionActionsHeader.close": {
     "defaultMessage": "بستن"
   },
@@ -3764,6 +3629,15 @@
   "sessionActionsHeader.copyText": {
     "defaultMessage": "کپی متن"
   },
+  "sessionActionsHeader.duplicateFailed": {
+    "defaultMessage": "تکثیر نشست ناموفق بود: {error}"
+  },
+  "sessionActionsHeader.duplicateSession": {
+    "defaultMessage": "تکثیر نشست"
+  },
+  "sessionActionsHeader.duplicated": {
+    "defaultMessage": "نشست تکثیر شد"
+  },
   "sessionActionsHeader.fullTextTitle": {
     "defaultMessage": "مقدار متن"
   },
@@ -3776,59 +3650,29 @@
   "sessionActionsHeader.loadingJson": {
     "defaultMessage": "در حال بارگذاری JSON..."
   },
+  "sessionActionsHeader.renameFailed": {
+    "defaultMessage": "تغییر نام نشست ناموفق بود: {error}"
+  },
+  "sessionActionsHeader.renamePlaceholder": {
+    "defaultMessage": "نام نشست را وارد کنید"
+  },
+  "sessionActionsHeader.renameSession": {
+    "defaultMessage": "تغییر نام نشست"
+  },
+  "sessionActionsHeader.renameTitle": {
+    "defaultMessage": "تغییر نام نشست"
+  },
+  "sessionActionsHeader.renamed": {
+    "defaultMessage": "نام نشست تغییر کرد"
+  },
+  "sessionActionsHeader.save": {
+    "defaultMessage": "ذخیره"
+  },
+  "sessionActionsHeader.saving": {
+    "defaultMessage": "در حال ذخیره..."
+  },
   "sessionActionsHeader.viewJson": {
     "defaultMessage": "مشاهده JSON نشست"
-  },
-  "sessionHistory.cancel": {
-    "defaultMessage": "لغو"
-  },
-  "sessionHistory.copy": {
-    "defaultMessage": "کپی"
-  },
-  "sessionHistory.empty.description": {
-    "defaultMessage": "این نشست حاوی هیچ پیامی نیست"
-  },
-  "sessionHistory.empty.title": {
-    "defaultMessage": "هیچ پیامی یافت نشد"
-  },
-  "sessionHistory.error.loading": {
-    "defaultMessage": "خطا در بارگذاری جزئیات نشست"
-  },
-  "sessionHistory.error.tryAgain": {
-    "defaultMessage": "تلاش مجدد"
-  },
-  "sessionHistory.loading": {
-    "defaultMessage": "در حال بارگذاری جزئیات نشست..."
-  },
-  "sessionHistory.resume": {
-    "defaultMessage": "ادامه"
-  },
-  "sessionHistory.searchPlaceholder": {
-    "defaultMessage": "جستجوی تاریخچه..."
-  },
-  "sessionHistory.share": {
-    "defaultMessage": "اشتراک‌گذاری"
-  },
-  "sessionHistory.shareModal.description": {
-    "defaultMessage": "این پیوند نشست را به اشتراک بگذارید تا به دیگران نمای فقط‌خواندنی از گفتگوی سها خود بدهید."
-  },
-  "sessionHistory.shareModal.title": {
-    "defaultMessage": "اشتراک‌گذاری نشست (نسخه آزمایشی)"
-  },
-  "sessionHistory.shareTooltip": {
-    "defaultMessage": "برای فعال کردن اشتراک‌گذاری نشست، به <b>تنظیمات</b> > <b>نشست</b> > <b>اشتراک‌گذاری نشست</b> بروید."
-  },
-  "sessionHistory.sharing": {
-    "defaultMessage": "در حال اشتراک‌گذاری..."
-  },
-  "sessionHistory.toast.copyFailed": {
-    "defaultMessage": "کپی پیوند در کلیپ‌بورد ناموفق بود"
-  },
-  "sessionHistory.toast.launchFailed": {
-    "defaultMessage": "اجرای نشست ممکن نشد: {error}"
-  },
-  "sessionHistory.toast.shareFailed": {
-    "defaultMessage": "اشتراک‌گذاری نشست ناموفق بود: {error}"
   },
   "sessionIndicators.error": {
     "defaultMessage": "نشست با خطا مواجه شد"
@@ -3838,57 +3682,6 @@
   },
   "sessionIndicators.streaming": {
     "defaultMessage": "در حال جریان"
-  },
-  "sessionSharingSection.alreadyConfigured": {
-    "defaultMessage": "اشتراک‌گذاری نشست از قبل پیکربندی شده است"
-  },
-  "sessionSharingSection.baseUrl": {
-    "defaultMessage": "نشانی پایه"
-  },
-  "sessionSharingSection.connectionFailed": {
-    "defaultMessage": "اتصال ناموفق بود."
-  },
-  "sessionSharingSection.connectionSuccess": {
-    "defaultMessage": "اتصال موفق بود!"
-  },
-  "sessionSharingSection.connectionTimedOut": {
-    "defaultMessage": "مهلت اتصال به پایان رسید. ممکن است سرور کند یا غیرقابل‌دسترس باشد."
-  },
-  "sessionSharingSection.descriptionConfigured": {
-    "defaultMessage": "اشتراک‌گذاری نشست پیکربندی شده اما کاملاً اختیاری است — نشست‌های شما فقط زمانی به اشتراک گذاشته می‌شوند که صراحتاً روی دکمه اشتراک‌گذاری کلیک کنید."
-  },
-  "sessionSharingSection.descriptionDefault": {
-    "defaultMessage": "می‌توانید اشتراک‌گذاری نشست را فعال کنید تا نشست‌های خود را با دیگران به اشتراک بگذارید."
-  },
-  "sessionSharingSection.enableSharing": {
-    "defaultMessage": "فعال کردن اشتراک‌گذاری نشست"
-  },
-  "sessionSharingSection.invalidUrl": {
-    "defaultMessage": "قالب نشانی نامعتبر است. لطفاً یک نشانی معتبر وارد کنید (مثلاً https://example.com/api)."
-  },
-  "sessionSharingSection.serverError": {
-    "defaultMessage": "خطای سرور: HTTP {status}. ممکن است سرور به‌درستی پیکربندی نشده باشد."
-  },
-  "sessionSharingSection.testConnection": {
-    "defaultMessage": "آزمایش اتصال"
-  },
-  "sessionSharingSection.testing": {
-    "defaultMessage": "در حال آزمایش..."
-  },
-  "sessionSharingSection.testingConnection": {
-    "defaultMessage": "در حال آزمایش اتصال..."
-  },
-  "sessionSharingSection.title": {
-    "defaultMessage": "اشتراک‌گذاری نشست"
-  },
-  "sessionSharingSection.unknownError": {
-    "defaultMessage": "خطای ناشناخته‌ای رخ داد."
-  },
-  "sessionSharingSection.unreachableServer": {
-    "defaultMessage": "دسترسی به سرور ممکن نیست. لطفاً نشانی و اتصال شبکه خود را بررسی کنید."
-  },
-  "sessionSharingSection.urlPlaceholder": {
-    "defaultMessage": "https://example.com/api"
   },
   "sessionViewComponents.empty.description": {
     "defaultMessage": "این نشست حاوی هیچ پیامی نیست"
@@ -4040,12 +3833,6 @@
   "sessions.toast.updated": {
     "defaultMessage": "توضیحات نشست با موفقیت به‌روزرسانی شد"
   },
-  "sessionsView.error.failedToLoad": {
-    "defaultMessage": "بارگذاری جزئیات نشست ناموفق بود. لطفاً بعداً دوباره تلاش کنید."
-  },
-  "sessionsView.loading": {
-    "defaultMessage": "در حال بارگذاری..."
-  },
   "settings.appearance.description": {
     "defaultMessage": "نحوه نمایش سها در سیستم خود را پیکربندی کنید"
   },
@@ -4091,11 +3878,17 @@
   "settings.language.japanese": {
     "defaultMessage": "ژاپنی"
   },
+  "settings.language.korean": {
+    "defaultMessage": "کره‌ای"
+  },
   "settings.language.persian": {
     "defaultMessage": "فارسی"
   },
   "settings.language.russian": {
     "defaultMessage": "روسی"
+  },
+  "settings.language.spanish": {
+    "defaultMessage": "اسپانیایی"
   },
   "settings.language.systemDefault": {
     "defaultMessage": "پیش‌فرض سیستم"
@@ -4213,12 +4006,6 @@
   },
   "settingsView.title": {
     "defaultMessage": "تنظیمات"
-  },
-  "sharedSession.loading": {
-    "defaultMessage": "در حال بارگذاری جزئیات نشست..."
-  },
-  "sharedSession.title": {
-    "defaultMessage": "نشست اشتراکی"
   },
   "sheet.close": {
     "defaultMessage": "بستن"
@@ -4457,9 +4244,6 @@
   "switchModelModal.providerPlaceholder": {
     "defaultMessage": "ارائه‌دهنده، برای جستجو تایپ کنید"
   },
-  "switchModelModal.quickStartGuide": {
-    "defaultMessage": "راهنمای شروع سریع"
-  },
   "switchModelModal.recommended": {
     "defaultMessage": "توصیه‌شده"
   },
@@ -4589,6 +4373,9 @@
   "toolApprovalButtons.deny": {
     "defaultMessage": "رد کن"
   },
+  "toolApprovalButtons.staleApprovalRequest": {
+    "defaultMessage": "این درخواستِ تأیید دیگر فعال نیست."
+  },
   "toolCallStatusIndicator.toolStatus": {
     "defaultMessage": "وضعیت ابزار: {status}"
   },
@@ -4625,98 +4412,14 @@
   "toolConfirmation.gooseWouldLikeToCallWithName": {
     "defaultMessage": "سها می‌خواهد {toolName} را فراخوانی کند. اجازه می‌دهید؟"
   },
-  "tunnelSection.appStoreQrInstructions": {
-    "defaultMessage": "این کد QR را با دوربین آیفون خود اسکن کنید تا برنامه موبایل سها را از App Store نصب کنید"
-  },
-  "tunnelSection.close": {
-    "defaultMessage": "بستن"
-  },
-  "tunnelSection.connectionDetails": {
-    "defaultMessage": "جزئیات اتصال"
-  },
-  "tunnelSection.downloadIosApp": {
-    "defaultMessage": "دانلود برنامه iOS سها"
-  },
-  "tunnelSection.failedToLoadStatus": {
-    "defaultMessage": "بارگذاری وضعیت تونل ناموفق بود"
-  },
-  "tunnelSection.failedToStartTunnel": {
-    "defaultMessage": "شروع تونل ناموفق بود"
-  },
-  "tunnelSection.failedToStopTunnel": {
-    "defaultMessage": "توقف تونل ناموفق بود"
-  },
-  "tunnelSection.getIosApp": {
-    "defaultMessage": "دریافت برنامه iOS"
-  },
-  "tunnelSection.mobileApp": {
-    "defaultMessage": "برنامه موبایل"
-  },
-  "tunnelSection.mobileAppConnection": {
-    "defaultMessage": "اتصال برنامه موبایل"
-  },
-  "tunnelSection.openInAppStore": {
-    "defaultMessage": "باز کردن در App Store"
-  },
-  "tunnelSection.or": {
-    "defaultMessage": "یا"
-  },
-  "tunnelSection.previewDescription": {
-    "defaultMessage": "دسترسی از راه دور به سها را از دستگاه‌های موبایل با استفاده از تونل‌سازی ایمن فعال کنید."
-  },
-  "tunnelSection.previewFeature": {
-    "defaultMessage": "قابلیت پیش‌نمایش:"
-  },
-  "tunnelSection.qrCodeInstructions": {
-    "defaultMessage": "این کد QR را با برنامه موبایل سها اسکن کنید. این کد را با دیگران به اشتراک نگذارید زیرا برای دسترسی شخصی شماست."
-  },
-  "tunnelSection.retry": {
-    "defaultMessage": "تلاش مجدد"
-  },
-  "tunnelSection.scanQrCode": {
-    "defaultMessage": "اسکن کد QR"
-  },
-  "tunnelSection.secretKey": {
-    "defaultMessage": "کلید محرمانه"
-  },
-  "tunnelSection.showQrCode": {
-    "defaultMessage": "نمایش کد QR"
-  },
-  "tunnelSection.startTunnel": {
-    "defaultMessage": "شروع تونل"
-  },
-  "tunnelSection.starting": {
-    "defaultMessage": "در حال شروع..."
-  },
-  "tunnelSection.statusDisabled": {
-    "defaultMessage": "تونل غیرفعال است"
-  },
-  "tunnelSection.statusError": {
-    "defaultMessage": "تونل با خطا مواجه شد"
-  },
-  "tunnelSection.statusIdle": {
-    "defaultMessage": "تونل در حال اجرا نیست"
-  },
-  "tunnelSection.statusRunning": {
-    "defaultMessage": "تونل فعال است"
-  },
-  "tunnelSection.statusStarting": {
-    "defaultMessage": "در حال شروع تونل..."
-  },
-  "tunnelSection.stopTunnel": {
-    "defaultMessage": "توقف تونل"
-  },
-  "tunnelSection.tunnelStatus": {
-    "defaultMessage": "وضعیت تونل"
-  },
-  "tunnelSection.tunnelUrl": {
-    "defaultMessage": "نشانی تونل"
-  },
-  "tunnelSection.url": {
-    "defaultMessage": "نشانی:"
-  },
   "updateSection.autoDownload": {
     "defaultMessage": "به‌روزرسانی به‌صورت خودکار در پس‌زمینه دانلود خواهد شد."
+  },
+  "updateSection.autoDownloadDisabledByEnv": {
+    "defaultMessage": "دانلود خودکار از طریق متغیر محیطی GOOSE_DISABLE_AUTO_DOWNLOAD غیرفعال شده است."
+  },
+  "updateSection.autoDownloadDisabledNote": {
+    "defaultMessage": "دانلود خودکار غیرفعال است. برای دانلود دستی روی «اکنون دانلود کن» کلیک کنید."
   },
   "updateSection.autoInstallNote": {
     "defaultMessage": "به‌روزرسانی هنگام خروج از برنامه به‌صورت خودکار نصب خواهد شد."
@@ -4729,6 +4432,15 @@
   },
   "updateSection.currentVersion": {
     "defaultMessage": "نسخه فعلی"
+  },
+  "updateSection.disableAutoDownload": {
+    "defaultMessage": "غیرفعال‌کردن دانلود خودکار بروزرسانی"
+  },
+  "updateSection.disableAutoDownloadDesc": {
+    "defaultMessage": "وقتی فعال باشد، سها نسخه‌های جدید را اطلاع می‌دهد ولی به‌طور خودکار دانلود نمی‌کند."
+  },
+  "updateSection.downloadNow": {
+    "defaultMessage": "اکنون دانلود کن"
   },
   "updateSection.downloadReady": {
     "defaultMessage": "به‌روزرسانی دانلود شد و آماده نصب است!"

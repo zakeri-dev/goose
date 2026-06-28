@@ -13,7 +13,7 @@ import { defineMessages, useIntl } from '../i18n';
 const i18n = defineMessages({
   heading: {
     id: 'telemetryConsentPrompt.heading',
-    defaultMessage: 'Help improve goose',
+    defaultMessage: 'Help improve SOHA',
   },
   description: {
     id: 'telemetryConsentPrompt.description',

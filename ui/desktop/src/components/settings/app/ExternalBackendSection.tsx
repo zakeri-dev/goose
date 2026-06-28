@@ -10,7 +10,7 @@ import { defineMessages, useIntl } from '../../../i18n';
 const i18n = defineMessages({
   title: {
     id: 'externalBackendSection.title',
-    defaultMessage: 'Goose Server',
+    defaultMessage: 'SOHA Server',
   },
   description: {
     id: 'externalBackendSection.description',
@@ -23,7 +23,7 @@ const i18n = defineMessages({
   },
   useExternalServerDescription: {
     id: 'externalBackendSection.useExternalServerDescription',
-    defaultMessage: 'Connect to a goose server running elsewhere (requires app restart)',
+    defaultMessage: 'Connect to a SOHA server running elsewhere (requires app restart)',
   },
   serverUrl: {
     id: 'externalBackendSection.serverUrl',

@@ -11,17 +11,11 @@
   "announcementModal.gotIt": {
     "defaultMessage": "Got it!"
   },
-  "appLayout.collapseNavigation": {
-    "defaultMessage": "Collapse navigation"
-  },
-  "appLayout.openNavigation": {
-    "defaultMessage": "Open navigation"
-  },
   "appsView.customApp": {
     "defaultMessage": "Custom app"
   },
   "appsView.description": {
-    "defaultMessage": "Applications from your MCP servers and Apps built by SOHA itself. You can ask it to create new apps through the chat interface and they will appear here."
+    "defaultMessage": "Applications from your MCP servers and Apps built by goose itself. You can ask it to create new apps through the chat interface and they will appear here."
   },
   "appsView.errorLoading": {
     "defaultMessage": "Error loading apps: {error}"
@@ -36,7 +30,7 @@
     "defaultMessage": "Loading apps..."
   },
   "appsView.noAppsDescription": {
-    "defaultMessage": "Open a chat and ask SOHA for the app you want to have. It can build one for you and that will appear here. Or if somebody shared an app, you can import it using the button above."
+    "defaultMessage": "Open a chat and ask goose for the app you want to have. It can build one for you and that will appear here. Or if somebody shared an app, you can import it using the button above."
   },
   "appsView.noAppsTitle": {
     "defaultMessage": "No apps available"
@@ -204,7 +198,7 @@
     "defaultMessage": "Waiting for images to save..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Choose the default mode SOHA uses for new sessions. Existing sessions keep their current mode."
+    "defaultMessage": "Choose the default mode Goose uses for new sessions. Existing sessions keep their current mode."
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Default Mode"
@@ -346,9 +340,6 @@
   },
   "createEditRecipe.generatingDeeplink": {
     "defaultMessage": "Generating deeplink..."
-  },
-  "createEditRecipe.learnMore": {
-    "defaultMessage": "Learn more"
   },
   "createEditRecipe.recipeSavedAndLaunchedMsg": {
     "defaultMessage": "Recipe saved and launched successfully"
@@ -1127,9 +1118,6 @@
   "extensionsSection.addExtension": {
     "defaultMessage": "Add Extension"
   },
-  "extensionsSection.browseExtensions": {
-    "defaultMessage": "Browse extensions"
-  },
   "extensionsSection.saveChanges": {
     "defaultMessage": "Save Changes"
   },
@@ -1142,14 +1130,11 @@
   "extensionsView.addExtension": {
     "defaultMessage": "Add Extension"
   },
-  "extensionsView.browseExtensions": {
-    "defaultMessage": "Browse extensions"
-  },
   "extensionsView.defaultNote": {
     "defaultMessage": "Extensions enabled here are used as the default for new chats. You can also toggle active extensions during chat."
   },
   "extensionsView.description": {
-    "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand SOHA's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
+    "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand Goose's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
   },
   "extensionsView.heading": {
     "defaultMessage": "Extensions"
@@ -1167,10 +1152,10 @@
     "defaultMessage": "AA:BB:CC:... or sha256/base64"
   },
   "externalBackendSection.description": {
-    "defaultMessage": "By default SOHA launches a server for you, use this to connect to an external SOHA server"
+    "defaultMessage": "By default goose launches a server for you, use this to connect to an external goose server"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Changes require restarting SOHA to take effect. New chat windows will connect to the external server."
+    "defaultMessage": "Changes require restarting Goose to take effect. New chat windows will connect to the external server."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Secret Key"
@@ -1236,7 +1221,7 @@
     "defaultMessage": "Developer"
   },
   "goosehintsModal.dialogDescription": {
-    "defaultMessage": "Provide additional context about your project to improve communication with SOHA"
+    "defaultMessage": "Provide additional context about your project to improve communication with Goose"
   },
   "goosehintsModal.dialogTitle": {
     "defaultMessage": "Configure Project Hints (.goosehints)"
@@ -1257,16 +1242,10 @@
     "defaultMessage": ".goosehints file found at: {filePath}"
   },
   "goosehintsModal.helpText1": {
-    "defaultMessage": ".goosehints is a text file used to provide additional context about your project and improve the communication with SOHA."
+    "defaultMessage": ".goosehints is a text file used to provide additional context about your project and improve the communication with Goose."
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "Please make sure {bold} extension is enabled in the extensions page. This extension is required to use .goosehints. You'll need to restart your session for .goosehints updates to take effect."
-  },
-  "goosehintsModal.helpText3": {
-    "defaultMessage": "See {link} for more information."
-  },
-  "goosehintsModal.helpTextLink": {
-    "defaultMessage": "using .goosehints"
   },
   "goosehintsModal.placeholder": {
     "defaultMessage": "Enter project hints here..."
@@ -1284,7 +1263,7 @@
     "defaultMessage": "Configure"
   },
   "goosehintsSection.description": {
-    "defaultMessage": "Configure your project's .goosehints file to provide additional context to SOHA"
+    "defaultMessage": "Configure your project's .goosehints file to provide additional context to Goose"
   },
   "goosehintsSection.title": {
     "defaultMessage": "Project Hints (.goosehints)"
@@ -1671,7 +1650,7 @@
     "defaultMessage": "Reset to Defaults"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting SOHA to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
+    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting Goose to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Restart Required"
@@ -2339,6 +2318,12 @@
   "navigationPanel.chats": {
     "defaultMessage": "Chats"
   },
+  "navigationPanel.collapseSidebar": {
+    "defaultMessage": "Collapse sidebar"
+  },
+  "navigationPanel.expandSidebar": {
+    "defaultMessage": "Expand sidebar"
+  },
   "navigationPanel.noChats": {
     "defaultMessage": "No recent chats"
   },
@@ -2616,7 +2601,7 @@
     "defaultMessage": "Failed to save prompt"
   },
   "promptsSettings.promptEditingDescription": {
-    "defaultMessage": "Customize the prompts that define SOHA's behavior in different contexts. These prompts use Jinja2 templating syntax. Be careful when modifying template variables, as incorrect changes can break functionality. Please share any improvements with the community."
+    "defaultMessage": "Customize the prompts that define goose's behavior in different contexts. These prompts use Jinja2 templating syntax. Be careful when modifying template variables, as incorrect changes can break functionality. Please share any improvements with the community."
   },
   "promptsSettings.promptEditingTitle": {
     "defaultMessage": "Prompt Editing"
@@ -2826,7 +2811,7 @@
     "defaultMessage": "Loading providers..."
   },
   "providerSettings.onboardingDescription": {
-    "defaultMessage": "Select an AI model provider to get started with SOHA. You'll need to use API keys generated by each provider which will be encrypted and stored locally. You can change your provider at any time in settings."
+    "defaultMessage": "Select an AI model provider to get started with goose. You'll need to use API keys generated by each provider which will be encrypted and stored locally. You can change your provider at any time in settings."
   },
   "providerSettings.otherProviders": {
     "defaultMessage": "Other providers"
@@ -3975,7 +3960,7 @@
     "defaultMessage": "Notifications"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "Keep your computer awake while SOHA is running a task (screen can still lock)"
+    "defaultMessage": "Keep your computer awake while goose is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "Prevent Sleep"
@@ -4259,9 +4244,6 @@
   "switchModelModal.providerPlaceholder": {
     "defaultMessage": "Provider, type to search"
   },
-  "switchModelModal.quickStartGuide": {
-    "defaultMessage": "Quick start guide"
-  },
   "switchModelModal.recommended": {
     "defaultMessage": "Recommended"
   },
@@ -4317,7 +4299,7 @@
     "defaultMessage": "Use other provider"
   },
   "telemetryConsentPrompt.description": {
-    "defaultMessage": "Would you like to share anonymous usage data to help improve SOHA? We never collect your conversations, code, or personal data."
+    "defaultMessage": "Would you like to share anonymous usage data to help improve goose? We never collect your conversations, code, or personal data."
   },
   "telemetryConsentPrompt.heading": {
     "defaultMessage": "Help improve SOHA"
@@ -4431,7 +4413,7 @@
     "defaultMessage": "SOHA would like to call {toolName}. Allow?"
   },
   "updateSection.autoDownload": {
-    "defaultMessage": "SOHA will download the update in the background and install it the next time you quit or restart."
+    "defaultMessage": "Goose will download the update in the background and install it the next time you quit or restart."
   },
   "updateSection.autoDownloadDisabledByEnv": {
     "defaultMessage": "Automatic downloads are disabled via the GOOSE_DISABLE_AUTO_DOWNLOAD environment variable."
@@ -4455,7 +4437,7 @@
     "defaultMessage": "Disable automatic update downloads"
   },
   "updateSection.disableAutoDownloadDesc": {
-    "defaultMessage": "When enabled, SOHA will notify you of new versions but will not download them automatically."
+    "defaultMessage": "When enabled, Goose will notify you of new versions but will not download them automatically."
   },
   "updateSection.downloadNow": {
     "defaultMessage": "Download Now"
@@ -4488,7 +4470,7 @@
     "defaultMessage": "Manual installation required for this update method."
   },
   "updateSection.readyInstallAuto": {
-    "defaultMessage": "✓ Update is ready. Restart SOHA to finish installing it, or quit when you're done."
+    "defaultMessage": "✓ Update is ready. Restart Goose to finish installing it, or quit when you're done."
   },
   "updateSection.readyInstallManual": {
     "defaultMessage": "✓ Update is ready! Click \"Install & Restart\" for installation instructions."
