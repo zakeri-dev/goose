@@ -12,6 +12,7 @@ interface AppLayoutContentProps {
   activeSessions: Array<{
     sessionId: string;
     initialMessage?: UserInput;
+    noAutoSubmit?: boolean;
   }>;
 }
 
@@ -67,6 +68,7 @@ interface AppLayoutProps {
   activeSessions: Array<{
     sessionId: string;
     initialMessage?: UserInput;
+    noAutoSubmit?: boolean;
   }>;
 }
 

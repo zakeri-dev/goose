@@ -7,7 +7,7 @@
  * lives there.
  */
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { defineMessages, useIntl } from '../i18n';
 import { AppEvents } from '../constants/events';
 import ChatInput from './ChatInput';
@@ -16,15 +16,16 @@ import { ChatState } from '../types/chatState';
 import 'react-toastify/dist/ReactToastify.css';
 import { View, ViewOptions } from '../utils/navigationUtils';
 import { useConfig } from './ConfigContext';
-import {
-  clearExtensionOverrides,
-  getExtensionConfigsWithOverrides,
-} from '../store/extensionOverrides';
 import { getInitialWorkingDir } from '../utils/workingDir';
 import { createSession } from '../sessions';
 import LoadingGoose from './LoadingGoose';
 import { UserInput } from '../types/message';
 import { ScrollText, AlignRight, Code2, Sparkles, ChevronLeft } from 'lucide-react';
+import {
+  createNextChatExtensionDraft,
+  selectNextChatExtensions,
+  type NextChatExtensionDraft,
+} from '../utils/nextChatExtensions';
 
 type SuggestionCard = {
   icon: typeof ScrollText;
@@ -101,6 +102,8 @@ export default function Hub({
   const { extensionsList } = useConfig();
   const [workingDir, setWorkingDir] = useState(getInitialWorkingDir());
   const [isCreatingSession, setIsCreatingSession] = useState(false);
+  const [nextChatExtensionDraft, setNextChatExtensionDraft] =
+    useState<NextChatExtensionDraft | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const { time, meridiem, hour } = useClock(intl.locale);
 
@@ -110,6 +113,11 @@ export default function Hub({
     return intl.formatMessage(i18n.goodEvening);
   }, [intl, hour]);
 
+  const draftForMenu = useMemo(
+    () => nextChatExtensionDraft ?? createNextChatExtensionDraft(extensionsList),
+    [extensionsList, nextChatExtensionDraft]
+  );
+
   // rAF is more reliable than autoFocus across async render boundaries.
   useEffect(() => {
     const frameId = requestAnimationFrame(() => {
@@ -118,19 +126,27 @@ export default function Hub({
     return () => cancelAnimationFrame(frameId);
   }, []);
 
+  const handleNextChatExtensionDraftChange = useCallback((draft: NextChatExtensionDraft) => {
+    setNextChatExtensionDraft(draft);
+  }, []);
+
   const handleSubmit = async (input: UserInput) => {
     const { msg: userMessage, images } = input;
     if (!(images.length > 0 || userMessage.trim()) || isCreatingSession) return;
 
-    const extensionConfigs = getExtensionConfigsWithOverrides(extensionsList);
-    clearExtensionOverrides();
     setIsCreatingSession(true);
 
     try {
-      const session = await createSession(workingDir, {
-        extensionConfigs,
-        allExtensions: extensionConfigs.length > 0 ? undefined : extensionsList,
-      });
+      const selectedExtensions = nextChatExtensionDraft
+        ? selectNextChatExtensions(extensionsList, nextChatExtensionDraft)
+        : [];
+      const sessionOptions =
+        selectedExtensions.length > 0
+          ? { extensionConfigs: selectedExtensions }
+          : { allExtensions: extensionsList };
+
+      const session = await createSession(workingDir, sessionOptions);
+      setNextChatExtensionDraft(null);
 
       window.dispatchEvent(new CustomEvent(AppEvents.SESSION_CREATED));
       window.dispatchEvent(
@@ -176,9 +192,10 @@ export default function Hub({
             onFilesProcessed={() => {}}
             messages={[]}
             disableAnimation={false}
-            toolCount={0}
             onWorkingDirChange={setWorkingDir}
             inputRef={inputRef}
+            nextChatExtensionDraft={draftForMenu}
+            onNextChatExtensionDraftChange={handleNextChatExtensionDraftChange}
           />
         </ChatInputCard>
 

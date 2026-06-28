@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { AlertTriangle, Download, Github } from 'lucide-react';
 import { Button } from './button';
 import { toastError } from '../../toasts';
-import { diagnostics } from '../../api';
 import { defineMessages, useIntl } from '../../i18n';
+import { getDiagnosticsReport } from '../../acp/diagnostics';
 
 const i18n = defineMessages({
   reportProblem: {
@@ -13,7 +13,7 @@ const i18n = defineMessages({
   description: {
     id: 'diagnosticsModal.description',
     defaultMessage:
-      'You can download a diagnostics zip file to share with the team, or file a bug directly on GitHub with your system details pre-filled. A diagnostics report contains the following:',
+      'You can download a diagnostics JSON report to share with the team, or file a bug directly on GitHub with your system details pre-filled. A diagnostics report contains the following:',
   },
   systemInfo: {
     id: 'diagnosticsModal.systemInfo',
@@ -66,7 +66,7 @@ const i18n = defineMessages({
   },
   diagnosticsErrorMsg: {
     id: 'diagnosticsModal.diagnosticsErrorMsg',
-    defaultMessage: 'Failed to download diagnostics',
+    defaultMessage: 'Failed to download diagnostics report',
   },
   systemInfoErrorTitle: {
     id: 'diagnosticsModal.systemInfoErrorTitle',
@@ -97,16 +97,14 @@ export const DiagnosticsModal: React.FC<DiagnosticsModalProps> = ({
     setIsDownloading(true);
 
     try {
-      const response = await diagnostics({
-        path: { session_id: sessionId },
-        throwOnError: true,
+      const report = await getDiagnosticsReport(sessionId, 'full');
+      const blob = new Blob([`${JSON.stringify(report, null, 2)}\n`], {
+        type: 'application/json',
       });
-
-      const blob = new Blob([response.data], { type: 'application/zip' });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `diagnostics_${sessionId}.zip`;
+      a.download = `diagnostics_${sessionId}.json`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
